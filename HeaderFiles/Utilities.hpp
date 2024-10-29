@@ -1,0 +1,99 @@
+//
+//  Utilities.hpp
+//  Draughts_NEA_V2
+//
+//  Created by Daniel Matveev on 10/10/2024.
+//
+
+#ifndef Utilities_hpp
+#define Utilities_hpp
+
+#include <stdio.h>
+#include <iostream>
+#include <unordered_map>
+#include <cstdlib>
+#include <math.h>
+
+// For piece colour
+// When printing on the board
+// Black - 'X'
+// White - 'O'
+// NoColour - ' '
+enum Colour
+{
+    Black,
+    White,
+    NoColour
+};
+// Declaration of overloading << operator for priting the string equivalent of each enum value
+std::ostream& operator << (std::ostream& os, const Colour& colour);
+
+
+// Position structure to hold (x, y) coordinate of a piece on the board
+struct Position
+{
+    int x;
+    int y;
+    
+    
+    // Operator overloading
+    bool operator == (const Position &toComparePosition) const
+    {
+        return x == toComparePosition.x && y == toComparePosition.y;
+    }
+    
+    bool operator != (const Position &toComparePosition) const
+    {
+        return x != toComparePosition.x || y != toComparePosition.y;
+    }
+    
+    // Compares as if in a 1D array, with top-left corner as 0 and bottom-right corner as 64
+    bool operator < (const Position &toComparePosition) const
+    {
+        return y + (x * 8) < toComparePosition.y + (toComparePosition.x * 8);
+    }
+    
+    Position operator + (const Position &toAddPosition) const
+    {
+        return Position { x + toAddPosition.x, y + toAddPosition.y };
+    }
+    
+    Position operator + (const int &iToAdd) const
+    {
+        return Position { x + iToAdd, y + iToAdd };
+    }
+    
+    Position operator - (const Position &toAddPosition) const
+    {
+        return Position { x - toAddPosition.x, y - toAddPosition.y };
+    }
+    
+    Position operator - (const int &iToSub) const
+    {
+        return Position { x - iToSub, y - iToSub };
+    }
+
+};
+// Declaration of overloading << operator for priting the string equivalent of a position as (x, y)
+std::ostream& operator << (std::ostream& os, const Position& pos);
+
+
+namespace std
+{
+    // Hash function of a position; used by std::set
+    template <> class hash<Position>
+    {
+        public:
+            std::size_t operator()(const Position& position) const
+            {
+                std::size_t hashedX = std::hash<int>()(position.x);
+                std::size_t hashedY = std::hash<int>()(position.y);
+                
+                return hashedX ^ (hashedY << 1);
+            }
+    };
+
+}
+
+
+#endif /* Utilities_hpp */

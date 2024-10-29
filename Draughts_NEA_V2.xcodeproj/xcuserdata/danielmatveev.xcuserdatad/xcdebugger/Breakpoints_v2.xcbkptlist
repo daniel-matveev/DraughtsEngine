@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A3D67E70-5B2F-46C7-B84B-47369FC581FD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D888134-8DC6-443E-A4AA-24F5C078A663"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Board.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "Board::initBoard()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E07C5213-2564-441B-8F8C-AE25E5A1B61E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Board.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "Board::removePiece(toRemovePosition)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E07C5213-2564-441B-8F8C-AE25E5A1B61E - 2181149737e4f0a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Board::removePiece(Position)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Board.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "E07C5213-2564-441B-8F8C-AE25E5A1B61E - 2181149737e4f0a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Board::removePiece(Position)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Board.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D28D88E-C73B-4990-8548-B8A2BFCA7381"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "Game::selectPieces()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "Game::checkLeft(startPosition, boardState, iDirection, bMultiJump)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a923fb1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a923fd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a923c73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a92c4d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a92ca87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "167"
+                  endingLineNumber = "167"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
+            landmarkName = "Game::checkRight(startPosition, boardState, iDirection, bMultiJump)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963 - 60555930db57f0c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkRight(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963 - 60555930db57f0ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkRight(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963 - 60555930db57f9c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkRight(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963 - 60555930db57e41a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkRight(Position, Board, int, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FF78D84-0FF4-45A6-8597-78666E6028D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "Game::selectPieces()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b7209d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "765">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1132">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "1137">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72d31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "1177">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72f60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "1160">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72fe4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "1201">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72faa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1025">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72faa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1030">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72faa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1160">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1077">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1107">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "861">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1119">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1166">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1200">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "2506">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "2506">
+               </Location>
+               <Location
+                  uuid = "7E2B6925-E060-4F7E-B673-CF7E2D0D6BFE - 191830d1c5b72e68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1166">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D288895-7290-4D25-8282-AF7B3944C794"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "Game::checkKing(piecePosition, boardState, bMultiJump)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFC89D35-574C-4995-8313-972663E6C193"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "Game::checkLeft(startPosition, boardState, iDirection, bMultiJump)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "365997C8-528F-4C93-B1C9-F9E7CB27C54F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "363"
+            endingLineNumber = "363"
+            landmarkName = "Game::checkRight(startPosition, boardState, iDirection, bMultiJump)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96BC647A-F79F-4CDF-96B3-2BE43DA2E9C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "364"
+            endingLineNumber = "364"
+            landmarkName = "Game::checkRight(startPosition, boardState, iDirection, bMultiJump)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05AA0AF1-2325-4FA7-9DC4-3DD5740698E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "05AA0AF1-2325-4FA7-9DC4-3DD5740698E0 - 191830d1c5b724a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "05AA0AF1-2325-4FA7-9DC4-3DD5740698E0 - 191830d1c5b724a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "61">
+               </Location>
+               <Location
+                  uuid = "05AA0AF1-2325-4FA7-9DC4-3DD5740698E0 - 191830d1c5b72458"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "111">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF2760E7-09D4-45AE-ADEE-ABA3A90FAA1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "Game::selectPieces()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB674AD6-0F2E-48C5-B393-2CC2B1C44F5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6A07511-B8B1-4058-ACE4-38C68B853110"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "467"
+            endingLineNumber = "467"
+            landmarkName = "Game::move(toCheckPosition)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E315B19-7260-421E-A0E3-AD044879E131"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50B8CCFA-D488-4D22-9050-640E5EA164ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Minimax.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "Minimax::getBestGameState(toAnalyseGame, iDepth)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50B8CCFA-D488-4D22-9050-640E5EA164ED - b7d12a312de6090f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Minimax::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Minimax.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "50B8CCFA-D488-4D22-9050-640E5EA164ED - b7d12a312de60aec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Minimax::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Minimax.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "99">
+               </Location>
+               <Location
+                  uuid = "50B8CCFA-D488-4D22-9050-640E5EA164ED - b7d12a312de60671"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Minimax::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Minimax.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "99">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBC1CF66-D8E1-4358-B18C-A21F152E4358"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Minimax.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "Minimax::getAllPossibleGames(toAnalyseGame)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B7D22E7-EA44-46E6-814C-B5834AF0684F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/AlphaBetaPruning.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "AlphaBetaPruning::getBestGameState(toAnalyseGame, iDepth)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6B7D22E7-EA44-46E6-814C-B5834AF0684F - e0f55cee38388ed3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlphaBetaPruning::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/AlphaBetaPruning.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "71">
+               </Location>
+               <Location
+                  uuid = "6B7D22E7-EA44-46E6-814C-B5834AF0684F - e0f55cee38388ed3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlphaBetaPruning::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/AlphaBetaPruning.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "362">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5195B37-0C61-4388-9A69-AAFAD7FDFF15"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4"
+            endingLineNumber = "4"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3C93295-9B6E-4F85-8D89-58206A0E3314"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "A3C93295-9B6E-4F85-8D89-58206A0E3314 - 191830d1c5b7222f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "523">
+               </Location>
+               <Location
+                  uuid = "A3C93295-9B6E-4F85-8D89-58206A0E3314 - 191830d1c5b7220e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "365">
+               </Location>
+               <Location
+                  uuid = "A3C93295-9B6E-4F85-8D89-58206A0E3314 - 191830d1c5b722cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "A3C93295-9B6E-4F85-8D89-58206A0E3314 - 191830d1c5b722cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "482">
+               </Location>
+               <Location
+                  uuid = "A3C93295-9B6E-4F85-8D89-58206A0E3314 - 191830d1c5b72153"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "A3C93295-9B6E-4F85-8D89-58206A0E3314 - 191830d1c5b722cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "487">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BF5881F-7C35-4A52-A6E5-0EF947F2F9C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "MonteCarloTreeSearch::MonteCarloTreeSearch()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5BF5881F-7C35-4A52-A6E5-0EF947F2F9C1 - 89d4e02ecdd83628"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::MonteCarloTreeSearch(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "189">
+               </Location>
+               <Location
+                  uuid = "5BF5881F-7C35-4A52-A6E5-0EF947F2F9C1 - 89d4e02ecdd83628"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::MonteCarloTreeSearch(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "5BF5881F-7C35-4A52-A6E5-0EF947F2F9C1 - 89d4e02ecdd83628"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::MonteCarloTreeSearch(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "69">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F2E8F48-125B-4B9C-899C-66A77645F220"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Minimax.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "Minimax::getAllPossibleGames(toAnalyseGame)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA0E2FF2-5C3E-4CC8-91F6-68408C28ABB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "MonteCarloTreeSearch::MonteCarloTreeSearch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A880A83E-1A19-41DD-8EBD-F58CA9B777E9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A880A83E-1A19-41DD-8EBD-F58CA9B777E9 - 2df46f77bd2381a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "167"
+                  endingLineNumber = "167"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  uuid = "A880A83E-1A19-41DD-8EBD-F58CA9B777E9 - 2df46f77bd2398ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  uuid = "A880A83E-1A19-41DD-8EBD-F58CA9B777E9 - c9f1a1f3b8dc4dfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, Colour, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "194"
+                  endingLineNumber = "194"
+                  offsetFromSymbolStart = "70">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCA5409E-5192-4B7B-AF83-B4865E34EBDB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BCA5409E-5192-4B7B-AF83-B4865E34EBDB - 2df46f77bd23808f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "342">
+               </Location>
+               <Location
+                  uuid = "BCA5409E-5192-4B7B-AF83-B4865E34EBDB - 2df46f77bd239795"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "244"
+                  endingLineNumber = "244"
+                  offsetFromSymbolStart = "342">
+               </Location>
+               <Location
+                  uuid = "BCA5409E-5192-4B7B-AF83-B4865E34EBDB - c9f1a1f3b8dc4cf3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, Colour, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "359">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8432DFDF-04FB-4A4C-B4AF-DE548DAEEED2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "MonteCarloTreeSearch::selectNode(currentNode)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "525BE41A-298A-4656-B143-448289906CFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "MonteCarloTreeSearch::rollOut(toRolloutNode)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A32E7E5-3ED5-4AAA-9A98-6BC00904C6A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "MonteCarloTreeSearch::rollOut(toRolloutNode)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3A32E7E5-3ED5-4AAA-9A98-6BC00904C6A5 - 4030975d49339756"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::rollOut(Node)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "325">
+               </Location>
+               <Location
+                  uuid = "3A32E7E5-3ED5-4AAA-9A98-6BC00904C6A5 - 4030975d49339756"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::rollOut(Node)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "343">
+               </Location>
+               <Location
+                  uuid = "3A32E7E5-3ED5-4AAA-9A98-6BC00904C6A5 - 4030975d49339737"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::rollOut(Node)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "346">
+               </Location>
+               <Location
+                  uuid = "3A32E7E5-3ED5-4AAA-9A98-6BC00904C6A5 - 4030975d49339737"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::rollOut(Node)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEE9E307-23AA-450F-B06A-E06539C2998A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "MonteCarloTreeSearch::rollOut(toRolloutNode)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B67F0268-3852-42D2-B992-9C079D9912D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
+            landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B67F0268-3852-42D2-B992-9C079D9912D6 - c9f1a1f3b8dc4a44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, Colour, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "353">
+               </Location>
+               <Location
+                  uuid = "B67F0268-3852-42D2-B992-9C079D9912D6 - c9f1a1f3b8dc4a44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, Colour, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "1079">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "167D7A4B-D4D8-4781-AAF0-A71D4AB5769F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
+            landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE433EAD-0644-47BC-9430-A32A6FC24B77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
+            landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DE433EAD-0644-47BC-9430-A32A6FC24B77 - c9f1a1f3b8dc4832"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, Colour, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "235"
+                  endingLineNumber = "235"
+                  offsetFromSymbolStart = "617">
+               </Location>
+               <Location
+                  uuid = "DE433EAD-0644-47BC-9430-A32A6FC24B77 - c9f1a1f3b8dc4832"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MonteCarloTreeSearch::getBestGameState(Game, Colour, int)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "235"
+                  endingLineNumber = "235"
+                  offsetFromSymbolStart = "1470">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3833926-BFDB-48BC-9EBA-544FEBC11505"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
+            landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5E8F9CD-EFA9-45E4-90FF-24ADCD1725A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3148F649-384E-4132-B4BD-1218E3674DF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "3148F649-384E-4132-B4BD-1218E3674DF9 - 191830d1c5b737e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "369">
+               </Location>
+               <Location
+                  uuid = "3148F649-384E-4132-B4BD-1218E3674DF9 - 191830d1c5b72f26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  uuid = "3148F649-384E-4132-B4BD-1218E3674DF9 - 191830d1c5b72e2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "734">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88D832EE-2F7C-40DB-8225-DD321B3B84B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "88D832EE-2F7C-40DB-8225-DD321B3B84B3 - 191830d1c5b722cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "455">
+               </Location>
+               <Location
+                  uuid = "88D832EE-2F7C-40DB-8225-DD321B3B84B3 - 191830d1c5b722cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "88D832EE-2F7C-40DB-8225-DD321B3B84B3 - 191830d1c5b721f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "534">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5ADD8A50-F0EF-44FA-A1E2-0D34DB736D50"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Console.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "Console::startGame()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5ADD8A50-F0EF-44FA-A1E2-0D34DB736D50 - 2f9e517cb762dd36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Console::startGame()"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Console.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  uuid = "5ADD8A50-F0EF-44FA-A1E2-0D34DB736D50 - 2f9e517cb762dd74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Console::startGame()"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Console.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B58E54A-DEA4-4F7B-8AD1-ADABBDE1FA91"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Console.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "Console::startGame()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B73D5E6-4918-46E7-9BB8-3FEA5DD52581"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74B33D12-07B2-4504-A017-99923B7F7807"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "607"
+            endingLineNumber = "607"
+            landmarkName = "Game::checkDraw(allBoards)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C021590-294F-47E3-BD03-987950078414"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Console.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "Console::startGame()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C021590-294F-47E3-BD03-987950078414 - 2f9e517cb762cc8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Console::startGame()"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Console.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "271"
+                  endingLineNumber = "271"
+                  offsetFromSymbolStart = "750">
+               </Location>
+               <Location
+                  uuid = "3C021590-294F-47E3-BD03-987950078414 - 2f9e517cb762cc4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Console::startGame()"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Console.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "269"
+                  endingLineNumber = "269"
+                  offsetFromSymbolStart = "750">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9056D36-D7F0-49C7-BD1F-1AF1CC09CF6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Console.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "Console::selectPlayer(iPlayer, iDifficulty)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29C4E6AE-3D53-4666-9222-0793E02862C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Console.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "Console::selectPlayer(iPlayer, iDifficulty)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE567AE9-CB71-4841-B680-A8054FBECC95"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "599"
+            endingLineNumber = "599"
+            landmarkName = "Game::calculateEvaluation()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE567AE9-CB71-4841-B680-A8054FBECC95 - 194a2576c76270d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::calculateEvaluation()"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "568"
+                  endingLineNumber = "568"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "CE567AE9-CB71-4841-B680-A8054FBECC95 - 194a2576c7627091"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::calculateEvaluation()"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "570"
+                  endingLineNumber = "570"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "CE567AE9-CB71-4841-B680-A8054FBECC95 - 194a2576c7620cdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::calculateEvaluation()"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "599"
+                  endingLineNumber = "599"
+                  offsetFromSymbolStart = "964">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90E09D49-6181-41A0-AC4B-62B05634E9B0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "590"
+            endingLineNumber = "590"
+            landmarkName = "Game::calculateEvaluation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34223EC7-31EE-44B4-9818-27051DDF375E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "586"
+            endingLineNumber = "586"
+            landmarkName = "Game::calculateEvaluation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

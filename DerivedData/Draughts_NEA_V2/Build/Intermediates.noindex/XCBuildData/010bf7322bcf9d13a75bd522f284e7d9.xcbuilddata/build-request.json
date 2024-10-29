@@ -1,0 +1,56 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "ccdf933a3873d4fcbde6c40169b3835676ddc1f0651ff2fb13868f227f814640"
+    }
+  ],
+  "containerPath" : "/Users/danielmatveev/Desktop/School/Computer Science/Draughts_NEA_V2/Draughts_NEA_V2.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx14.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/danielmatveev/Desktop/School/Computer Science/Draughts_NEA_V2/DerivedData/Draughts_NEA_V2/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/danielmatveev/Desktop/School/Computer Science/Draughts_NEA_V2/DerivedData/Draughts_NEA_V2/Build/Products",
+      "derivedDataPath" : "/Users/danielmatveev/Desktop/School/Computer Science/Draughts_NEA_V2/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/danielmatveev/Desktop/School/Computer Science/Draughts_NEA_V2/DerivedData/Draughts_NEA_V2/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/danielmatveev/Desktop/School/Computer Science/Draughts_NEA_V2/DerivedData/Draughts_NEA_V2/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/danielmatveev/Desktop/School/Computer Science/Draughts_NEA_V2/DerivedData/Draughts_NEA_V2/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_ADDRESS_SANITIZER" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

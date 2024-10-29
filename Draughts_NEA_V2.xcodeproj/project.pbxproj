@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9423C1CF2CB6C20A006D3AAE /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9423C1CD2CB6C20A006D3AAE /* Game.cpp */; };
+		9426BD8E2CCD7285004CC02A /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9426BD8C2CCD7285004CC02A /* Console.cpp */; };
+		943059962CB8761A00D2E2DA /* Utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943059942CB8761A00D2E2DA /* Utilities.cpp */; };
+		944009CB2CC3F53C00E7C6DC /* Minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 944009C92CC3F53C00E7C6DC /* Minimax.cpp */; };
+		944009CE2CC41DF900E7C6DC /* AlphaBetaPruning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 944009CC2CC41DF900E7C6DC /* AlphaBetaPruning.cpp */; };
 		9445E2F22CB68D4100912D93 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9445E2F12CB68D4100912D93 /* main.cpp */; };
+		9445E2FC2CB6920E00912D93 /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9445E2FA2CB6920E00912D93 /* Piece.cpp */; };
+		9445E2FF2CB6930A00912D93 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9445E2FD2CB6930A00912D93 /* Board.cpp */; };
+		948D488B2CC8091B0040235B /* MonteCarloTreeSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948D48892CC8091B0040235B /* MonteCarloTreeSearch.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9423C1CD2CB6C20A006D3AAE /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		9423C1CE2CB6C20A006D3AAE /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		9426BD8C2CCD7285004CC02A /* Console.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
+		9426BD8D2CCD7285004CC02A /* Console.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Console.hpp; sourceTree = "<group>"; };
+		943059942CB8761A00D2E2DA /* Utilities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utilities.cpp; sourceTree = "<group>"; };
+		943059952CB8761A00D2E2DA /* Utilities.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utilities.hpp; sourceTree = "<group>"; };
+		944009C92CC3F53C00E7C6DC /* Minimax.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Minimax.cpp; sourceTree = "<group>"; };
+		944009CA2CC3F53C00E7C6DC /* Minimax.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Minimax.hpp; sourceTree = "<group>"; };
+		944009CC2CC41DF900E7C6DC /* AlphaBetaPruning.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AlphaBetaPruning.cpp; sourceTree = "<group>"; };
+		944009CD2CC41DF900E7C6DC /* AlphaBetaPruning.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AlphaBetaPruning.hpp; sourceTree = "<group>"; };
 		9445E2EE2CB68D4100912D93 /* Draughts_NEA_V2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Draughts_NEA_V2; sourceTree = BUILT_PRODUCTS_DIR; };
 		9445E2F12CB68D4100912D93 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9445E2FA2CB6920E00912D93 /* Piece.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Piece.cpp; sourceTree = "<group>"; };
+		9445E2FB2CB6920E00912D93 /* Piece.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Piece.hpp; sourceTree = "<group>"; };
+		9445E2FD2CB6930A00912D93 /* Board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		9445E2FE2CB6930A00912D93 /* Board.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Board.hpp; sourceTree = "<group>"; };
+		948D48892CC8091B0040235B /* MonteCarloTreeSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MonteCarloTreeSearch.cpp; sourceTree = "<group>"; };
+		948D488A2CC8091B0040235B /* MonteCarloTreeSearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MonteCarloTreeSearch.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +65,7 @@
 		9445E2E52CB68D4100912D93 = {
 			isa = PBXGroup;
 			children = (
+				9445E2F82CB68D7D00912D93 /* HeaderFiles */,
 				9445E2F02CB68D4100912D93 /* Draughts_NEA_V2 */,
 				9445E2EF2CB68D4100912D93 /* Products */,
 			);
@@ -57,9 +82,32 @@
 		9445E2F02CB68D4100912D93 /* Draughts_NEA_V2 */ = {
 			isa = PBXGroup;
 			children = (
+				9445E2FD2CB6930A00912D93 /* Board.cpp */,
 				9445E2F12CB68D4100912D93 /* main.cpp */,
+				9445E2FA2CB6920E00912D93 /* Piece.cpp */,
+				9423C1CD2CB6C20A006D3AAE /* Game.cpp */,
+				943059942CB8761A00D2E2DA /* Utilities.cpp */,
+				944009C92CC3F53C00E7C6DC /* Minimax.cpp */,
+				944009CC2CC41DF900E7C6DC /* AlphaBetaPruning.cpp */,
+				948D48892CC8091B0040235B /* MonteCarloTreeSearch.cpp */,
+				9426BD8C2CCD7285004CC02A /* Console.cpp */,
 			);
 			path = Draughts_NEA_V2;
+			sourceTree = "<group>";
+		};
+		9445E2F82CB68D7D00912D93 /* HeaderFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9426BD8D2CCD7285004CC02A /* Console.hpp */,
+				9423C1CE2CB6C20A006D3AAE /* Game.hpp */,
+				944009CA2CC3F53C00E7C6DC /* Minimax.hpp */,
+				948D488A2CC8091B0040235B /* MonteCarloTreeSearch.hpp */,
+				944009CD2CC41DF900E7C6DC /* AlphaBetaPruning.hpp */,
+				943059952CB8761A00D2E2DA /* Utilities.hpp */,
+				9445E2FE2CB6930A00912D93 /* Board.hpp */,
+				9445E2FB2CB6920E00912D93 /* Piece.hpp */,
+			);
+			path = HeaderFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9426BD8E2CCD7285004CC02A /* Console.cpp in Sources */,
+				944009CE2CC41DF900E7C6DC /* AlphaBetaPruning.cpp in Sources */,
+				9445E2FF2CB6930A00912D93 /* Board.cpp in Sources */,
+				9445E2FC2CB6920E00912D93 /* Piece.cpp in Sources */,
+				948D488B2CC8091B0040235B /* MonteCarloTreeSearch.cpp in Sources */,
 				9445E2F22CB68D4100912D93 /* main.cpp in Sources */,
+				9423C1CF2CB6C20A006D3AAE /* Game.cpp in Sources */,
+				943059962CB8761A00D2E2DA /* Utilities.cpp in Sources */,
+				944009CB2CC3F53C00E7C6DC /* Minimax.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
