@@ -20,8 +20,7 @@ int main(int argc, const char * argv[])
     do 
     {
         iMainMenuOption = 0;
-        
-        
+    
         console.printStartOptions();
         std::cin >> iMainMenuOption;
         
@@ -109,13 +108,13 @@ int main(int argc, const char * argv[])
 //    return 0;
     
 //    Game mainGame;
-//    
+////    
 //    Minimax mm;
 //    AlphaBetaPruning abp;
 //    MonteCarloTreeSearch mcts;
 //    
-//    
-//    
+    
+    
 //    Position toSelectPosition;
 //    Position toMovePosition;
 // 
@@ -129,12 +128,12 @@ int main(int argc, const char * argv[])
 //        if (mainGame.getCurrentPlayerColour() == Black)
 //        {
 ////            std::cout << "Minimax called" << std::endl;
-////            mainGame = mm.getBestGameState(mainGame, 7);
+////            mainGame = mm.getBestGameState(mainGame, 6);
 ////            std::cout << mm.iNumberOfLeafNodes << std::endl;
 ////            mm.iNumberOfLeafNodes = 0;
 //            
 ////            std::cout << "AlphaBetaPruning called" << std::endl;
-////            mainGame = abp.getBestGameState(mainGame, 7);
+////            mainGame = abp.getBestGameState(mainGame, 6);
 ////            std::cout << abp.iNumberOfLeafNodes << std::endl;
 ////            abp.iNumberOfLeafNodes = 0;
 //            
@@ -156,9 +155,10 @@ int main(int argc, const char * argv[])
 //                std::cin >> toSelectPosition.y;
 //            } while (!mainGame.select(toSelectPosition));
 //            
-//            mainGame.printBoard();
+//            
 //            do
 //            {
+//                mainGame.printBoard();
 //                std::cout << "Move to:" << std::endl;
 //                std::cout << "X: ";
 //                std::cin >> toMovePosition.x;
@@ -166,9 +166,8 @@ int main(int argc, const char * argv[])
 //                std::cout << "Y: ";
 //                std::cin >> toMovePosition.y;
 //            } while (!mainGame.move(toMovePosition));
-//        }
+////        }
 //        
-//        mainGame.checkDraw();
 //    }
 //    
 //    mainGame.getWinner();

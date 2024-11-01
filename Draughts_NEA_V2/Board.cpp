@@ -41,7 +41,7 @@ void Board::setUpBoard()
     // Controls Row / y
     for (int i = 0; i < this->iSize; i++)
     {
-        // Controls Column / x
+//      Controls Column / x
         for (int j = 0; j < this->iSize; j++)
         {
             // If the row is one of the first 3
@@ -162,6 +162,14 @@ void Board::removePiece(Position toRemovePosition)
     toRemovePosition = toRemovePosition - 1;
     this->board [toRemovePosition.y] [toRemovePosition.x].setColour(NoColour);
     this->board [toRemovePosition.y] [toRemovePosition.x].updateCrowned(false);
+}
+
+void Board::removePieces(std::vector<Position> toRemovePositions)
+{
+    for (int i = 0; i < toRemovePositions.size(); i++)
+    {
+        this->removePiece(toRemovePositions.at(i));
+    }
 }
 
 Piece Board::getPiece(Position piecePosition)

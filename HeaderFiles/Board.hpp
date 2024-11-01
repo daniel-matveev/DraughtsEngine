@@ -40,6 +40,7 @@ public:
     void movePiece(Position newPosition, Piece selectedPiece);
     
     void removePiece(Position toRemovePosition);
+    void removePieces(std::vector<Position> toRemovePositions);
     
     // Getters
     Piece getPiece(Position piecePosition);

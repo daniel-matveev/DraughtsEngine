@@ -78,8 +78,8 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "Game::selectPieces()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,13 +94,13 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "Game::checkLeft(startPosition, boardState, iDirection, bMultiJump)"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "Game::checkDirection(startPosition, boardState, directionPosition, bMultiJump)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a923fb1"
+                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a92ccf3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -110,147 +110,39 @@
                   urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "66">
+                  startingLineNumber = "211"
+                  endingLineNumber = "211"
+                  offsetFromSymbolStart = "83">
                </Location>
                <Location
-                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a923fd0"
+                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - cb5ae8714c6a11ea"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
+                  symbolName = "Game::checkDirection(Position, Board, Position, bool)"
                   moduleName = "Draughts_NEA_V2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "66">
+                  startingLineNumber = "212"
+                  endingLineNumber = "212"
+                  offsetFromSymbolStart = "84">
                </Location>
                <Location
-                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a923c73"
+                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - cb5ae8714c6a11ea"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
+                  symbolName = "Game::checkDirection(Position, Board, Position, bool)"
                   moduleName = "Draughts_NEA_V2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "66">
-               </Location>
-               <Location
-                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a92c4d6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
-                  moduleName = "Draughts_NEA_V2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "150"
-                  endingLineNumber = "150"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  uuid = "F56046D2-BED4-4FA0-805F-DF9FB551297A - 5df193081a92ca87"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Game::checkLeft(Position, Board, int, bool)"
-                  moduleName = "Draughts_NEA_V2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "167"
-                  endingLineNumber = "167"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Draughts_NEA_V2/Game.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
-            landmarkName = "Game::checkRight(startPosition, boardState, iDirection, bMultiJump)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963 - 60555930db57f0c3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Game::checkRight(Position, Board, int, bool)"
-                  moduleName = "Draughts_NEA_V2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "151"
-                  endingLineNumber = "151"
-                  offsetFromSymbolStart = "66">
-               </Location>
-               <Location
-                  uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963 - 60555930db57f0ec"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Game::checkRight(Position, Board, int, bool)"
-                  moduleName = "Draughts_NEA_V2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "152"
-                  endingLineNumber = "152"
-                  offsetFromSymbolStart = "66">
-               </Location>
-               <Location
-                  uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963 - 60555930db57f9c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Game::checkRight(Position, Board, int, bool)"
-                  moduleName = "Draughts_NEA_V2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "221"
-                  endingLineNumber = "221"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  uuid = "3C882F6B-31B5-4368-892F-A21B10C2E963 - 60555930db57e41a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Game::checkRight(Position, Board, int, bool)"
-                  moduleName = "Draughts_NEA_V2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "238"
-                  endingLineNumber = "238"
-                  offsetFromSymbolStart = "104">
+                  startingLineNumber = "212"
+                  endingLineNumber = "212"
+                  offsetFromSymbolStart = "75">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -265,8 +157,8 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "Game::selectPieces()"
             landmarkType = "7">
          </BreakpointContent>
@@ -281,8 +173,8 @@
             filePath = "Draughts_NEA_V2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
             <Locations>
@@ -569,10 +461,57 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "Game::checkKing(piecePosition, boardState, bMultiJump)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D288895-7290-4D25-8282-AF7B3944C794 - 732bb9d15da83fbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkKing(Position, Board, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "6D288895-7290-4D25-8282-AF7B3944C794 - 732bb9d15da83f9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkKing(Position, Board, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "6D288895-7290-4D25-8282-AF7B3944C794 - 732bb9d15da83fbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Game::checkKing(Position, Board, bool)"
+                  moduleName = "Draughts_NEA_V2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielmatveev/Desktop/School/Computer%20Science/Draughts_NEA_V2/Draughts_NEA_V2/Game.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -585,41 +524,9 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
-            landmarkName = "Game::checkLeft(startPosition, boardState, iDirection, bMultiJump)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "365997C8-528F-4C93-B1C9-F9E7CB27C54F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Draughts_NEA_V2/Game.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "363"
-            endingLineNumber = "363"
-            landmarkName = "Game::checkRight(startPosition, boardState, iDirection, bMultiJump)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "96BC647A-F79F-4CDF-96B3-2BE43DA2E9C1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Draughts_NEA_V2/Game.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "364"
-            endingLineNumber = "364"
-            landmarkName = "Game::checkRight(startPosition, boardState, iDirection, bMultiJump)"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
+            landmarkName = "Game::checkDirection(startPosition, boardState, directionPosition, bMultiJump)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -633,8 +540,8 @@
             filePath = "Draughts_NEA_V2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
             <Locations>
@@ -696,8 +603,8 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "Game::selectPieces()"
             landmarkType = "7">
          </BreakpointContent>
@@ -728,8 +635,8 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "467"
-            endingLineNumber = "467"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
             landmarkName = "Game::move(toCheckPosition)"
             landmarkType = "7">
          </BreakpointContent>
@@ -744,8 +651,8 @@
             filePath = "Draughts_NEA_V2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
          </BreakpointContent>
@@ -760,8 +667,8 @@
             filePath = "Draughts_NEA_V2/Minimax.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "Minimax::getBestGameState(toAnalyseGame, iDepth)"
             landmarkType = "7">
             <Locations>
@@ -839,8 +746,8 @@
             filePath = "Draughts_NEA_V2/AlphaBetaPruning.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "AlphaBetaPruning::getBestGameState(toAnalyseGame, iDepth)"
             landmarkType = "7">
             <Locations>
@@ -903,8 +810,8 @@
             filePath = "Draughts_NEA_V2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
             <Locations>
@@ -1106,8 +1013,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "264"
-            endingLineNumber = "264"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
             <Locations>
@@ -1169,8 +1076,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "299"
-            endingLineNumber = "299"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
             <Locations>
@@ -1232,8 +1139,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "MonteCarloTreeSearch::selectNode(currentNode)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1358,8 +1265,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "279"
-            endingLineNumber = "279"
+            startingLineNumber = "280"
+            endingLineNumber = "280"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
             <Locations>
@@ -1406,8 +1313,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "291"
-            endingLineNumber = "291"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1422,8 +1329,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "294"
-            endingLineNumber = "294"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
             <Locations>
@@ -1470,8 +1377,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1486,8 +1393,8 @@
             filePath = "Draughts_NEA_V2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1502,8 +1409,8 @@
             filePath = "Draughts_NEA_V2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
             <Locations>
@@ -1565,8 +1472,8 @@
             filePath = "Draughts_NEA_V2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
             <Locations>
@@ -1685,22 +1592,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3B73D5E6-4918-46E7-9BB8-3FEA5DD52581"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Draughts_NEA_V2/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
-            landmarkName = "main(argc, argv)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "74B33D12-07B2-4504-A017-99923B7F7807"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1708,8 +1599,8 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "607"
-            endingLineNumber = "607"
+            startingLineNumber = "527"
+            endingLineNumber = "527"
             landmarkName = "Game::checkDraw(allBoards)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1804,8 +1695,8 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "599"
-            endingLineNumber = "599"
+            startingLineNumber = "519"
+            endingLineNumber = "519"
             landmarkName = "Game::calculateEvaluation()"
             landmarkType = "7">
             <Locations>
@@ -1867,8 +1758,8 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "590"
-            endingLineNumber = "590"
+            startingLineNumber = "510"
+            endingLineNumber = "510"
             landmarkName = "Game::calculateEvaluation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1883,9 +1774,73 @@
             filePath = "Draughts_NEA_V2/Game.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "586"
-            endingLineNumber = "586"
+            startingLineNumber = "506"
+            endingLineNumber = "506"
             landmarkName = "Game::calculateEvaluation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A41EE3FD-03E4-4E35-9B67-FE4CE413EE33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "394"
+            endingLineNumber = "394"
+            landmarkName = "Game::move(toCheckPosition)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C927E7B6-709E-4A69-B37C-17B5AABD80D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "Game::checkPiece(piecePosition, boardState, bMultiJump)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF88EBFC-CAD5-479A-B2AE-3D0612031446"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Game.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "Game::checkPiece(piecePosition, boardState, bMultiJump)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AB5CF5A-2682-4DE8-817E-FF2894041BFC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Minimax.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "Minimax::getAllPossibleGames(toAnalyseGame)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

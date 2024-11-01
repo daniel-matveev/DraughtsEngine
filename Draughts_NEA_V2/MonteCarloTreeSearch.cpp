@@ -13,7 +13,7 @@
 Node::Node(Game gameState)
 {
     this->iNumberOfVisits = 0;
-    this->iTotalScore = 0;
+    this->fTotalScore = 0;
     this->gameState = gameState;
     
 }
@@ -21,7 +21,7 @@ Node::Node(Game gameState)
 Node::Node()
 {
     this->iNumberOfVisits = 0;
-    this->iTotalScore = 0;
+    this->fTotalScore = 0;
 }
 
 // MCTS constructor
@@ -76,7 +76,7 @@ float MonteCarloTreeSearch::getUCBScore(Node toCalculateNode)
     
     // Formula
     float C = 2;
-    float dNodeMean = ((float) toCalculateNode.iTotalScore) / ((float) toCalculateNode.iNumberOfVisits);
+    float dNodeMean = ( toCalculateNode.fTotalScore) / ((float) toCalculateNode.iNumberOfVisits);
     
     return dNodeMean + C * sqrt( log(iNumberOfTotalSimulations) / toCalculateNode.iNumberOfVisits );
 }
@@ -113,7 +113,7 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
             
             int iRandomMove = rand() % iNumberOfEndMoves;
             
-            std::unordered_map<Position, Board>::iterator filteredEndPositionsToBoardIterator = tempGame.filteredEndPositionsToBoard.begin();
+            std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = tempGame.filteredEndPositionsToBoard.begin();
             
             std::advance(filteredEndPositionsToBoardIterator, iRandomMove);
             
@@ -158,7 +158,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
 
             // Increment the values of that node accordingly
             currentNode.iNumberOfVisits = currentNode.iNumberOfVisits + 1;
-            currentNode.iTotalScore = currentNode.iTotalScore + fFinalScore;
+            currentNode.fTotalScore = currentNode.fTotalScore + fFinalScore;
             
             // Return the score for back propagation for the parent nodes
             return fFinalScore;
@@ -187,7 +187,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
                 currentNode.gameState.getValidMoves(false);
 
                 // And for each valid move
-                std::unordered_map<Position, Board>::iterator filteredEndPositionsToBoardIterator = currentNode.gameState.filteredEndPositionsToBoard.begin();
+                std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = currentNode.gameState.filteredEndPositionsToBoard.begin();
 
                 for (; filteredEndPositionsToBoardIterator != currentNode.gameState.filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
                 {
@@ -205,6 +205,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
                 currentNode.gameState.endPositionsToBoard.clear();
                 currentNode.gameState.filteredEndPositionsToBoard.clear();
                 currentNode.gameState.intermediatePositionsToBoard.clear();
+                currentNode.gameState.toSkipPositions.clear();
 
             }
             
@@ -213,7 +214,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
             
             // Update its values accordingly
             currentNode.childNodes.at(0)->iNumberOfVisits = currentNode.childNodes.at(0)->iNumberOfVisits + 1;
-            currentNode.childNodes.at(0)->iTotalScore = currentNode.childNodes.at(0)->iTotalScore + fFinalScore;
+            currentNode.childNodes.at(0)->fTotalScore = currentNode.childNodes.at(0)->fTotalScore + fFinalScore;
             
             // return the score for backpropagation
             return fFinalScore;
@@ -249,7 +250,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
         
         // Update the values of the node accordingly
         currentNode.iNumberOfVisits = currentNode.iNumberOfVisits + 1;
-        currentNode.iTotalScore = currentNode.iTotalScore + fFinalScore;
+        currentNode.fTotalScore = currentNode.fTotalScore + fFinalScore;
         
         // Return or backpropagation
         return fFinalScore;

@@ -16,17 +16,21 @@ void Game::initVariables()
 Game::Game()
 {
     this->initVariables();
-    
-//    this->allBoards.push_back(this->gameBoard);
 }
 
 Game::~Game() {}
 
 
-bool Game::canCurrentlyJump(Board toCompareBoard)
+bool Game::canCurrentlyJump(std::vector<Position> toSkipPositions)
 {
-    
-    return !(this->gameBoard.getBlackLeft() == toCompareBoard.getBlackLeft() && this->gameBoard.getWhiteLeft() == toCompareBoard.getWhiteLeft());
+    if (toSkipPositions.size() == 0)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
 }
 
 
@@ -51,7 +55,7 @@ void Game::selectPieces()
                 this->getValidMoves(false);
                 
                 // Create iterator to be able to iterate over the map
-                std::unordered_map<Position, Board>::iterator filteredEndPositionsToBoardIterator = this->filteredEndPositionsToBoard.begin();
+                std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = this->filteredEndPositionsToBoard.begin();
                 
                 // Filtering of valid pieces
                 for (; filteredEndPositionsToBoardIterator != this->filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
@@ -90,6 +94,7 @@ void Game::selectPieces()
                 this->intermediatePositionsToBoard.clear();
                 this->endPositionsToBoard.clear();
                 this->filteredEndPositionsToBoard.clear();
+                this->toSkipPositions.clear();
             }
         }
     }
@@ -115,7 +120,7 @@ void Game::getValidMoves(bool bMultiJump)
     // If moves consists of taking pieces we keep those
     bool bCanJumpOverall = false;
     
-    std::unordered_map<Position, Board>::iterator endPositionsToBoardIterator = this->endPositionsToBoard.begin();
+    std::unordered_map<Position, std::vector<Position>>::iterator endPositionsToBoardIterator = this->endPositionsToBoard.begin();
     
     for (;endPositionsToBoardIterator != this->endPositionsToBoard.end(); ++endPositionsToBoardIterator)
     {
@@ -151,20 +156,19 @@ bool Game::checkPiece(Position piecePosition, Board boardState, bool bMultiJump)
     // if white check up
     if ( boardState.getPiece(piecePosition).getColour() == White )
     {
-        bool bHasJumpedNW = this->checkLeft(piecePosition, boardState, -1, bMultiJump);
+        bool bHasJumpedNW = this->checkDirection(piecePosition, boardState, Position {-1, -1}, bMultiJump);
     
-        bool bHasJumpedNE = this->checkRight(piecePosition, boardState, -1, bMultiJump);
+        bool bHasJumpedNE = this->checkDirection(piecePosition, boardState, Position {+1, -1}, bMultiJump);
 
-        
         return bHasJumpedNW || bHasJumpedNE;
     }
     
     // If black check down
     else if ( boardState.getPiece(piecePosition).getColour() == Black )
     {
-        bool bHasJumpedSW = this->checkLeft(piecePosition, boardState, 1, bMultiJump);
+        bool bHasJumpedSW = this->checkDirection(piecePosition, boardState, Position {-1, +1}, bMultiJump);
         
-        bool bHasJumpedSE = this->checkRight(piecePosition, boardState, 1, bMultiJump);
+        bool bHasJumpedSE = this->checkDirection(piecePosition, boardState, Position {+1, +1}, bMultiJump);
 
         
         return bHasJumpedSW || bHasJumpedSE;
@@ -178,14 +182,15 @@ bool Game::checkPiece(Position piecePosition, Board boardState, bool bMultiJump)
 // else -> return false
 bool Game::checkKing(Position piecePosition, Board boardState, bool bMultiJump)
 {
-    bool bHasJumpedNW = this->checkLeft(piecePosition, boardState, -1, bMultiJump);
     
-    bool bHasJumpedNE = this->checkRight(piecePosition, boardState, -1, bMultiJump);
+    bool bHasJumpedNW = this->checkDirection(piecePosition, boardState, Position {-1, -1}, bMultiJump);
     
-    bool bHasJumpedSW = this->checkLeft(piecePosition, boardState, 1, bMultiJump);
+    bool bHasJumpedNE = this->checkDirection(piecePosition, boardState, Position {+1, -1}, bMultiJump);
     
-    bool bHasJumpedSE = this->checkRight(piecePosition, boardState, 1, bMultiJump);
+    bool bHasJumpedSW = this->checkDirection(piecePosition, boardState, Position {-1, +1}, bMultiJump);
     
+    bool bHasJumpedSE = this->checkDirection(piecePosition, boardState, Position {+1, +1}, bMultiJump);
+
 
     return (bHasJumpedNW || bHasJumpedNE || bHasJumpedSW || bHasJumpedSE);
 }
@@ -194,10 +199,10 @@ bool Game::checkKing(Position piecePosition, Board boardState, bool bMultiJump)
 // Returns if it can make one successful jump
 // startPosition - the position of the piece moving
 // boardState - board permuatation as the piece is jumping
-// iDirection - direction the pieces are moving
+// directionPosition - direction the pieces are moving
 //            -> White - -1 (Up)
 //            -> Black - +1 (Down)
-bool Game::checkLeft(Position startPosition, Board boardState, int iDirection, bool bMultiJump)
+bool Game::checkDirection(Position startPosition, Board boardState, Position directionPosition, bool bMultiJump)
 {
     // To store position of piece to remove in case we can jump
     Position toSkipPosition;
@@ -210,17 +215,19 @@ bool Game::checkLeft(Position startPosition, Board boardState, int iDirection, b
     for (int i = 0; i < 2; i++)
     {
         // Update the position we are checking {Horizontal offset, Vertical Offset}
-        tempPosition = tempPosition + Position {-1, iDirection};
+        tempPosition = tempPosition + directionPosition;
         
         // Edge cases
         if (tempPosition.x > 8 || tempPosition.x < 1)
         {
             bHasJumped = false;
+  
             break;
         }
         if (tempPosition.y > 8 || tempPosition.y < 1)
         {
             bHasJumped = false;
+            
             break;
         }
         
@@ -232,6 +239,7 @@ bool Game::checkLeft(Position startPosition, Board boardState, int iDirection, b
         if (atPositionPiece.getColour() == this->currentPlayerColour)
         {
             bHasJumped = false;
+            
             break;
         }
         // If the space to check is empty
@@ -240,61 +248,66 @@ bool Game::checkLeft(Position startPosition, Board boardState, int iDirection, b
             // And we are jumping
             if (bHasJumped)
             {
+                this->toSkipPositions.push_back(toSkipPosition);
+                
                 // Move the piece to the new position
                 boardState.movePiece(tempPosition, boardState.getPiece(startPosition));
                 
                 // Remove the piece we jumped over
                 boardState.removePiece(toSkipPosition);
             
+                
+                bool bCanJump = false;
                 // If the piece moving is a king
                 if (boardState.getPiece(tempPosition).getCrowned())
                 {
                     // check if it can jump again
-                    bool bCanJump = this->checkKing(tempPosition, boardState, true);
+                    bCanJump = this->checkKing(tempPosition, boardState, true);
                     
-                    // If it cannot = > reached terminal position
-                    // => Insert to the end positions map
-                    if (!bCanJump)
-                    {
-                        this->endPositionsToBoard.insert( { std::make_pair( tempPosition, boardState ) } );
-                    }
-                    // If it can jump => intermediate move
-                    else
-                    {
-                        this->intermediatePositionsToBoard.insert( std::make_pair(tempPosition, boardState) );
-                    }
                 }
                 // If the pice moving is a regular piece
                 else
                 {
                     // Check if it can jump again
-                    bool bCanJump = this->checkPiece(tempPosition, boardState, true);
+                    bCanJump = this->checkPiece(tempPosition, boardState, true);
+                }
+                
+                // If it cannot = > reached terminal position
+                // => Insert to the end positions map
+                if (!bCanJump)
+                {
+                    this->endPositionsToBoard.insert( { std::make_pair( tempPosition, this->toSkipPositions ) } );
                     
-                    // If it cannot => reached terminal position
-                    // => insert to the end positions map
-                    if (!bCanJump)
+                    if (this->toSkipPositions.size() > 0)
                     {
-                        this->endPositionsToBoard.insert( { std::make_pair( tempPosition, boardState ) } );
-                    }
-                    // If it can jump => intermediate move
-                    else
-                    {
-                        this->intermediatePositionsToBoard.insert( std::make_pair(tempPosition, boardState) );
+                        this->toSkipPositions.pop_back();
                     }
                 }
+                // If it can jump => intermediate move
+                else
+                {
+                    this->intermediatePositionsToBoard.insert( std::make_pair(tempPosition, this->toSkipPositions) );
+                    
+                    if (this->toSkipPositions.size() > 0)
+                    {
+                        this->toSkipPositions.pop_back();
+                    }
+                }
+                
             }
             
-            // And are molti jumping but we haven't jumped
+            // And are multi jumping but we haven't jumped
             // Not a valid move
             else if (bMultiJump == true && bHasJumped == false)
             {
+//                this->endPositionsToBoard.insert( { std::make_pair( startPosition, this->toSkipPositions ) } );
                 break;
             }
             // Simple move, no jumps
             else if (bMultiJump == false && bHasJumped == false)
             {
                 boardState.movePiece(tempPosition, boardState.getPiece(startPosition));
-                this->endPositionsToBoard.insert( { std::make_pair(tempPosition, boardState) } );
+                this->endPositionsToBoard.insert( { std::make_pair( tempPosition, this->toSkipPositions ) } );
                 
                 break;
             }
@@ -318,101 +331,6 @@ bool Game::checkLeft(Position startPosition, Board boardState, int iDirection, b
         }
     }
     
-    return bHasJumped;
-}
-
-// Same as checkLeft but with a different increment to tempPosition
-bool Game::checkRight(Position startPosition, Board boardState, int iDirection, bool bMultiJump)
-{
-    Position toSkipPosition;
-    Position tempPosition = startPosition;
-    
-    bool bHasJumped = false;
-    
-    for (int i = 0; i < 2; i++)
-    {
-        tempPosition = tempPosition + Position {1, iDirection};
-        
-        if (tempPosition.x > 8 || tempPosition.x < 1)
-        {
-            bHasJumped = false;
-            break;
-        }
-        if (tempPosition.y > 8 || tempPosition.y < 1)
-        {
-            bHasJumped = false;
-            break;
-        }
-        
-        Piece atPositionPiece = boardState.getPiece(tempPosition);
-        
-        if (atPositionPiece.getColour() == this->currentPlayerColour)
-        {
-            bHasJumped = false;
-            break;
-        }
-        else if (atPositionPiece.getColour() == NoColour)
-        {
-            if (bHasJumped)
-            {
-                boardState.movePiece(tempPosition, boardState.getPiece(startPosition));
-                
-                boardState.removePiece(toSkipPosition);
-           
-                if (boardState.getPiece(tempPosition).getCrowned())
-                {
-                    bool bCanJump = this->checkKing(tempPosition, boardState, true);
-                    
-                    if (!bCanJump)
-                    {
-                        this->endPositionsToBoard.insert( { std::make_pair( tempPosition, boardState ) } );
-                    }
-                    else
-                    {
-                        this->intermediatePositionsToBoard.insert( std::make_pair(tempPosition, boardState) );
-                    }
-                }
-                else
-                {
-                    bool bCanJump = this->checkPiece(tempPosition, boardState, true);
-                    
-                    if (!bCanJump)
-                    {
-                        this->endPositionsToBoard.insert( { std::make_pair( tempPosition, boardState ) } );
-                    }
-                    else
-                    {
-                        this->intermediatePositionsToBoard.insert( std::make_pair(tempPosition, boardState) );
-                    }
-                }
-            }
-            else if (bMultiJump == true && bHasJumped == false)
-            {
-                break;
-            }
-            else if (bMultiJump == false && bHasJumped == false)
-            {
-                boardState.movePiece(tempPosition, boardState.getPiece(startPosition));
-                
-                this->endPositionsToBoard.insert( { std::make_pair( tempPosition, boardState ) } );
-                break;
-            }
-        
-        }
-        else
-        {
-            if (bHasJumped == false)
-            {
-                bHasJumped = true;
-                toSkipPosition = tempPosition;
-            }
-            else
-            {
-                bHasJumped = false;
-            }
-            
-        }
-    }
     
     return bHasJumped;
 }
@@ -464,7 +382,7 @@ bool Game::select(Position toCheckPosition)
 // Returns true if the end position has been inputed and updates the boardState accordingly
 bool Game::move(Position toCheckPosition)
 {
-    std::unordered_map<Position, Board>::iterator filteredEndPositionsToBoardIterator = this->filteredEndPositionsToBoard.begin();
+    std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = this->filteredEndPositionsToBoard.begin();
     
     for (; filteredEndPositionsToBoardIterator != this->filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
     {
@@ -472,7 +390,8 @@ bool Game::move(Position toCheckPosition)
         if (filteredEndPositionsToBoardIterator->first == toCheckPosition)
         {
             // Make the gameBoard the same as the board associated with that move
-            this->gameBoard = filteredEndPositionsToBoardIterator->second;
+            this->gameBoard.movePiece(filteredEndPositionsToBoardIterator->first, this->selectedPiece);
+            this->gameBoard.removePieces(filteredEndPositionsToBoardIterator->second);
 
             // Move ends
             // => swap players
@@ -481,15 +400,14 @@ bool Game::move(Position toCheckPosition)
             this->intermediatePositionsToBoard.clear();
             this->endPositionsToBoard.clear();
             this->filteredEndPositionsToBoard.clear();
-            
-//            this->allBoards.push_back(this->gameBoard);
+            this->toSkipPositions.clear();
             
             return true;
         }
     }
     
     // If it is not in the end positions map, it may be in the intermediate move
-    std::unordered_map<Position, Board>::iterator intermediatePositionsToBoardIterator = this->intermediatePositionsToBoard.begin();
+    std::unordered_map<Position, std::vector<Position> >::iterator intermediatePositionsToBoardIterator = this->intermediatePositionsToBoard.begin();
     
     for (; intermediatePositionsToBoardIterator != this->intermediatePositionsToBoard.end(); ++intermediatePositionsToBoardIterator)
     {
@@ -497,11 +415,13 @@ bool Game::move(Position toCheckPosition)
         if (intermediatePositionsToBoardIterator->first == toCheckPosition)
         {
             // Make the gameBoard the same as the board associated with that move
-            this->gameBoard = intermediatePositionsToBoardIterator->second;
+            this->gameBoard.movePiece(intermediatePositionsToBoardIterator->first, this->selectedPiece);
+            this->gameBoard.removePieces(intermediatePositionsToBoardIterator->second);
             
             this->intermediatePositionsToBoard.clear();
             this->endPositionsToBoard.clear();
             this->filteredEndPositionsToBoard.clear();
+            this->toSkipPositions.clear();
             // Move not ended
             
             // Update the position of the selected piece

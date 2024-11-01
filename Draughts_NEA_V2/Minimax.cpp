@@ -82,34 +82,36 @@ std::vector<Game> Minimax::getAllPossibleGames(Game toAnalyseGame)
 {
     std::vector<Game> toAnalyseGames;
     
-    this->currentGameState = toAnalyseGame;
+//    this->currentGameState = toAnalyseGame;
     
-    std::set<Position>::iterator selectablePiecesIterator = this->currentGameState.selectablePieces.begin();
+    std::set<Position>::iterator selectablePiecesIterator = toAnalyseGame.selectablePieces.begin();
     
     // for each selectable piece
-    for (; selectablePiecesIterator != this->currentGameState.selectablePieces.end(); ++selectablePiecesIterator)
+    for (; selectablePiecesIterator != toAnalyseGame.selectablePieces.end(); ++selectablePiecesIterator)
     {
         // Select it
-        this->currentGameState.select(Position {selectablePiecesIterator->x, selectablePiecesIterator->y});
+        toAnalyseGame.select(Position {selectablePiecesIterator->x, selectablePiecesIterator->y});
         
         // Get its valid moves
-        this->currentGameState.getValidMoves(false);
+        toAnalyseGame.getValidMoves(false);
         
-        std::unordered_map<Position, Board>::iterator filteredEndPositionsToBoardIterator = this->currentGameState.filteredEndPositionsToBoard.begin();
+        std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = toAnalyseGame.filteredEndPositionsToBoard.begin();
         
         // For each valid move
-        for (; filteredEndPositionsToBoardIterator != this->currentGameState.filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
+        for (; filteredEndPositionsToBoardIterator != toAnalyseGame.filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
         {
             // simulate that move
-            Game tempGame = this->simulateMove(filteredEndPositionsToBoardIterator->first, this->currentGameState);
+            Game tempGame = this->simulateMove(filteredEndPositionsToBoardIterator->first, toAnalyseGame);
             
+
             // add the board permuation to toAnalyseGames
             toAnalyseGames.push_back(tempGame);
         }
         
-        this->currentGameState.endPositionsToBoard.clear();
-        this->currentGameState.filteredEndPositionsToBoard.clear();
-        this->currentGameState.intermediatePositionsToBoard.clear();
+        toAnalyseGame.endPositionsToBoard.clear();
+        toAnalyseGame.filteredEndPositionsToBoard.clear();
+        toAnalyseGame.intermediatePositionsToBoard.clear();
+        toAnalyseGame.toSkipPositions.clear();
     }
     
     return toAnalyseGames;

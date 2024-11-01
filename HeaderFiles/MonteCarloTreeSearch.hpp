@@ -15,7 +15,7 @@
 struct Node
 {
     int iNumberOfVisits;
-    int iTotalScore;
+    float fTotalScore;
     
     // The game state at that node
     Game gameState;

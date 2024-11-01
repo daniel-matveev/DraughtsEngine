@@ -27,14 +27,16 @@ private:
     // Stores the pieces that can be selected by the player during move
     std::set<Position> selectablePieces;
     
+    std::vector<Position> toSkipPositions;
+    
     // Map that stores the end positions as keys and the board permutation as values
-    std::unordered_map< Position, Board > endPositionsToBoard;
+    std::unordered_map< Position, std::vector<Position> > endPositionsToBoard;
     // Map that stores the filtered key-value pairs of the endPositionsToBoard map
-    std::unordered_map< Position, Board > filteredEndPositionsToBoard;
+    std::unordered_map< Position, std::vector<Position> > filteredEndPositionsToBoard;
     
     // Map that stores intermediate moves in multi jumping
     // Allows players to choose a path to take if multiple pieces can be captured
-    std::unordered_map< Position, Board > intermediatePositionsToBoard;
+    std::unordered_map< Position, std::vector<Position> > intermediatePositionsToBoard;
     
     // For a selected piece it will generate the moves possible and filter through the endPositionsToBoard map
     void getValidMoves(bool bMultiJump);
@@ -46,10 +48,10 @@ private:
     bool checkKing(Position piecePosition, Board boardState, bool bMultiJump);
     
     // Checks the left side of the piece for possible moves
-    bool checkLeft(Position startPosition, Board boardState, int iDirection, bool bMultiJump);
+    bool checkDirection(Position startPosition, Board boardState, Position directionPosition, bool bMultiJump);
     
     // Checks the right side of the piece for possible moves
-    bool checkRight(Position startPosition, Board boardState, int iDirection, bool bMultiJump);
+//    bool checkRight(Position startPosition, Board boardState, int iDirection, bool bMultiJump);
     
     // Populates the selectablePieces set if a piece can make a valid move
     // Filters through the pieces if jumps are possible
@@ -58,7 +60,7 @@ private:
     // Checks if for a given position, the piece at that position is the colour of the current player
     bool selectPiece(Position toSelectPosition);
     
-    bool canCurrentlyJump(Board toCompareBoard);
+    bool canCurrentlyJump(std::vector<Position> toSkipPositions);
     
     // Return a score relating how good the position is for a player
     int getEvaluation();
