@@ -30,12 +30,12 @@ public:
     ~Piece();
     
     // Setters
-    void setColour(Colour pieceColour);
+//    void setColour(Colour pieceColour);
     void setPosition(Position piecePosition);
     
     // Update procedures
     void updateCrowned(bool bIsCrowned);
-    void updateColour(Colour colour);
+    void updateColour(Colour pieceColour);
     
     // Getters
     Colour getColour();

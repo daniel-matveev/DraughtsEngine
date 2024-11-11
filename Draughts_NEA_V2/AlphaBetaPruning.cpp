@@ -99,7 +99,7 @@ std::vector<Game> AlphaBetaPruning::getAllPossibleGames(Game toAnalyseGame)
     
 //    this->currentGameState = toAnalyseGame;
     
-    std::set<Position>::iterator selectablePiecesIterator = this->currentGameState.selectablePieces.begin();
+    std::set<Position>::iterator selectablePiecesIterator = toAnalyseGame.selectablePieces.begin();
     
     // for each selectable piece
     for (; selectablePiecesIterator != toAnalyseGame.selectablePieces.end(); ++selectablePiecesIterator)

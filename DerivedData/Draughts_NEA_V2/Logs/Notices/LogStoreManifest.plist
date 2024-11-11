@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>AF381EFB-ED7B-4293-853E-C319B94C0146</key>
+		<key>12F83124-5D2D-453E-9619-F9E825C2F2DD</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>AF381EFB-ED7B-4293-853E-C319B94C0146.xcactivitylog</string>
+			<string>12F83124-5D2D-453E-9619-F9E825C2F2DD.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -34,15 +34,15 @@
 			<key>signature</key>
 			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6Ijk0NDVFMkVEMkNCNjhENDEwMDkxMkQ5MyIsImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZGFuaWVsbWF0dmVldlwvRGVza3RvcFwvU2Nob29sXC9Db21wdXRlciBTY2llbmNlXC9EcmF1Z2h0c19ORUFfVjJcL0RyYXVnaHRzX05FQV9WMi54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludCI6e319fQ==</string>
 			<key>timeStartedRecording</key>
-			<real>752004310.82263696</real>
+			<real>752530957.68414104</real>
 			<key>timeStoppedRecording</key>
-			<real>63113904000</real>
+			<real>752530957.74075902</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>AF381EFB-ED7B-4293-853E-C319B94C0146</string>
+			<string>12F83124-5D2D-453E-9619-F9E825C2F2DD</string>
 		</dict>
-		<key>D8E3C674-8DE1-4907-855F-6AC46B5DE7CA</key>
+		<key>1A8A75E6-87DD-4434-BDD9-AF0DA0243AA9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -51,7 +51,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>D8E3C674-8DE1-4907-855F-6AC46B5DE7CA.xcactivitylog</string>
+			<string>1A8A75E6-87DD-4434-BDD9-AF0DA0243AA9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -70,13 +70,121 @@
 			<key>signature</key>
 			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6Ijk0NDVFMkVEMkNCNjhENDEwMDkxMkQ5MyIsImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZGFuaWVsbWF0dmVldlwvRGVza3RvcFwvU2Nob29sXC9Db21wdXRlciBTY2llbmNlXC9EcmF1Z2h0c19ORUFfVjJcL0RyYXVnaHRzX05FQV9WMi54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludCI6e319fQ==</string>
 			<key>timeStartedRecording</key>
-			<real>752004310.82263696</real>
+			<real>753020028.28459203</real>
 			<key>timeStoppedRecording</key>
 			<real>63113904000</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>D8E3C674-8DE1-4907-855F-6AC46B5DE7CA</string>
+			<string>1A8A75E6-87DD-4434-BDD9-AF0DA0243AA9</string>
+		</dict>
+		<key>88F1FC9F-808D-4EBE-BB11-6A7FF2C0C07C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>88F1FC9F-808D-4EBE-BB11-6A7FF2C0C07C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCIsInR5cGUiOnsiYnVpbGRTeXN0ZW1UYXNrIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>753020028.28459203</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>88F1FC9F-808D-4EBE-BB11-6A7FF2C0C07C</string>
+		</dict>
+		<key>9417296F-1E5A-4479-8BF9-0B1A9ED9C2E2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9417296F-1E5A-4479-8BF9-0B1A9ED9C2E2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6Ijk0NDVFMkVEMkNCNjhENDEwMDkxMkQ5MyIsImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZGFuaWVsbWF0dmVldlwvRGVza3RvcFwvU2Nob29sXC9Db21wdXRlciBTY2llbmNlXC9EcmF1Z2h0c19ORUFfVjJcL0RyYXVnaHRzX05FQV9WMi54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludCI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>752530957.68414104</real>
+			<key>timeStoppedRecording</key>
+			<real>752530957.74075902</real>
+			<key>title</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>9417296F-1E5A-4479-8BF9-0B1A9ED9C2E2</string>
+		</dict>
+		<key>C2BCD9D9-DE63-4400-8865-BDD312548759</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C2BCD9D9-DE63-4400-8865-BDD312548759.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZGFuaWVsbWF0dmVldlwvRGVza3RvcFwvU2Nob29sXC9Db21wdXRlciBTY2llbmNlXC9EcmF1Z2h0c19ORUFfVjJcL0RyYXVnaHRzX05FQV9WMi54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>753020028.28459203</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>C2BCD9D9-DE63-4400-8865-BDD312548759</string>
 		</dict>
 	</dict>
 </dict>

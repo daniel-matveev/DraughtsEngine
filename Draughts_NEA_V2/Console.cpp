@@ -250,39 +250,40 @@ void Console::startGame()
             if (cQuitOrHint == 'q')
             {
                 cToQuit = 'q';
-                continue;
+
             }
             // If they wnat a hint
             else if (cQuitOrHint == 'h')
             {
                 // a move is made by the alpha beta pruning algorithm witha depth of 8
                 this->mainGame = this->alphaBetaPruning.getBestGameState(this->mainGame, 8);
-                
-                continue;
+ 
             }
-            
-            // Allow them to select a piece
-            do
+            else
             {
-                std::cout << "Select:" << std::endl;
-                std::cout << "X: ";
-                std::cin >> toSelectPosition.x;
-
-                std::cout << "Y: ";
-                std::cin >> toSelectPosition.y;
+                // Allow them to select a piece
+                do
+                {
+                    std::cout << "Select:" << std::endl;
+                    std::cout << "X: ";
+                    std::cin >> toSelectPosition.x;
+                    
+                    std::cout << "Y: ";
+                    std::cin >> toSelectPosition.y;
+                    
+                } while (!mainGame.select(toSelectPosition));
                 
-            } while (!mainGame.select(toSelectPosition));
-
-            // And move the selected piece to a valid position
-            do
-            {
-                std::cout << "Move to:" << std::endl;
-                std::cout << "X: ";
-                std::cin >> toMovePosition.x;
-
-                std::cout << "Y: ";
-                std::cin >> toMovePosition.y;
-            } while (!mainGame.move(toMovePosition));
+                // And move the selected piece to a valid position
+                do
+                {
+                    std::cout << "Move to:" << std::endl;
+                    std::cout << "X: ";
+                    std::cin >> toMovePosition.x;
+                    
+                    std::cout << "Y: ";
+                    std::cin >> toMovePosition.y;
+                } while (!mainGame.move(toMovePosition));
+            }
         }
         
         // If a q is typed the game quits

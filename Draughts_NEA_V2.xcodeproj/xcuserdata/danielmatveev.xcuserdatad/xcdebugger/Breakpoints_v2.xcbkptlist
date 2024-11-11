@@ -1013,8 +1013,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "265"
-            endingLineNumber = "265"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
             <Locations>
@@ -1076,8 +1076,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "300"
-            endingLineNumber = "300"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
             <Locations>
@@ -1139,8 +1139,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "MonteCarloTreeSearch::selectNode(currentNode)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1155,8 +1155,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "MonteCarloTreeSearch::rollOut(toRolloutNode)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1171,8 +1171,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "MonteCarloTreeSearch::rollOut(toRolloutNode)"
             landmarkType = "7">
             <Locations>
@@ -1249,8 +1249,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "MonteCarloTreeSearch::rollOut(toRolloutNode)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1265,8 +1265,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
             <Locations>
@@ -1313,8 +1313,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "292"
-            endingLineNumber = "292"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1329,8 +1329,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
             <Locations>
@@ -1377,8 +1377,8 @@
             filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
             landmarkName = "MonteCarloTreeSearch::getBestGameState(toAnalyseGame, currentPlayerColour, iNumberOfSimulations)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1841,6 +1841,102 @@
             startingLineNumber = "91"
             endingLineNumber = "91"
             landmarkName = "Minimax::getAllPossibleGames(toAnalyseGame)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCA9800E-6F40-49BB-A1CC-D467F20183F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Console.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
+            landmarkName = "Console::startGame()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6951585F-AD81-456B-B312-3D5F1DAFEF1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Minimax.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "Minimax::minimax(toAnalyseGame, iDepth)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BD6FA08-49CB-4003-90A5-65DF43CE10EF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/AlphaBetaPruning.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "AlphaBetaPruning::alphaBetaPruning(toAnalyseGame, iDepth, fAlpha, fBeta)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53A22347-F148-4DB9-9071-5A0860F3B45A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "MonteCarloTreeSearch::selectNode(currentNode)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0F7B0A6-6838-44F7-A368-41BB88238B07"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/MonteCarloTreeSearch.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
+            landmarkName = "MonteCarloTreeSearch::selectNode(currentNode)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E80C9460-07CF-48D1-BDE7-94D1D318CB26"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Draughts_NEA_V2/Console.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "Console::selectPlayer(iPlayer, iDifficulty)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

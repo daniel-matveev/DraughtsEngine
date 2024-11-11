@@ -6,10 +6,10 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>59F401D6-CD7E-4ED5-9224-1604482FB1CA</key>
+		<key>6A97F11A-8765-4BF3-A95B-828838838C9E</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>E8585FC6-12A9-46A2-BC64-BA6FA3FFC634</string>
+			<string>21BE3DA2-BA5F-4F47-BDCD-A5E76329E99A</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Draughts_NEA_V2-2024.10.30_18-05-10-+0000.xcresult</string>
+			<string>Run-Draughts_NEA_V2-2024.11.11_12-13-48-+0000.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -59,13 +59,74 @@
 			<key>signature</key>
 			<string>Run Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>752004310.82250297</real>
+			<real>753020028.28260899</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>59F401D6-CD7E-4ED5-9224-1604482FB1CA</string>
+			<string>6A97F11A-8765-4BF3-A95B-828838838C9E</string>
+		</dict>
+		<key>89484215-6986-4BB7-B1DF-1B5157B57636</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>1C64D734-27CC-4B1F-A926-D5898A00C987</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Draughts_NEA_V2-2024.11.05_20-22-37-+0000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Draughts_NEA_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Draughts_NEA_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Draughts_NEA_V2</string>
+			<key>timeStartedRecording</key>
+			<real>752530957.68400896</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>89484215-6986-4BB7-B1DF-1B5157B57636</string>
 		</dict>
 	</dict>
 </dict>

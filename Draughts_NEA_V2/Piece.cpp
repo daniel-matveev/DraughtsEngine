@@ -19,20 +19,13 @@ void Piece::initVariables(Position piecePosition, bool bIsCrowned, Colour pieceC
 Piece::Piece()
 {
     // Variables initialised to dummy data
-    // The Board object must use the default constructor (no parameters | Didn't want to over-complicate it)
+    // The Board object must use the default constructor
     this->piecePosition = {0, 0};
     this->bIsCrowned = false;
     this->pieceColour = NoColour;
 }
 
 Piece::~Piece() {}
-
-// Sets the colour of the piece
-// Only used when setting up the board | NO USE DURING GAME
-void Piece::setColour(Colour pieceColour)
-{
-    this->pieceColour = pieceColour;
-}
 
 // Update the position of the piece
 void Piece::setPosition(Position piecePosition)
@@ -47,9 +40,9 @@ void Piece::updateCrowned(bool bIsCrowned)
 }
 
 // Updates colour of the piece
-void Piece::updateColour(Colour colour)
+void Piece::updateColour(Colour pieceColour)
 {
-    this->pieceColour = colour;
+    this->pieceColour = pieceColour;
 }
 
 // Returns colour of the piece

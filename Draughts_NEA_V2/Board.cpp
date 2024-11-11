@@ -51,13 +51,13 @@ void Board::setUpBoard()
             // Set the colour to these pieces Black
             if ( ( i >= 0 && i <= 2) && ( j % 2 == (i + 1) % 2 ) )
             {
-                this->board[i][j].setColour(Black);
+                this->board[i][j].updateColour(Black);
             }
             // Same condition but for the last 3 rows
             // Set the colour to these pieces White
             else if ( ( i >= 5 && i <= 8) && ( j % 2 == (i + 1) % 2 ) )
             {
-                this->board[i][j].setColour(White);
+                this->board[i][j].updateColour(White);
             }
         }
     }
@@ -160,7 +160,7 @@ void Board::removePiece(Position toRemovePosition)
     
     // Convert position coordinates into index values
     toRemovePosition = toRemovePosition - 1;
-    this->board [toRemovePosition.y] [toRemovePosition.x].setColour(NoColour);
+    this->board [toRemovePosition.y] [toRemovePosition.x].updateColour(NoColour);
     this->board [toRemovePosition.y] [toRemovePosition.x].updateCrowned(false);
 }
 

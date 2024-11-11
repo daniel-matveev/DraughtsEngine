@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>E8585FC6-12A9-46A2-BC64-BA6FA3FFC634</key>
+		<key>1C64D734-27CC-4B1F-A926-D5898A00C987</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E8585FC6-12A9-46A2-BC64-BA6FA3FFC634.xcactivitylog</string>
+			<string>1C64D734-27CC-4B1F-A926-D5898A00C987.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +40,55 @@
 			<key>signature</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>752004310.82263696</real>
+			<real>752530957.68414104</real>
 			<key>timeStoppedRecording</key>
-			<real>752004312.10460401</real>
+			<real>752530957.74075902</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>E8585FC6-12A9-46A2-BC64-BA6FA3FFC634</string>
+			<string>1C64D734-27CC-4B1F-A926-D5898A00C987</string>
+		</dict>
+		<key>21BE3DA2-BA5F-4F47-BDCD-A5E76329E99A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>21BE3DA2-BA5F-4F47-BDCD-A5E76329E99A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Draughts_NEA_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Draughts_NEA_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>timeStartedRecording</key>
+			<real>753020028.28459203</real>
+			<key>timeStoppedRecording</key>
+			<real>753020041.91392398</real>
+			<key>title</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>21BE3DA2-BA5F-4F47-BDCD-A5E76329E99A</string>
 		</dict>
 	</dict>
 </dict>

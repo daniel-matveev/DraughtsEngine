@@ -35,7 +35,10 @@ MonteCarloTreeSearch::MonteCarloTreeSearch()
 MonteCarloTreeSearch::~MonteCarloTreeSearch()
 {
     // Free up all the allocated memory
-    this->deleteTree(this->rootNode);
+    if (!isLeafNode(* this->rootNode))
+    {
+        this->deleteTree(this->rootNode);
+    }
 }
 
 // Recursevely traverses the tree and deletes the nodes if they are leaf nodes
@@ -216,6 +219,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
             currentNode.childNodes.at(0)->iNumberOfVisits = currentNode.childNodes.at(0)->iNumberOfVisits + 1;
             currentNode.childNodes.at(0)->fTotalScore = currentNode.childNodes.at(0)->fTotalScore + fFinalScore;
             
+           
             // return the score for backpropagation
             return fFinalScore;
         }

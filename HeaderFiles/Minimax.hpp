@@ -14,7 +14,7 @@ class Minimax
 {
 private:
     
-    Game currentGameState;
+
     
     int minimax(Game toAnalyseGame, int iDepth);
     
