@@ -35,20 +35,27 @@ MonteCarloTreeSearch::MonteCarloTreeSearch()
 MonteCarloTreeSearch::~MonteCarloTreeSearch()
 {
     // Free up all the allocated memory
-    if (!isLeafNode(* this->rootNode))
+    if (this->rootNode == nullptr)
     {
-        this->deleteTree(this->rootNode);
+        if (!isLeafNode(* this->rootNode))
+        {
+            this->deleteTree(this->rootNode);
+        }
+
     }
 }
 
 // Recursevely traverses the tree and deletes the nodes if they are leaf nodes
 void MonteCarloTreeSearch::deleteTree(Node * currentNode)
 {
-    for (int i = 0; i < currentNode->childNodes.size(); i++)
+    int iSize = (int) currentNode->childNodes.size();
+    for (int i = 0; i < iSize; i++)
     {
-        this->deleteTree(currentNode->childNodes.at(i));
+        this->deleteTree(currentNode->childNodes.at(0));
+        
+        currentNode->childNodes.erase(currentNode->childNodes.begin());
     }
-    
+//    free(currentNode);
     delete currentNode;
 }
 
@@ -89,20 +96,25 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
 {
     int iTotalScore = 0;
     
+    unsigned long iNumberOfSelectablePieces;
+    unsigned long iNumberOfEndMoves;
     
+    int iRandomToSelectPiece;
+    int iRandomMove;
     
-    for (int i = 0; i < iNumberOfSimulationsInRollOut; i++)
+    Game tempGame;
+    
+    for (int i = 0; i < this->iNumberOfSimulationsInRollOut; i++)
     {
         // To store the game state in the node without altering the game state in the node
-        Game tempGame = toRolloutNode.gameState;
-        
+        tempGame = toRolloutNode.gameState;
         
         while (tempGame.getWinner() == NoColour)
         {
             // Make a random piece selection from the selectable pieces
-            unsigned long iNumberOfSelectablePieces = (int) tempGame.selectablePieces.size();
+            iNumberOfSelectablePieces = (int) tempGame.selectablePieces.size();
             
-            int iRandomToSelectPiece = rand() % iNumberOfSelectablePieces;
+            iRandomToSelectPiece = rand() % iNumberOfSelectablePieces;
             
             std::set<Position>::iterator selectablePiecesIterator = tempGame.selectablePieces.begin();
             
@@ -112,16 +124,18 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
             
             
             // Make a random move from the selected piece
-            unsigned long iNumberOfEndMoves = tempGame.filteredEndPositionsToBoard.size();
+            iNumberOfEndMoves = tempGame.filteredEndPositionsToBoard.size();
             
-            int iRandomMove = rand() % iNumberOfEndMoves;
+            iRandomMove = rand() % iNumberOfEndMoves;
             
             std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = tempGame.filteredEndPositionsToBoard.begin();
             
             std::advance(filteredEndPositionsToBoardIterator, iRandomMove);
             
             tempGame.move(filteredEndPositionsToBoardIterator->first);
+        
         }
+    
         
         // If the player that won in the tempGame is the same player that we are running the search for
         // Increase their total score by 10

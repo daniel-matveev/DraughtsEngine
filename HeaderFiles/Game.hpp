@@ -10,7 +10,7 @@
 
 #include "Board.hpp"
 
-#include <set>
+
 
 class Game
 {
@@ -99,8 +99,6 @@ public:
     
     // Prints the board
     void printBoard();
-    
-    
     
     // Allows access to private methods from the Game class
     friend class Minimax;

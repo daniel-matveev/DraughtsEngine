@@ -8,7 +8,7 @@
 #include "Console.hpp"
 
 int main(int argc, const char * argv[])
-{
+{ 
     srand( static_cast<unsigned>( time( NULL ) ) );
     
     Console console;
@@ -113,34 +113,35 @@ int main(int argc, const char * argv[])
 //    AlphaBetaPruning abp;
 //    MonteCarloTreeSearch mcts;
 //    
-    
-    
+//    
+//    
 //    Position toSelectPosition;
 //    Position toMovePosition;
 // 
-//    mainGame.printBoard();
+//    int counter = 0;
 //    
 //    while (mainGame.getWinner() == NoColour) 
 //    {
+//        counter++;
+//        mainGame.printBoard();
 //        
 //        std::cout << mainGame.getCurrentPlayerColour() << "'s turn" << std::endl;
 //        
 //        if (mainGame.getCurrentPlayerColour() == Black)
 //        {
-////            std::cout << "Minimax called" << std::endl;
-////            mainGame = mm.getBestGameState(mainGame, 6);
-////            std::cout << mm.iNumberOfLeafNodes << std::endl;
-////            mm.iNumberOfLeafNodes = 0;
-//            
-////            std::cout << "AlphaBetaPruning called" << std::endl;
-////            mainGame = abp.getBestGameState(mainGame, 6);
-////            std::cout << abp.iNumberOfLeafNodes << std::endl;
-////            abp.iNumberOfLeafNodes = 0;
+//            std::cout << "Minimax called" << std::endl;
+//            mainGame = mm.getBestGameState(mainGame, 6);
+//            std::cout << mm.iNumberOfLeafNodes << std::endl;
+//            mm.iNumberOfLeafNodes = 0;
+            
+//            std::cout << "AlphaBetaPruning called" << std::endl;
+//            mainGame = abp.getBestGameState(mainGame, 6);
+//            std::cout << abp.iNumberOfLeafNodes << std::endl;
+//            abp.iNumberOfLeafNodes = 0;
 //            
 //            std::cout << "MonteCarloTreeSearch called" << std::endl;
-//            mainGame = mcts.getBestGameState(mainGame, mainGame.getCurrentPlayerColour(), 1000);
-//            
-//    
+//            mainGame = mcts.getBestGameState(mainGame, mainGame.getCurrentPlayerColour(), 100);
+    
 //        }
 //        else
 //        {
@@ -166,8 +167,8 @@ int main(int argc, const char * argv[])
 //                std::cout << "Y: ";
 //                std::cin >> toMovePosition.y;
 //            } while (!mainGame.move(toMovePosition));
-////        }
-//        
+//        }
+        
 //    }
 //    
 //    mainGame.getWinner();

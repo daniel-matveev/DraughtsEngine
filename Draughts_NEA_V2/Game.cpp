@@ -51,6 +51,10 @@ void Game::selectPieces()
             // If the piece at that position is the player's colour
             if (this->selectPiece(Position {j+1, i+1}))
             {
+                #ifdef DEBUG_FLAG
+                    Debug("Checking Piece: {" << j+1 << ", " << i+1 << "}");
+                #endif
+                
                 // Get its valid moves
                 this->getValidMoves(false);
                 
@@ -98,6 +102,10 @@ void Game::selectPieces()
             }
         }
     }
+    
+    #ifdef DEBUG_FLAG
+        Debug("Selectable pieces: " << this->selectablePieces);
+    #endif
 }
 
 // Gets the valid moves for a selected piece and populates the end and filteredEndPositionsToBoard maps
@@ -217,6 +225,10 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
         // Update the position we are checking {Horizontal offset, Vertical Offset}
         tempPosition = tempPosition + directionPosition;
         
+        #ifdef DEBUG_FLAG
+            Debug("Checking position: " << tempPosition);
+        #endif
+        
         // Edge cases
         if (tempPosition.x > 8 || tempPosition.x < 1)
         {
@@ -230,6 +242,8 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
             
             break;
         }
+        
+        
         
         // Space to check
         Piece atPositionPiece = boardState.getPiece(tempPosition);
@@ -249,6 +263,10 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
             if (bHasJumped)
             {
                 this->toSkipPositions.push_back(toSkipPosition);
+                
+                #ifdef DEBUG_FLAG
+                    Debug("Pieces to skip stack: " << this->toSkipPositions);
+                #endif
                 
                 // Move the piece to the new position
                 boardState.movePiece(tempPosition, boardState.getPiece(startPosition));
@@ -271,6 +289,8 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
                     // Check if it can jump again
                     bCanJump = this->checkPiece(tempPosition, boardState, true);
                 }
+                
+                
                 
                 // If it cannot = > reached terminal position
                 // => Insert to the end positions map
@@ -300,7 +320,6 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
             // Not a valid move
             else if (bMultiJump == true && bHasJumped == false)
             {
-//                this->endPositionsToBoard.insert( { std::make_pair( startPosition, this->toSkipPositions ) } );
                 break;
             }
             // Simple move, no jumps
@@ -330,7 +349,12 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
             }
         }
     }
-    
+    #ifdef DEBUG_FLAG
+
+        Debug("At position: " << tempPosition);
+
+        Debug("Pieces to skip stack: " << this->toSkipPositions);
+    #endif
     
     return bHasJumped;
 }

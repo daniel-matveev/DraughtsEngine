@@ -13,6 +13,20 @@
 #include <unordered_map>
 #include <cstdlib>
 #include <math.h>
+#include <set>
+#include <filesystem>
+
+
+#ifndef Debug
+    #define Debug(note) (std::cerr << "<" << std::filesystem::path(__FILE__).filename().string() << ">function=" << __FUNCTION__ << "> <line=" << __LINE__ << ">: " << note << std::endl)
+#else
+    #define Debug(note)
+#endif
+
+
+#ifndef DEBUG_FLAG
+    #define DEBUG_FLAG
+#endif
 
 // For piece colour
 // When printing on the board
@@ -77,6 +91,45 @@ struct Position
 // Declaration of overloading << operator for priting the string equivalent of a position as (x, y)
 std::ostream& operator << (std::ostream& os, const Position& pos);
 
+template <typename T>
+std::ostream& operator << (std::ostream& os, const std::vector<T>& vector)
+{
+    os << "{";
+    for (int i = 0 ; i < vector.size(); i++)
+    {
+        os << vector.at(i);
+        
+        if (i != (vector.size() - 1) )
+        {
+            os << ", ";
+        }
+    }
+    os << "}";
+    
+    return os;
+}
+
+template <typename T>
+std::ostream& operator << (std::ostream& os, const std::set<T>& set)
+{
+    os << "{";
+    
+    typename std::set<T>::iterator setIterator = set.begin();
+    
+    for (; setIterator != set.end(); setIterator++)
+    {
+        os << * setIterator;
+       
+        
+        if (setIterator != (--set.end()) )
+        {
+            os << ", ";
+        }
+    }
+    os << "}";
+    
+    return os;
+}
 
 namespace std
 {
@@ -97,3 +150,6 @@ namespace std
 
 
 #endif /* Utilities_hpp */
+
+
+

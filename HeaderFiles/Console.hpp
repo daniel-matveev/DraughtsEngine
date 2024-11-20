@@ -42,10 +42,15 @@ private:
     Player player1;
     Player player2;
     
+    char extractInvalidInput();
+    void handleInvalidInput(char cExtracted);
+    
     // Printing messages
     void printWelcomeMessage();
     
     void printGoodbyeMessage();
+    
+    void reset();
     
 public:
     // Constructor / Destructor

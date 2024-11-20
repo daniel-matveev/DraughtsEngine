@@ -16,16 +16,24 @@ Player::Player()
     this->iDifficulty = 0;
 }
 
+void Console::reset()
+{
+    this->player1 = Player();
+    this->player2 = Player();
+    
+    this->mainGame = Game();
+}
+
 // To print welcome message
 void Console::printWelcomeMessage()
 {
-    std::cout << "Welcome" << std::endl;
+    std::cout << "\nWelcome" << std::endl;
 }
 
 // To print goodbye message
 void Console::printGoodbyeMessage()
 {
-    std::cout << "Goodbye" << std::endl;
+    std::cout << "\nGoodbye" << std::endl;
 }
 
 // Main menu options
@@ -34,7 +42,7 @@ void Console::printStartOptions()
     std::string szText;
     
     szText =
-    
+            "\n"
             "1 - Start Game\n"
             "2 - Game Rules\n"
             "3 - Quit\n"
@@ -49,7 +57,17 @@ void Console::printGameRules()
     std::string szText;
     
     szText =
-            "Game Rules:";
+            "\n"
+            "Game Rules:\n"
+            " - A regular piece can move and capture on the diagonal in a forward direction\n"
+            " - If a piece can take then it has to take\n"
+            " - A piece can jump over multiple opponent pieces and capture them\n"
+            " - Once a piece reaches the other side of the board, it becomes a king\n"
+            " - A king can move in all directions\n"
+            " - The game is over once a player can no longer make a move\n"
+            " - If you want to exit a game type q at any point in the console\n"
+            " - If you want to get a hint type h\n"
+    ;
     
     std::cout << szText << std::endl;
 }
@@ -60,6 +78,7 @@ void Console::printPlayerSelection()
     std::string szText;
     
     szText =
+            "\n"
             "1 - Minimax\n"
             "2 - Alpha Beta Pruning\n"
             "3 - Monte Carlo Tree Search\n"
@@ -74,6 +93,7 @@ void Console::printDifficultyLevels()
     std::string szText;
     
     szText  =
+            "\n"
             "1 - Easy\n"
             "2 - Medium\n"
             "3 - Hard\n"
@@ -183,6 +203,37 @@ void Console::selectPlayer(int iPlayer, int iDifficulty)
     
 }
 
+char Console::extractInvalidInput()
+{
+    char cToExtract;
+
+    std::cin.clear();
+    
+    std::cin.get(cToExtract);
+    
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    
+    return cToExtract;
+}
+
+void Console::handleInvalidInput(char cExtracted)
+{
+    switch (cExtracted) {
+        case 'q':
+            std::cout << "Quiting game" << std::endl;
+            break;
+        case 'h':
+            std::cout << "Geting help" << std::endl;
+            this->mainGame = this->alphaBetaPruning.getBestGameState(this->mainGame, 6);
+            break;
+            
+        default:
+            std::cout << "Invalid Input!\n";
+            std::cout << "Please re-enter [positive integer only]" << std::endl;
+            break;
+    }
+}
+
 // To play a game based on the selected players
 void Console::startGame()
 {
@@ -190,7 +241,7 @@ void Console::startGame()
     Player currentPlayer = this->player1;
     
     // Character for allowing players to quit during a game (when playing agains an algorithm)
-    char cToQuit = ' ';
+    char cExtracted = ' ';
     
     this->mainGame.printBoard();
     
@@ -210,8 +261,8 @@ void Console::startGame()
             // Get the best move based on the current board state, and search depth based on the difficulty
             this->mainGame = this->minimax.getBestGameState(this->mainGame, currentPlayer.iDifficulty);
             
-            this->minimax = Minimax();
-            std::cin >> cToQuit;
+//            this->minimax = Minimax();
+            std::cin >> cExtracted;
 
         }
         // If the current player is a alpha beta prunning algorithm
@@ -220,8 +271,8 @@ void Console::startGame()
             // Get the best move based on the current board state, and search depth based on the difficulty
             this->mainGame = this->alphaBetaPruning.getBestGameState(this->mainGame, currentPlayer.iDifficulty);
             
-            this->alphaBetaPruning = AlphaBetaPruning();
-            std::cin >> cToQuit;
+//            this->alphaBetaPruning = AlphaBetaPruning();
+            std::cin >> cExtracted;
 
         }
         // If the current player is a monte carlo tree search algorithm
@@ -230,67 +281,95 @@ void Console::startGame()
             // Get the best move based on the current board state, and number of simulations to do
             this->mainGame = this->monteCarloTreeSearch.getBestGameState(this->mainGame, this->mainGame.getCurrentPlayerColour(), currentPlayer.iDifficulty);
             
-            this->monteCarloTreeSearch = MonteCarloTreeSearch();
-            std::cin >> cToQuit;
+//            this->monteCarloTreeSearch = MonteCarloTreeSearch();
+            std::cin >> cExtracted;
         }
     
         // If the current player is human
         else if (currentPlayer.szTypeOfPlayer == "Human")
         {
-            Position toSelectPosition;
-            Position toMovePosition;
+            Position toSelectPosition = Position {0, 0};
+            Position toMovePosition = Position {0, 0};
             
+            char cExtracted = ' ';
             
-            // To give the player a choice to get a hint or to quit the game before proceeding to make a move
-            char cQuitOrHint;
-            
-            std::cout << "Quit or Hint (q/h): ";
-            std::cin >> cQuitOrHint;
-            // If they want to quit
-            if (cQuitOrHint == 'q')
-            {
-                cToQuit = 'q';
 
-            }
-            // If they wnat a hint
-            else if (cQuitOrHint == 'h')
+            // Allow them to select a piece
+            while ( (!mainGame.select(toSelectPosition)) && (cExtracted != 'q' && cExtracted != 'h') )
             {
-                // a move is made by the alpha beta pruning algorithm witha depth of 8
-                this->mainGame = this->alphaBetaPruning.getBestGameState(this->mainGame, 8);
- 
-            }
-            else
-            {
-                // Allow them to select a piece
-                do
-                {
-                    std::cout << "Select:" << std::endl;
-                    std::cout << "X: ";
-                    std::cin >> toSelectPosition.x;
-                    
-                    std::cout << "Y: ";
-                    std::cin >> toSelectPosition.y;
-                    
-                } while (!mainGame.select(toSelectPosition));
+                std::cout << "Select:" << std::endl;
                 
-                // And move the selected piece to a valid position
-                do
+                std::cout << "X: ";
+                std::cin >> toSelectPosition.x;
+                std::cout << "\n";
+                
+                if (std::cin.fail())
                 {
-                    std::cout << "Move to:" << std::endl;
-                    std::cout << "X: ";
-                    std::cin >> toMovePosition.x;
+                    cExtracted = this->extractInvalidInput();
+                
+                    this->handleInvalidInput(cExtracted);
                     
-                    std::cout << "Y: ";
-                    std::cin >> toMovePosition.y;
-                } while (!mainGame.move(toMovePosition));
+                    continue;
+                }
+                
+
+                std::cout << "Y: ";
+                std::cin >> toSelectPosition.y;
+                std::cout << "\n";
+                
+                if (std::cin.fail())
+                {
+                    cExtracted = this->extractInvalidInput();
+                    
+                    this->handleInvalidInput(cExtracted);
+                    
+                    continue;
+                }
+                    
+                    
+            }
+                
+            // And move the selected piece to a valid position
+            while ((!mainGame.move(toMovePosition)) && (cExtracted != 'q' && cExtracted != 'h') )
+            {
+                std::cout << "Move to:" << std::endl;
+                
+                std::cout << "X: ";
+                std::cin >> toMovePosition.x;
+                std::cout << "\n";
+                
+                if (std::cin.fail())
+                {
+                    cExtracted = this->extractInvalidInput();
+                
+                    this->handleInvalidInput(cExtracted);
+                    
+                    continue;
+                }
+                
+                std::cout << "Y: ";
+                std::cin >> toMovePosition.y;
+                std::cout << "\n";
+                
+                if (std::cin.fail())
+                {
+                    cExtracted = this->extractInvalidInput();
+                
+                    this->handleInvalidInput(cExtracted);
+                    
+                    continue;
+                }
+                
+                
+                
             }
         }
         
         // If a q is typed the game quits
-        if (cToQuit == 'q')
+        if (cExtracted == 'q')
         {
             // Game state is reset
-            this->mainGame = Game();
+            this->reset();
             
             return;
         }
@@ -306,7 +385,7 @@ void Console::startGame()
             std::cout << "Draw" << std::endl;
             
             // Game state is reset
-            this->mainGame = Game();
+            this->reset();
 
             return;
         }
@@ -327,12 +406,13 @@ void Console::startGame()
     std::cout << this->mainGame.getWinner() << " won!" << std::endl;
     
     // Game state is reset
-    this->mainGame = Game();
+    this->reset();
 }
 
 // Constructor
 Console::Console()
 {
+    this->reset();
     this->printWelcomeMessage();
 }
 
