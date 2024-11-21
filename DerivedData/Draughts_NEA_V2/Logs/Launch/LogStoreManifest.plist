@@ -6,6 +6,67 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>30036A0F-737A-47EE-9873-60B8A5F3B27E</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>3FFAD224-84EF-4B2A-A7A8-A26DCDECE7A6</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Draughts_NEA_V2-2024.11.21_09-36-19-+0000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Draughts_NEA_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Draughts_NEA_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Draughts_NEA_V2</string>
+			<key>timeStartedRecording</key>
+			<real>753874579.92717695</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>30036A0F-737A-47EE-9873-60B8A5F3B27E</string>
+		</dict>
 		<key>3686F3BF-19B1-4F37-8D2B-247416C451F5</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -66,128 +127,6 @@
 			<string>Run Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
 			<string>3686F3BF-19B1-4F37-8D2B-247416C451F5</string>
-		</dict>
-		<key>3EFC1F05-5045-4395-995E-DBA47D8182F0</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>D48977B5-535F-446B-A483-A64B0EA01647</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-Draughts_NEA_V2-2024.11.20_19-46-29-+0000.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Draughts_NEA_V2 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Draughts_NEA_V2</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run Draughts_NEA_V2</string>
-			<key>timeStartedRecording</key>
-			<real>753824789.66314399</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run Draughts_NEA_V2</string>
-			<key>uniqueIdentifier</key>
-			<string>3EFC1F05-5045-4395-995E-DBA47D8182F0</string>
-		</dict>
-		<key>4034B477-CAD7-48D2-B4AA-385357E8B9D5</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>498A5948-C9C9-4DB9-B8EF-3E6263B6D66B</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-Draughts_NEA_V2-2024.11.20_19-48-29-+0000.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Draughts_NEA_V2 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Draughts_NEA_V2</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run Draughts_NEA_V2</string>
-			<key>timeStartedRecording</key>
-			<real>753824909.30051994</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run Draughts_NEA_V2</string>
-			<key>uniqueIdentifier</key>
-			<string>4034B477-CAD7-48D2-B4AA-385357E8B9D5</string>
 		</dict>
 	</dict>
 </dict>

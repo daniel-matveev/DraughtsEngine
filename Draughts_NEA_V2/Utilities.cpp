@@ -14,24 +14,6 @@ std::ostream& operator << (std::ostream& os, const Position& pos)
     return os;
 }
 
-//template <typename T>
-//std::ostream& operator << (std::ostream& os, const std::vector<T>& vector)
-//{
-//    os << "{";
-//    for (int i = 0 ; i < vector.size(); i++)
-//    {
-//        os << vector.at(i);
-//        
-//        if (i != (vector.size() - 1) )
-//        {
-//            os << ", ";
-//        }
-//    }
-//    os << "}\n";
-//    
-//    return os;
-//}
-
 
 std::ostream& operator << (std::ostream& os, const Colour& colour)
 {
@@ -55,5 +37,3 @@ std::ostream& operator << (std::ostream& os, const Colour& colour)
     
     return os;
 }
-
-

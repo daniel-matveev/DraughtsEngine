@@ -30,7 +30,6 @@ public:
     ~Piece();
     
     // Setters
-//    void setColour(Colour pieceColour);
     void setPosition(Position piecePosition);
     
     // Update procedures

@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>498A5948-C9C9-4DB9-B8EF-3E6263B6D66B</key>
+		<key>3FFAD224-84EF-4B2A-A7A8-A26DCDECE7A6</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>498A5948-C9C9-4DB9-B8EF-3E6263B6D66B.xcactivitylog</string>
+			<string>3FFAD224-84EF-4B2A-A7A8-A26DCDECE7A6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +40,13 @@
 			<key>signature</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>753824909.30073094</real>
+			<real>753874579.93111205</real>
 			<key>timeStoppedRecording</key>
-			<real>753824913.06479204</real>
+			<real>753874580.57876599</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>498A5948-C9C9-4DB9-B8EF-3E6263B6D66B</string>
+			<string>3FFAD224-84EF-4B2A-A7A8-A26DCDECE7A6</string>
 		</dict>
 		<key>53B351CD-97DC-49C6-A552-850CE02A1B9B</key>
 		<dict>
@@ -89,48 +89,6 @@
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
 			<string>53B351CD-97DC-49C6-A552-850CE02A1B9B</string>
-		</dict>
-		<key>D48977B5-535F-446B-A483-A64B0EA01647</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D48977B5-535F-446B-A483-A64B0EA01647.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Draughts_NEA_V2 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Draughts_NEA_V2</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Draughts_NEA_V2</string>
-			<key>timeStartedRecording</key>
-			<real>753824789.66601801</real>
-			<key>timeStoppedRecording</key>
-			<real>753824799.17995095</real>
-			<key>title</key>
-			<string>Build Draughts_NEA_V2</string>
-			<key>uniqueIdentifier</key>
-			<string>D48977B5-535F-446B-A483-A64B0EA01647</string>
 		</dict>
 	</dict>
 </dict>
