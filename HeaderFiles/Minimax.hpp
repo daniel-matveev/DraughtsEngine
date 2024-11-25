@@ -14,8 +14,6 @@ class Minimax
 {
 private:
     
-
-    
     int minimax(Game toAnalyseGame, int iDepth);
     
     // helper function

@@ -10,8 +10,6 @@
 
 #include "Board.hpp"
 
-
-
 class Game
 {
 private:
@@ -47,11 +45,8 @@ private:
     // Checks the next valid move for a king piece given the piece position and a board state
     bool checkKing(Position piecePosition, Board boardState, bool bMultiJump);
     
-    // Checks the left side of the piece for possible moves
+    // Checks the specified direction for possible moves
     bool checkDirection(Position startPosition, Board boardState, Position directionPosition, bool bMultiJump);
-    
-    // Checks the right side of the piece for possible moves
-//    bool checkRight(Position startPosition, Board boardState, int iDirection, bool bMultiJump);
     
     // Populates the selectablePieces set if a piece can make a valid move
     // Filters through the pieces if jumps are possible
@@ -72,6 +67,9 @@ private:
     
     // Initialises variables
     void initVariables();
+    
+    // clear maps to prepare for new move
+    void clear();
 public:
     // Constructor / Destructor
     Game();

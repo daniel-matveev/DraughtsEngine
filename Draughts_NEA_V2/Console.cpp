@@ -144,7 +144,7 @@ void Console::selectPlayer(int iPlayer, int iDifficulty)
                     break;
                     
                 case 2:
-                    tempPlayer.iDifficulty = 4;
+                    tempPlayer.iDifficulty = 2;
                     break;
                     
                 case 3:

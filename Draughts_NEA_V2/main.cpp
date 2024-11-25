@@ -9,7 +9,7 @@
 
 int main(int argc, const char * argv[])
 { 
-    srand( static_cast<unsigned>( time( NULL ) ) );
+//    srand( static_cast<unsigned>( time( NULL ) ) );
     
     Console console;
     

@@ -15,8 +15,6 @@ class AlphaBetaPruning
 {
 private:
     
-//    Game currentGameState;
-    
     float alphaBetaPruning(Game toAnalyseGame, int iDepth, float fAlpha, float fBeta);
     
     // helper function

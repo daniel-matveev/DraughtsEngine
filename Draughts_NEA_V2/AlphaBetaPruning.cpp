@@ -14,12 +14,19 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
     // If we have hit the desired depth or There is a winner
     if (iDepth == 0 || toAnalyseGame.getWinner() != NoColour)
     {
+        #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+            Debug("Depth hit");
+        #endif
         this->iNumberOfLeafNodes++;
         return toAnalyseGame.calculateEvaluation();
     }
     
     // Get the current player's colour
     Colour currentPlayerColour = toAnalyseGame.getCurrentPlayerColour();
+    
+    #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+        Debug("Checking moves for: " << currentPlayerColour);
+    #endif
     
     // White is the maximising player
     if (currentPlayerColour == White)
@@ -33,6 +40,13 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
         
         for (int i = 0 ; i < toAnalyseGames.size(); i++)
         {
+            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
+                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() );
+                Debug("Current Maximum Evaluation: " << fMaxEvaluation);
+                Debug("Current Alpha: " << fAlpha);
+                Debug("Current Beta: " << fBeta);
+            #endif
             // Recursevely go through each one
             // Alternatting moves
             // Once a final position is reached the evaluation of that position is returned
@@ -43,8 +57,12 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
             
             fAlpha = std::max(fAlpha, fEvaluation);
             
+            
             if (fBeta <= fAlpha)
             {
+                #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                    Debug("Pruning");
+                #endif
                 break;
             }
         }
@@ -63,6 +81,13 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
         
         for (int i = 0 ; i < toAnalyseGames.size(); i++)
         {
+            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
+                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() );
+                Debug("Current Minimum Evaluation: " << fMinEvaluation);
+                Debug("Current Alpha: " << fAlpha);
+                Debug("Current Beta: " << fBeta);
+            #endif
             // Recursevely go through each one
             // Alternatting moves
             // Once a final position is reached the evaluation of that position is returned
@@ -71,12 +96,13 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
             // Compare it to the best evaluation for black and update
             fMinEvaluation = std::min(fMinEvaluation, fEvaluation);
             
-            
-            
             fBeta = std::min(fBeta, fEvaluation);
             
             if (fBeta <= fAlpha)
             {
+                #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                    Debug("Pruning");
+                #endif
                 break;
             }
         }
@@ -96,8 +122,6 @@ Game AlphaBetaPruning::simulateMove(Position toMovePosition, Game toAnalyseGame)
 std::vector<Game> AlphaBetaPruning::getAllPossibleGames(Game toAnalyseGame)
 {
     std::vector<Game> toAnalyseGames;
-    
-//    this->currentGameState = toAnalyseGame;
     
     std::set<Position>::iterator selectablePiecesIterator = toAnalyseGame.selectablePieces.begin();
     
@@ -122,10 +146,7 @@ std::vector<Game> AlphaBetaPruning::getAllPossibleGames(Game toAnalyseGame)
             toAnalyseGames.push_back(tempGame);
         }
         
-        toAnalyseGame.endPositionsToBoard.clear();
-        toAnalyseGame.filteredEndPositionsToBoard.clear();
-        toAnalyseGame.intermediatePositionsToBoard.clear();
-        toAnalyseGame.toSkipPositions.clear();
+        toAnalyseGame.clear();
     }
     
     return toAnalyseGames;
@@ -151,6 +172,9 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
     
     float fMaxEvaluation = -INFINITY;
     
+    float fAlpha = -INFINITY;
+    float fBeta = INFINITY;
+    
     Colour playerColour = toAnalyseGame.getCurrentPlayerColour();
     
     // Get all the possible game states for black
@@ -158,6 +182,13 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
     
     for (int i = 0; i < toAnalyseGames.size(); i++)
     {
+        #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+            Debug("Current Node ID: " << iDepth << "+1." << playerColour << "." << i);
+            Debug("Analysing move: " << i << "/" << toAnalyseGames.size() );
+            Debug("Current Maximum Evaluation: " << fMaxEvaluation);
+            Debug("Current Alpha: " << -INFINITY);
+            Debug("Current Beta: " << INFINITY);
+        #endif
         // Recursevely go through each one
         // Alternatting moves
         // Once a final position is reached the evaluation of that position is returned
@@ -167,16 +198,32 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
         if (playerColour == Black && fEvaluation < fMinEvaluation)
         {
             fMinEvaluation = fEvaluation;
+            fBeta = std::min(fBeta, fEvaluation);
             iBestBoardStateIndex = i;
         }
         
         else if (playerColour == White && fEvaluation > fMaxEvaluation)
         {
             fMaxEvaluation = fEvaluation;
+            fAlpha = std::max(fAlpha, fEvaluation);
             iBestBoardStateIndex = i;
         }
         
+        if (fBeta <= fAlpha)
+        {
+            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                Debug("Pruning");
+            #endif
+            break;
+        }
+        
     }
+    
+    #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+        Debug("Number of different games analysed: " << this->iNumberOfLeafNodes);
+    #endif
+
+    this->iNumberOfLeafNodes = 0;
     
     return toAnalyseGames.at(iBestBoardStateIndex);
 }

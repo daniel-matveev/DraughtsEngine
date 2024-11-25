@@ -33,6 +33,14 @@ bool Game::canCurrentlyJump(std::vector<Position> toSkipPositions)
     }
 }
 
+void Game::clear()
+{
+    this->intermediatePositionsToBoard.clear();
+    this->endPositionsToBoard.clear();
+    this->filteredEndPositionsToBoard.clear();
+    this->toSkipPositions.clear();
+}
+
 
 // Goes through the whole board selecting each piece one by one and getting the valid moves
 // Based on whether or not the piece can take it filters the whole set
@@ -64,7 +72,6 @@ void Game::selectPieces()
                 // Filtering of valid pieces
                 for (; filteredEndPositionsToBoardIterator != this->filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
                 {
-                    
                     bool bCanJumpCurrently = this->canCurrentlyJump(filteredEndPositionsToBoardIterator->second);
                     
                     // If the currently selected piece can jump and we have found a piece that can also jump
@@ -94,11 +101,7 @@ void Game::selectPieces()
                     
                 }
                 
-                
-                this->intermediatePositionsToBoard.clear();
-                this->endPositionsToBoard.clear();
-                this->filteredEndPositionsToBoard.clear();
-                this->toSkipPositions.clear();
+                this->clear();
             }
         }
     }
@@ -421,10 +424,7 @@ bool Game::move(Position toCheckPosition)
             // => swap players
             this->swapPlayers();
             
-            this->intermediatePositionsToBoard.clear();
-            this->endPositionsToBoard.clear();
-            this->filteredEndPositionsToBoard.clear();
-            this->toSkipPositions.clear();
+            this->clear();
             
             return true;
         }
@@ -442,10 +442,7 @@ bool Game::move(Position toCheckPosition)
             this->gameBoard.movePiece(intermediatePositionsToBoardIterator->first, this->selectedPiece);
             this->gameBoard.removePieces(intermediatePositionsToBoardIterator->second);
             
-            this->intermediatePositionsToBoard.clear();
-            this->endPositionsToBoard.clear();
-            this->filteredEndPositionsToBoard.clear();
-            this->toSkipPositions.clear();
+            this->clear();
             // Move not ended
             
             // Update the position of the selected piece

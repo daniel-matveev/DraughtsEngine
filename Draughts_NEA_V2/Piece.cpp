@@ -2,20 +2,12 @@
 //  Piece.cpp
 //  Draughts_NEA_V2
 //
-//  Created by Daniel Matveev on 09/10/2024.
+//  Created by Daniel Matveev
 //
 
 #include "Piece.hpp"
 
-void Piece::initVariables(Position piecePosition, bool bIsCrowned, Colour pieceColour)
-{
-    this->piecePosition = piecePosition;
-    this->bIsCrowned = bIsCrowned;
-    this->pieceColour = pieceColour;
-}
-
 // Default constructor
-
 Piece::Piece()
 {
     // Variables initialised to dummy data

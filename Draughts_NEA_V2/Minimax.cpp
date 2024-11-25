@@ -108,10 +108,7 @@ std::vector<Game> Minimax::getAllPossibleGames(Game toAnalyseGame)
             toAnalyseGames.push_back(tempGame);
         }
         
-        toAnalyseGame.endPositionsToBoard.clear();
-        toAnalyseGame.filteredEndPositionsToBoard.clear();
-        toAnalyseGame.intermediatePositionsToBoard.clear();
-        toAnalyseGame.toSkipPositions.clear();
+        toAnalyseGame.clear();
     }
     
     return toAnalyseGames;
@@ -139,6 +136,8 @@ Game Minimax::getBestGameState(Game toAnalyseGame, int iDepth)
     
     Colour playerColour = toAnalyseGame.getCurrentPlayerColour();
     
+    this->iNumberOfLeafNodes = 0;
+    
     // Get all the possible game states for black
     std::vector<Game> toAnalyseGames = this->getAllPossibleGames(toAnalyseGame);
     
@@ -161,6 +160,12 @@ Game Minimax::getBestGameState(Game toAnalyseGame, int iDepth)
             iBestBoardStateIndex = i;
         }
     }
+    
+    #ifdef DEBUG_FLAG_MINIMAX
+        Debug("Number of different games analysed: " << this->iNumberOfLeafNodes);
+    #endif
+    
+    
     
     return toAnalyseGames.at(iBestBoardStateIndex);
 }

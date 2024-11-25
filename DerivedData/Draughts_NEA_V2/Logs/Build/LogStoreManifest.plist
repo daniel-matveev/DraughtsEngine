@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>3FFAD224-84EF-4B2A-A7A8-A26DCDECE7A6</key>
+		<key>43419B62-EFE2-4185-BD41-05A5609A7DEA</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>3FFAD224-84EF-4B2A-A7A8-A26DCDECE7A6.xcactivitylog</string>
+			<string>43419B62-EFE2-4185-BD41-05A5609A7DEA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,55 +40,13 @@
 			<key>signature</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>753874579.93111205</real>
+			<real>754240661.56217599</real>
 			<key>timeStoppedRecording</key>
-			<real>753874580.57876599</real>
+			<real>754240662.00721598</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>3FFAD224-84EF-4B2A-A7A8-A26DCDECE7A6</string>
-		</dict>
-		<key>53B351CD-97DC-49C6-A552-850CE02A1B9B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>53B351CD-97DC-49C6-A552-850CE02A1B9B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Draughts_NEA_V2 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Draughts_NEA_V2</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Draughts_NEA_V2</string>
-			<key>timeStartedRecording</key>
-			<real>753825074.71385098</real>
-			<key>timeStoppedRecording</key>
-			<real>753825078.61624801</real>
-			<key>title</key>
-			<string>Build Draughts_NEA_V2</string>
-			<key>uniqueIdentifier</key>
-			<string>53B351CD-97DC-49C6-A552-850CE02A1B9B</string>
+			<string>43419B62-EFE2-4185-BD41-05A5609A7DEA</string>
 		</dict>
 	</dict>
 </dict>

@@ -24,8 +24,19 @@
 #endif
 
 
-#ifndef DEBUG_FLAG
-    #define DEBUG_FLAG
+//#ifndef DEBUG_FLAG
+//    #define DEBUG_FLAG
+//#endif
+//#ifndef DEBUG_FLAG_MINIMAX
+//    #define DEBUG_FLAG_MINIMAX
+//#endif
+//
+//#ifndef DEBUG_FLAG_MCTS
+//    #define DEBUG_FLAG_MCTS
+//#endif
+
+#ifndef DEBUG_FLAG_ALPHABETAPRUNING
+    #define DEBUG_FLAG_ALPHABETAPRUNING
 #endif
 
 // For piece colour

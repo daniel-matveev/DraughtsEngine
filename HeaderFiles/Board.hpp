@@ -55,7 +55,7 @@ public:
     void printBoard();
     
     // Overloading == operator
-    // If 2 board don't have the same pieces at the same locations they are not the same
+    // If 2 boards don't have the same pieces at the same locations they are not the same
     bool operator == (const Board &toCompareBoard) const
     {
         // Go though all the board positions
