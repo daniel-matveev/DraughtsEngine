@@ -258,30 +258,48 @@ void Console::startGame()
         // If the current player is a minimax algorithm
         if (currentPlayer.szTypeOfPlayer == "Minimax")
         {
+            #ifdef DEBUG_FLAG_MINIMAX
+                clock_t startTime = clock();
+            #endif
             // Get the best move based on the current board state, and search depth based on the difficulty
             this->mainGame = this->minimax.getBestGameState(this->mainGame, currentPlayer.iDifficulty);
             
-//            this->minimax = Minimax();
+            #ifdef DEBUG_FLAG_MINIMAX
+            Debug("Time to execute (sec): " << ((float)(clock() - startTime))/CLOCKS_PER_SEC);
+            #endif
+            
             std::cin >> cExtracted;
 
         }
         // If the current player is a alpha beta prunning algorithm
         else if (currentPlayer.szTypeOfPlayer == "AlphaBetaPruning")
         {
+            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                clock_t startTime = clock();
+            #endif
             // Get the best move based on the current board state, and search depth based on the difficulty
             this->mainGame = this->alphaBetaPruning.getBestGameState(this->mainGame, currentPlayer.iDifficulty);
             
-//            this->alphaBetaPruning = AlphaBetaPruning();
+            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                Debug("Time to execute (sec): " << ((float)(clock() - startTime))/CLOCKS_PER_SEC);
+            #endif
+
             std::cin >> cExtracted;
 
         }
         // If the current player is a monte carlo tree search algorithm
         else if (currentPlayer.szTypeOfPlayer == "MonteCarloTreeSearch")
         {
+            #ifdef DEBUG_FLAG_MCTS
+                clock_t startTime = clock();
+            #endif
             // Get the best move based on the current board state, and number of simulations to do
             this->mainGame = this->monteCarloTreeSearch.getBestGameState(this->mainGame, this->mainGame.getCurrentPlayerColour(), currentPlayer.iDifficulty);
             
-//            this->monteCarloTreeSearch = MonteCarloTreeSearch();
+            #ifdef DEBUG_FLAG_MCTS
+                Debug("Time to execute (sec): " << ((float)(clock() - startTime))/CLOCKS_PER_SEC));
+            #endif
+
             std::cin >> cExtracted;
         }
     

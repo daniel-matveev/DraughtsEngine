@@ -153,10 +153,10 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
         }
     }
     #ifdef DEBUG_FLAG_MCTS
-        Debug("Ratio of wins to loses: " << iWins << ":" << iLoses);
+        Debug("Ratio of wins to loses (W:B): " << iWins << ":" << iLoses << "\n");
     #endif
     
-    iTotalScore = (10 * iWins) + iLoses;
+    iTotalScore = (10 * iWins);
     // Return the average of the games
     return ( (float) iTotalScore ) / this->iNumberOfSimulationsInRollOut;
 }
@@ -176,8 +176,9 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
     
     #ifdef DEBUG_FLAG_MCTS
         Debug("Checking node: " << &currentNode);
+        currentNode.gameState.printBoard();
         Debug("Number of visits: " << currentNode.iNumberOfVisits);
-        Debug("Total score: " << currentNode.fTotalScore);
+        Debug("Total score: " << currentNode.fTotalScore << "\n");
     #endif
     
     if (this->isLeafNode(currentNode))
@@ -188,6 +189,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
             // Simulate games from it and get its average win rate based on random moves
             #ifdef DEBUG_FLAG_MCTS
                 Debug("Leaf node. Rolling out node: " << &currentNode);
+                currentNode.gameState.printBoard();
             #endif
             float fFinalScore = this->rollOut(currentNode);
 
@@ -207,6 +209,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
             {
                 #ifdef DEBUG_FLAG_MCTS
                     Debug("Game over. Rolling out node: " << &currentNode);
+                    currentNode.gameState.printBoard();
                 #endif
                 // No games will be simulated, just get the average value of that node
                 float fFinalScore = this->rollOut( currentNode );
@@ -248,7 +251,10 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
 
             }
             #ifdef DEBUG_FLAG_MCTS
-                Debug("Number of children: " << currentNode.childNodes.size());
+                Debug("Number of children: " << currentNode.childNodes.size() << "\n");
+            
+                Debug("Rolling out node: " << &currentNode.childNodes.at(0));
+                currentNode.childNodes.at(0)->gameState.printBoard();
             #endif
             
             // Once the node is expanded, select the first child of that node and do a rollout
@@ -272,7 +278,7 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
         float iBestScore = -1;
         int iCurrentBestScoreIndex = -1;
 
-        // Go thorugh is child
+        // Go through its children
         for (int i = 0; i < currentNode.childNodes.size(); i++)
         {
             // Compute its UCB score

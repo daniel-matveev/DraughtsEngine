@@ -14,12 +14,20 @@ int Minimax::minimax(Game toAnalyseGame, int iDepth)
     // If we have hit the desired depth or There is a winner
     if (iDepth == 0 || toAnalyseGame.getWinner() != NoColour)
     {
+        #ifdef DEBUG_FLAG_MINIMAX
+            Debug("Depth hit");
+            Debug("Board evaluation: " << toAnalyseGame.getEvaluation() << "\n");
+        #endif
         this->iNumberOfLeafNodes++;
         return toAnalyseGame.getEvaluation();
     }
     
     // Get the current player's colour
     Colour currentPlayerColour = toAnalyseGame.getCurrentPlayerColour();
+    
+    #ifdef DEBUG_FLAG_MINIMAX
+        Debug("Checking moves for: " << currentPlayerColour);
+    #endif
     
     // White is the maximising player
     if (currentPlayerColour == White)
@@ -33,6 +41,12 @@ int Minimax::minimax(Game toAnalyseGame, int iDepth)
         
         for (int i = 0 ; i < toAnalyseGames.size(); i++)
         {
+            #ifdef DEBUG_FLAG_MINIMAX
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
+                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+                toAnalyseGames.at(i).printBoard();
+                Debug("Current Maximum Evaluation: " << iMaxEvaluation << "\n");
+            #endif
             // Recursevely go through each one
             // Alternatting moves
             // Once a final position is reached the evaluation of that position is returned
@@ -40,6 +54,12 @@ int Minimax::minimax(Game toAnalyseGame, int iDepth)
             
             // Compare it to the best evaluation for white and update
             iMaxEvaluation = std::max(iMaxEvaluation, iEvaluation);
+            
+            #ifdef DEBUG_FLAG_MINIMAX
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
+                Debug("Move analysed: " << i << "/" << toAnalyseGames.size()-1 );
+                Debug("Current Maximum Evaluation: " << iMaxEvaluation << "\n");
+            #endif
         }
         // return the best evaluation for white
         return iMaxEvaluation;
@@ -56,6 +76,13 @@ int Minimax::minimax(Game toAnalyseGame, int iDepth)
         
         for (int i = 0 ; i < toAnalyseGames.size(); i++)
         {
+            #ifdef DEBUG_FLAG_MINIMAX
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
+                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+                toAnalyseGames.at(i).printBoard();
+                Debug("Current Minimum Evaluation: " << iMinEvaluation << "\n");
+
+            #endif
             // Recursevely go through each one
             // Alternatting moves
             // Once a final position is reached the evaluation of that position is returned
@@ -63,6 +90,12 @@ int Minimax::minimax(Game toAnalyseGame, int iDepth)
             
             // Compare it to the best evaluation for black and update
             iMinEvaluation = std::min(iMinEvaluation, iEvaluation);
+                        
+            #ifdef DEBUG_FLAG_MINIMAX
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
+                Debug("Move analysed : " << i << "/" << toAnalyseGames.size()-1 );
+                Debug("Current Minimum Evaluation: " << iMinEvaluation << "\n");
+            #endif
         }
         
         // return the best evaluation for black
@@ -143,6 +176,20 @@ Game Minimax::getBestGameState(Game toAnalyseGame, int iDepth)
     
     for (int i = 0; i < toAnalyseGames.size(); i++)
     {
+        #ifdef DEBUG_FLAG_MINIMAX
+            Debug("Current Node ID: " << iDepth << "+1." << playerColour << "." << i);
+            Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+            toAnalyseGames.at(i).printBoard();
+            if (toAnalyseGame.currentPlayerColour == White)
+            {
+                Debug("Current Maximum Evaluation: " << iMaxEvaluation << "\n");
+            }
+            else
+            {
+                Debug("Current Minimum Evaluation: " << iMinEvaluation << "\n");
+            }
+            
+        #endif
         // Recursevely go through each one
         // Alternatting moves
         // Once a final position is reached the evaluation of that position is returned
@@ -159,13 +206,23 @@ Game Minimax::getBestGameState(Game toAnalyseGame, int iDepth)
             iMaxEvaluation = iEvaluation;
             iBestBoardStateIndex = i;
         }
+        #ifdef DEBUG_FLAG_MINIMAX
+            Debug("Current Node ID: " << iDepth << "+1." << playerColour << "." << i);
+            Debug("Move analysed: " << i << "/" << toAnalyseGames.size()-1 );
+            if (toAnalyseGame.currentPlayerColour == White)
+            {
+                Debug("Current Maximum Evaluation: " << iMaxEvaluation << "\n");
+            }
+            else
+            {
+                Debug("Current Minimum Evaluation: " << iMinEvaluation << "\n");
+            }
+        #endif
     }
     
     #ifdef DEBUG_FLAG_MINIMAX
         Debug("Number of different games analysed: " << this->iNumberOfLeafNodes);
     #endif
-    
-    
     
     return toAnalyseGames.at(iBestBoardStateIndex);
 }

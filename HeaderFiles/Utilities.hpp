@@ -18,15 +18,15 @@
 
 
 #ifndef Debug
-    #define Debug(note) (std::cerr << "<" << std::filesystem::path(__FILE__).filename().string() << ">function=" << __FUNCTION__ << "> <line=" << __LINE__ << ">: " << note << std::endl)
+    #define Debug(note) (std::cerr << "<" << std::filesystem::path(__FILE__).filename().string() << "> <function=" << __FUNCTION__ << "> <line=" << __LINE__ << ">: " << note << std::endl)
 #else
     #define Debug(note)
 #endif
 
 
-//#ifndef DEBUG_FLAG
-//    #define DEBUG_FLAG
-//#endif
+#ifndef DEBUG_FLAG
+    #define DEBUG_FLAG
+#endif
 //#ifndef DEBUG_FLAG_MINIMAX
 //    #define DEBUG_FLAG_MINIMAX
 //#endif
@@ -35,9 +35,9 @@
 //    #define DEBUG_FLAG_MCTS
 //#endif
 
-#ifndef DEBUG_FLAG_ALPHABETAPRUNING
-    #define DEBUG_FLAG_ALPHABETAPRUNING
-#endif
+//#ifndef DEBUG_FLAG_ALPHABETAPRUNING
+//    #define DEBUG_FLAG_ALPHABETAPRUNING
+//#endif
 
 // For piece colour
 // When printing on the board

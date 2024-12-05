@@ -55,21 +55,12 @@ void Board::setUpBoard()
             }
             // Same condition but for the last 3 rows
             // Set the colour to these pieces White
-            else if ( ( i >= 5 && i <= 8) && ( j % 2 == (i + 1) % 2 ) )
+            else if ( ( i >= 5 && i <= 7) && ( j % 2 == (i + 1) % 2 ) )
             {
                 this->board[i][j].updateColour(White);
             }
         }
     }
-//    
-//    this->board[7][5].updateColour(White);
-//    
-//    this->board[6][4].updateColour(Black);
-//    
-//    this->board[4][2].updateColour(Black);
-//    
-//    
-//    this->board[4][4].updateColour(Black);
 }
 
 // Constructor

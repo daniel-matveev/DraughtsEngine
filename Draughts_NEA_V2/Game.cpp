@@ -20,7 +20,8 @@ Game::Game()
 
 Game::~Game() {}
 
-
+// Returns if a selected piece can jump or not
+// Used to filter pieces once their valid end positions are calculated
 bool Game::canCurrentlyJump(std::vector<Position> toSkipPositions)
 {
     if (toSkipPositions.size() == 0)
@@ -60,7 +61,7 @@ void Game::selectPieces()
             if (this->selectPiece(Position {j+1, i+1}))
             {
                 #ifdef DEBUG_FLAG
-                    Debug("Checking Piece: {" << j+1 << ", " << i+1 << "}");
+                    Debug("Checking Piece: {" << j+1 << ", " << i+1 << "}" << "\n");
                 #endif
                 
                 // Get its valid moves
@@ -126,6 +127,15 @@ void Game::getValidMoves(bool bMultiJump)
         this->checkKing(this->selectedPiece.getPosition(), this->gameBoard, bMultiJump);
     }
     
+    #ifdef DEBUG_FLAG
+        Debug("Piece end positions: {");
+        for (const auto& pair : this->endPositionsToBoard)
+        {
+            Debug("\t" << pair.first);
+        }
+        Debug("}\n");
+    #endif
+    
     
     // Filtering of valid moves
     // If moves consists of taking pieces we keep those
@@ -157,6 +167,22 @@ void Game::getValidMoves(bool bMultiJump)
             
         }
     }
+    
+    #ifdef DEBUG_FLAG
+        Debug("Piece valid end positions: {");
+        for (const auto& pair : this->filteredEndPositionsToBoard)
+        {
+            Debug("\t" << pair.first);
+        }
+        Debug("}\n");
+    
+        Debug("Piece valid intermediate positions: {");
+        for (const auto& pair : this->intermediatePositionsToBoard)
+        {
+            Debug("\t" << pair.first);
+        }
+        Debug("}\n");
+    #endif
 }
 
 // Checks left and right moves and returns if for the current position (piecePosition) the piece can jump in at least one direction
@@ -167,8 +193,14 @@ bool Game::checkPiece(Position piecePosition, Board boardState, bool bMultiJump)
     // if white check up
     if ( boardState.getPiece(piecePosition).getColour() == White )
     {
+        #ifdef DEBUG_FLAG
+            Debug("Checking North-West\n");
+        #endif
         bool bHasJumpedNW = this->checkDirection(piecePosition, boardState, Position {-1, -1}, bMultiJump);
     
+        #ifdef DEBUG_FLAG
+            Debug("Checking North-East\n");
+        #endif
         bool bHasJumpedNE = this->checkDirection(piecePosition, boardState, Position {+1, -1}, bMultiJump);
 
         return bHasJumpedNW || bHasJumpedNE;
@@ -177,8 +209,13 @@ bool Game::checkPiece(Position piecePosition, Board boardState, bool bMultiJump)
     // If black check down
     else if ( boardState.getPiece(piecePosition).getColour() == Black )
     {
+        #ifdef DEBUG_FLAG
+            Debug("Checking South-West\n");
+        #endif
         bool bHasJumpedSW = this->checkDirection(piecePosition, boardState, Position {-1, +1}, bMultiJump);
-        
+        #ifdef DEBUG_FLAG
+            Debug("Checking South-East\n");
+        #endif
         bool bHasJumpedSE = this->checkDirection(piecePosition, boardState, Position {+1, +1}, bMultiJump);
 
         
@@ -193,20 +230,31 @@ bool Game::checkPiece(Position piecePosition, Board boardState, bool bMultiJump)
 // else -> return false
 bool Game::checkKing(Position piecePosition, Board boardState, bool bMultiJump)
 {
-    
+    #ifdef DEBUG_FLAG
+        Debug("Checking North-West\n");
+    #endif
     bool bHasJumpedNW = this->checkDirection(piecePosition, boardState, Position {-1, -1}, bMultiJump);
     
+    #ifdef DEBUG_FLAG
+        Debug("Checking North-East\n");
+    #endif
     bool bHasJumpedNE = this->checkDirection(piecePosition, boardState, Position {+1, -1}, bMultiJump);
     
+    #ifdef DEBUG_FLAG
+        Debug("Checking South-West\n");
+    #endif
     bool bHasJumpedSW = this->checkDirection(piecePosition, boardState, Position {-1, +1}, bMultiJump);
     
+    #ifdef DEBUG_FLAG
+        Debug("Checking South-East\n");
+    #endif
     bool bHasJumpedSE = this->checkDirection(piecePosition, boardState, Position {+1, +1}, bMultiJump);
 
 
     return (bHasJumpedNW || bHasJumpedNE || bHasJumpedSW || bHasJumpedSE);
 }
 
-// Checks left side of piece for any jumps
+// Checks a side of piece for any jumps
 // Returns if it can make one successful jump
 // startPosition - the position of the piece moving
 // boardState - board permuatation as the piece is jumping
@@ -235,12 +283,18 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
         // Edge cases
         if (tempPosition.x > 8 || tempPosition.x < 1)
         {
+            #ifdef DEBUG_FLAG
+                Debug("Out of bounds. Break\n");
+            #endif
             bHasJumped = false;
   
             break;
         }
         if (tempPosition.y > 8 || tempPosition.y < 1)
         {
+            #ifdef DEBUG_FLAG
+                Debug("Out of bounds. Break\n");
+            #endif
             bHasJumped = false;
             
             break;
@@ -251,11 +305,19 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
         // Space to check
         Piece atPositionPiece = boardState.getPiece(tempPosition);
         
+        #ifdef DEBUG_FLAG
+            Debug("Piece colour: " << atPositionPiece.getColour() << "\n");
+        #endif
+        
         // If the space to check has a piece of the player's colour
         // Break
         if (atPositionPiece.getColour() == this->currentPlayerColour)
         {
             bHasJumped = false;
+            
+            #ifdef DEBUG_FLAG
+                Debug("Terminal position reached.\n");
+            #endif
             
             break;
         }
@@ -268,7 +330,7 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
                 this->toSkipPositions.push_back(toSkipPosition);
                 
                 #ifdef DEBUG_FLAG
-                    Debug("Pieces to skip stack: " << this->toSkipPositions);
+                    Debug("Pieces to skip stack: " << this->toSkipPositions << "\n");
                 #endif
                 
                 // Move the piece to the new position
@@ -317,17 +379,32 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
                     }
                 }
                 
+                #ifdef DEBUG_FLAG
+                    Debug("At position: " << startPosition);
+                    Debug("Pieces to skip stack: " << this->toSkipPositions << "\n");
+                #endif
+                
             }
             
             // And are multi jumping but we haven't jumped
             // Not a valid move
             else if (bMultiJump == true && bHasJumped == false)
             {
+                #ifdef DEBUG_FLAG
+                    Debug("Terminal position reached.\n");
+                    Debug("At position: " << startPosition);
+                    Debug("Pieces to skip stack: " << this->toSkipPositions << "\n");
+                #endif
                 break;
             }
             // Simple move, no jumps
             else if (bMultiJump == false && bHasJumped == false)
             {
+                #ifdef DEBUG_FLAG
+                    Debug("Terminal position reached.\n");
+                    Debug("At position: " << tempPosition);
+                    Debug("Pieces to skip stack: " << this->toSkipPositions << "\n");
+                #endif
                 boardState.movePiece(tempPosition, boardState.getPiece(startPosition));
                 this->endPositionsToBoard.insert( { std::make_pair( tempPosition, this->toSkipPositions ) } );
                 
@@ -352,12 +429,6 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
             }
         }
     }
-    #ifdef DEBUG_FLAG
-
-        Debug("At position: " << tempPosition);
-
-        Debug("Pieces to skip stack: " << this->toSkipPositions);
-    #endif
     
     return bHasJumped;
 }
@@ -399,7 +470,7 @@ bool Game::select(Position toCheckPosition)
         
         // get the valid moves of that piece
         this->getValidMoves(false);
-        
+
         
         return true;
     }

@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>10</integer>
+	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>43419B62-EFE2-4185-BD41-05A5609A7DEA</key>
+		<key>6769AC8F-44A3-49DC-A2B8-625B6618504D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>43419B62-EFE2-4185-BD41-05A5609A7DEA.xcactivitylog</string>
+			<string>6769AC8F-44A3-49DC-A2B8-625B6618504D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +40,13 @@
 			<key>signature</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>754240661.56217599</real>
+			<real>755092434.23060095</real>
 			<key>timeStoppedRecording</key>
-			<real>754240662.00721598</real>
+			<real>755092437.85073495</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>43419B62-EFE2-4185-BD41-05A5609A7DEA</string>
+			<string>6769AC8F-44A3-49DC-A2B8-625B6618504D</string>
 		</dict>
 	</dict>
 </dict>

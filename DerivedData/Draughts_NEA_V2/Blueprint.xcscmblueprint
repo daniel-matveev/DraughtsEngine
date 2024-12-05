@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1F3AEAA5F46794808392FB6C063F3394D94159E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1F3AEAA5F46794808392FB6C063F3394D94159E7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6A460C34-3FEC-459F-9026-B2F4B1D29CF4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1F3AEAA5F46794808392FB6C063F3394D94159E7" : "Draughts_NEA_V2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Draughts_NEA_V2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Draughts_NEA_V2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/piekarate\/Draughts_NEA_V2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1F3AEAA5F46794808392FB6C063F3394D94159E7"
+    }
+  ]
+}

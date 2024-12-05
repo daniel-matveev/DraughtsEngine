@@ -16,6 +16,7 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
     {
         #ifdef DEBUG_FLAG_ALPHABETAPRUNING
             Debug("Depth hit");
+            Debug("Board evaluation: " << toAnalyseGame.calculateEvaluation() << "\n");
         #endif
         this->iNumberOfLeafNodes++;
         return toAnalyseGame.calculateEvaluation();
@@ -42,10 +43,11 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
         {
             #ifdef DEBUG_FLAG_ALPHABETAPRUNING
                 Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
-                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() );
+                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+                toAnalyseGames.at(i).printBoard();
                 Debug("Current Maximum Evaluation: " << fMaxEvaluation);
                 Debug("Current Alpha: " << fAlpha);
-                Debug("Current Beta: " << fBeta);
+                Debug("Current Beta: " << fBeta << "\n");
             #endif
             // Recursevely go through each one
             // Alternatting moves
@@ -57,11 +59,18 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
             
             fAlpha = std::max(fAlpha, fEvaluation);
             
+            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
+                Debug("Move analysed: " << i << "/" << toAnalyseGames.size() - 1 );
+                Debug("Current Maximum Evaluation: " << fMaxEvaluation);
+                Debug("Current Alpha: " << fAlpha);
+                Debug("Current Beta: " << fBeta << "\n");
+            #endif
             
             if (fBeta <= fAlpha)
             {
                 #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-                    Debug("Pruning");
+                    Debug("Pruning\n");
                 #endif
                 break;
             }
@@ -83,10 +92,11 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
         {
             #ifdef DEBUG_FLAG_ALPHABETAPRUNING
                 Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
-                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() );
+                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+                toAnalyseGames.at(i).printBoard();
                 Debug("Current Minimum Evaluation: " << fMinEvaluation);
                 Debug("Current Alpha: " << fAlpha);
-                Debug("Current Beta: " << fBeta);
+                Debug("Current Beta: " << fBeta << "\n");
             #endif
             // Recursevely go through each one
             // Alternatting moves
@@ -98,10 +108,18 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
             
             fBeta = std::min(fBeta, fEvaluation);
             
+            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
+                Debug("Move analysed : " << i << "/" << toAnalyseGames.size()-1 );
+                Debug("Current Minimum Evaluation: " << fMinEvaluation);
+                Debug("Current Alpha: " << fAlpha);
+                Debug("Current Beta: " << fBeta << "\n");
+            #endif
+            
             if (fBeta <= fAlpha)
             {
                 #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-                    Debug("Pruning");
+                    Debug("Pruning\n");
                 #endif
                 break;
             }
@@ -184,10 +202,18 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
     {
         #ifdef DEBUG_FLAG_ALPHABETAPRUNING
             Debug("Current Node ID: " << iDepth << "+1." << playerColour << "." << i);
-            Debug("Analysing move: " << i << "/" << toAnalyseGames.size() );
-            Debug("Current Maximum Evaluation: " << fMaxEvaluation);
-            Debug("Current Alpha: " << -INFINITY);
-            Debug("Current Beta: " << INFINITY);
+            Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+            toAnalyseGames.at(i).printBoard();
+            if (toAnalyseGame.currentPlayerColour == White)
+            {
+                Debug("Current Maximum Evaluation: " << fMaxEvaluation);
+            }
+            else
+            {
+                Debug("Current Minimum Evaluation: " << fMinEvaluation);
+            }
+            Debug("Current Alpha: " << fAlpha);
+            Debug("Current Beta: " << fBeta << "\n");
         #endif
         // Recursevely go through each one
         // Alternatting moves
@@ -209,10 +235,27 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
             iBestBoardStateIndex = i;
         }
         
+        #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+            Debug("Current Node ID: " << iDepth << "+1." << playerColour << "." << i);
+            Debug("Move analysed: " << i << "/" << toAnalyseGames.size()-1 );
+            if (toAnalyseGame.currentPlayerColour == White)
+            {
+                Debug("Current Maximum Evaluation: " << fMaxEvaluation);
+            }
+            else
+            {
+                Debug("Current Minimum Evaluation: " << fMinEvaluation);
+            }
+            Debug("Current Alpha: " << fAlpha);
+            Debug("Current Beta: " << fBeta << "\n");
+        #endif
+        
+        
+        
         if (fBeta <= fAlpha)
         {
             #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-                Debug("Pruning");
+                Debug("Pruning\n");
             #endif
             break;
         }
