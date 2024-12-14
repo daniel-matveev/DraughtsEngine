@@ -1,9 +1,6 @@
 //
 //  Piece.hpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev
-//
+//  Draughts_NEA
 
 #ifndef Piece_hpp
 #define Piece_hpp

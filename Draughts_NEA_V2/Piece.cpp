@@ -1,9 +1,6 @@
 //
 //  Piece.cpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev
-//
+//  Draughts_NEA
 
 #include "Piece.hpp"
 

@@ -1,9 +1,6 @@
 //
 //  Game.hpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 09/10/2024.
-//
+//  Draughts_NEA
 
 #ifndef Game_hpp
 #define Game_hpp

@@ -1,9 +1,6 @@
 //
 //  Utilities.cpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 10/10/2024.
-//
+//  Draughts_NEA
 
 #include "Utilities.hpp"
 

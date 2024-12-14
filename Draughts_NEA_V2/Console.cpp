@@ -1,9 +1,6 @@
 //
 //  Console.cpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 26/10/2024.
-//
+//  Draughts_NEA
 
 #include "Console.hpp"
 
@@ -125,7 +122,7 @@ void Console::selectPlayer(int iPlayer, int iDifficulty)
                     break;
                     
                 case 3:
-                    tempPlayer.iDifficulty = 4;
+                    tempPlayer.iDifficulty = 6;
                     break;
                     
                 default:
@@ -167,11 +164,11 @@ void Console::selectPlayer(int iPlayer, int iDifficulty)
                     break;
                     
                 case 2:
-                    tempPlayer.iDifficulty = 50;
+                    tempPlayer.iDifficulty = 15;
                     break;
                     
                 case 3:
-                    tempPlayer.iDifficulty = 100;
+                    tempPlayer.iDifficulty = 120;
                     break;
                     
                 default:
@@ -258,14 +255,16 @@ void Console::startGame()
         // If the current player is a minimax algorithm
         if (currentPlayer.szTypeOfPlayer == "Minimax")
         {
-            #ifdef DEBUG_FLAG_MINIMAX
+            #ifdef DEBUG_FLAG_TIME
                 clock_t startTime = clock();
+                Debug("Current Player Type: " << currentPlayer.szTypeOfPlayer);
+                Debug("Depth: " << currentPlayer.iDifficulty + 1);
             #endif
             // Get the best move based on the current board state, and search depth based on the difficulty
             this->mainGame = this->minimax.getBestGameState(this->mainGame, currentPlayer.iDifficulty);
             
-            #ifdef DEBUG_FLAG_MINIMAX
-            Debug("Time to execute (sec): " << ((float)(clock() - startTime))/CLOCKS_PER_SEC);
+            #ifdef DEBUG_FLAG_TIME
+                Debug("Time to execute (sec): " << ((float)(clock() - startTime))/CLOCKS_PER_SEC);
             #endif
             
             std::cin >> cExtracted;
@@ -274,13 +273,15 @@ void Console::startGame()
         // If the current player is a alpha beta prunning algorithm
         else if (currentPlayer.szTypeOfPlayer == "AlphaBetaPruning")
         {
-            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+            #ifdef DEBUG_FLAG_TIME
                 clock_t startTime = clock();
+                Debug("Current Player Type: " << currentPlayer.szTypeOfPlayer);
+                Debug("Depth: " << currentPlayer.iDifficulty + 1);
             #endif
             // Get the best move based on the current board state, and search depth based on the difficulty
             this->mainGame = this->alphaBetaPruning.getBestGameState(this->mainGame, currentPlayer.iDifficulty);
             
-            #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+            #ifdef DEBUG_FLAG_TIME
                 Debug("Time to execute (sec): " << ((float)(clock() - startTime))/CLOCKS_PER_SEC);
             #endif
 
@@ -290,14 +291,16 @@ void Console::startGame()
         // If the current player is a monte carlo tree search algorithm
         else if (currentPlayer.szTypeOfPlayer == "MonteCarloTreeSearch")
         {
-            #ifdef DEBUG_FLAG_MCTS
+            #ifdef DEBUG_FLAG_TIME
                 clock_t startTime = clock();
+                Debug("Current Player Type: " << currentPlayer.szTypeOfPlayer);
+                Debug("Number of iterations (tree traversals): " << currentPlayer.iDifficulty << "\n");
             #endif
             // Get the best move based on the current board state, and number of simulations to do
             this->mainGame = this->monteCarloTreeSearch.getBestGameState(this->mainGame, this->mainGame.getCurrentPlayerColour(), currentPlayer.iDifficulty);
             
-            #ifdef DEBUG_FLAG_MCTS
-                Debug("Time to execute (sec): " << ((float)(clock() - startTime))/CLOCKS_PER_SEC));
+            #ifdef DEBUG_FLAG_TIME
+                Debug("Time to execute (sec): " << ((float)(clock() - startTime))/CLOCKS_PER_SEC);
             #endif
 
             std::cin >> cExtracted;
@@ -350,6 +353,8 @@ void Console::startGame()
             // And move the selected piece to a valid position
             while ((!mainGame.move(toMovePosition)) && (cExtracted != 'q' && cExtracted != 'h') )
             {
+                this->mainGame.printBoard();
+                
                 std::cout << "Move to:" << std::endl;
                 
                 std::cout << "X: ";

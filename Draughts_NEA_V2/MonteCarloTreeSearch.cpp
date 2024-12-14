@@ -1,9 +1,6 @@
 //
 //  MonteCarloTreeSearch.cpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 22/10/2024.
-//
+//  Draughts_NEA
 
 #include "MonteCarloTreeSearch.hpp"
 
@@ -28,7 +25,6 @@ Node::Node()
 MonteCarloTreeSearch::MonteCarloTreeSearch()
 {
     this->iNumberOfSimulationsInRollOut = 10;
-    this->rootNode = new Node();
 }
 
 // MCTS destructor
@@ -37,26 +33,26 @@ MonteCarloTreeSearch::~MonteCarloTreeSearch()
     // Free up all the allocated memory
     if (this->rootNode == nullptr)
     {
-        if (!isLeafNode(* this->rootNode))
+        if (!this->isLeafNode(*this->rootNode))
         {
             this->deleteTree(this->rootNode);
         }
-
     }
 }
 
 // Recursevely traverses the tree and deletes the nodes if they are leaf nodes
 void MonteCarloTreeSearch::deleteTree(Node * currentNode)
 {
-    int iSize = (int) currentNode->childNodes.size();
-    for (int i = 0; i < iSize; i++)
+    for (int i = 0; i < currentNode->childNodes.size(); i++)
     {
-        this->deleteTree(currentNode->childNodes.at(0));
-        
-        currentNode->childNodes.erase(currentNode->childNodes.begin());
+        this->deleteTree(currentNode->childNodes.at(i));
     }
-//    free(currentNode);
+    
+    currentNode->childNodes.clear();
+
     delete currentNode;
+    
+    currentNode = nullptr;
 }
 
 // Returns true if the node passed is a leaf node
@@ -81,7 +77,7 @@ float MonteCarloTreeSearch::getUCBScore(Node toCalculateNode)
     // But need to return +inf
     if (toCalculateNode.iNumberOfVisits == 0)
     {
-        return INT_MAX;
+        return INFINITY;
     }
     
     // Formula
@@ -95,6 +91,9 @@ float MonteCarloTreeSearch::getUCBScore(Node toCalculateNode)
 float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
 {
     int iTotalScore = 0;
+    
+    std::set<Position>::iterator selectablePiecesIterator;
+    std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator;
     
     unsigned long iNumberOfSelectablePieces;
     unsigned long iNumberOfEndMoves;
@@ -119,7 +118,7 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
             
             iRandomToSelectPiece = rand() % iNumberOfSelectablePieces;
             
-            std::set<Position>::iterator selectablePiecesIterator = tempGame.selectablePieces.begin();
+            selectablePiecesIterator = tempGame.selectablePieces.begin();
             
             std::advance(selectablePiecesIterator, iRandomToSelectPiece);
             
@@ -131,7 +130,7 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
             
             iRandomMove = rand() % iNumberOfEndMoves;
             
-            std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = tempGame.filteredEndPositionsToBoard.begin();
+            filteredEndPositionsToBoardIterator = tempGame.filteredEndPositionsToBoard.begin();
             
             std::advance(filteredEndPositionsToBoardIterator, iRandomMove);
             
@@ -151,9 +150,10 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
         {
             iLoses = iLoses + 1;
         }
+        tempGame.clear();
     }
     #ifdef DEBUG_FLAG_MCTS
-        Debug("Ratio of wins to loses (W:B): " << iWins << ":" << iLoses << "\n");
+        Debug("Ratio of wins to losses (W:B): " << iWins << ":" << iLoses << "\n");
     #endif
     
     iTotalScore = (10 * iWins);
@@ -170,32 +170,33 @@ Game MonteCarloTreeSearch::simulateMove(Position toMovePosition, Game toAnalyseG
 }
 
 // Recursive function that traverses, expands the nodes and back propagates the results back up the tree
-float MonteCarloTreeSearch::selectNode(Node & currentNode)
+float MonteCarloTreeSearch::selectNode(Node * currentNode)
 {
     // If the current node is a leaf node
     
     #ifdef DEBUG_FLAG_MCTS
         Debug("Checking node: " << &currentNode);
-        currentNode.gameState.printBoard();
-        Debug("Number of visits: " << currentNode.iNumberOfVisits);
-        Debug("Total score: " << currentNode.fTotalScore << "\n");
+        currentNode->gameState.printBoard();
+        Debug("Number of visits: " << currentNode->iNumberOfVisits);
+        Debug("Total score: " << currentNode->fTotalScore);
+        Debug("UCB Score: " << this->getUCBScore(*currentNode) << "\n");
     #endif
     
-    if (this->isLeafNode(currentNode))
+    if (this->isLeafNode(*currentNode))
     {
         // And it hasn't been visited
-        if (currentNode.iNumberOfVisits == 0)
+        if (currentNode->iNumberOfVisits == 0)
         {
             // Simulate games from it and get its average win rate based on random moves
             #ifdef DEBUG_FLAG_MCTS
                 Debug("Leaf node. Rolling out node: " << &currentNode);
-                currentNode.gameState.printBoard();
+                currentNode->gameState.printBoard();
             #endif
-            float fFinalScore = this->rollOut(currentNode);
+            float fFinalScore = this->rollOut(*currentNode);
 
             // Increment the values of that node accordingly
-            currentNode.iNumberOfVisits = currentNode.iNumberOfVisits + 1;
-            currentNode.fTotalScore = currentNode.fTotalScore + fFinalScore;
+            currentNode->iNumberOfVisits = currentNode->iNumberOfVisits + 1;
+            currentNode->fTotalScore = currentNode->fTotalScore + fFinalScore;
             
             // Return the score for back propagation for the parent nodes
             return fFinalScore;
@@ -205,15 +206,14 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
         else
         {
             // If a node is a terminal state (a player has won) it cannot be expanded
-            if (currentNode.gameState.getWinner() != NoColour)
+            if (currentNode->gameState.getWinner() != NoColour)
             {
                 #ifdef DEBUG_FLAG_MCTS
-                    Debug("Game over. Rolling out node: " << &currentNode);
-                    currentNode.gameState.printBoard();
+                    currentNode->gameState.printBoard();
+                    Debug("Game over.\n");
                 #endif
-                // No games will be simulated, just get the average value of that node
-                float fFinalScore = this->rollOut( currentNode );
-                return fFinalScore;
+                // No games will be simulated, just return a constant
+                return 5;
             }
             
             #ifdef DEBUG_FLAG_MCTS
@@ -221,48 +221,48 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
             #endif
             
             // For each selectable piece
-            std::set<Position>::iterator selectablePiecesIterator = currentNode.gameState.selectablePieces.begin();
+            std::set<Position>::iterator selectablePiecesIterator = currentNode->gameState.selectablePieces.begin();
             
-            for (; selectablePiecesIterator != currentNode.gameState.selectablePieces.end(); ++selectablePiecesIterator)
+            for (; selectablePiecesIterator != currentNode->gameState.selectablePieces.end(); ++selectablePiecesIterator)
             {
                 // Select that piece
-                currentNode.gameState.select(Position {selectablePiecesIterator->x, selectablePiecesIterator->y});
+                currentNode->gameState.select(Position {selectablePiecesIterator->x, selectablePiecesIterator->y});
                 
                 // Get its valid moves
-                currentNode.gameState.getValidMoves(false);
+                currentNode->gameState.getValidMoves(false);
 
                 // And for each valid move
-                std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = currentNode.gameState.filteredEndPositionsToBoard.begin();
+                std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = currentNode->gameState.filteredEndPositionsToBoard.begin();
 
-                for (; filteredEndPositionsToBoardIterator != currentNode.gameState.filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
+                for (; filteredEndPositionsToBoardIterator != currentNode->gameState.filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
                 {
                     // Make a new node where that move is taken
-                    Game tempGame = this->simulateMove(filteredEndPositionsToBoardIterator->first, currentNode.gameState);
+                    Game tempGame = this->simulateMove(filteredEndPositionsToBoardIterator->first, currentNode->gameState);
 
                     // Allocate memory for new node
                     Node * childNode = new Node(tempGame);
                     
                     // Add the node created to the vector of child nodes
-                    currentNode.childNodes.push_back(childNode);
+                    currentNode->childNodes.push_back(childNode);
                 }
 
                 // Clear game state for the current piece to be selected
-                currentNode.gameState.clear();
+                currentNode->gameState.clear();
 
             }
             #ifdef DEBUG_FLAG_MCTS
-                Debug("Number of children: " << currentNode.childNodes.size() << "\n");
+                Debug("Number of children: " << currentNode->childNodes.size() << "\n");
             
-                Debug("Rolling out node: " << &currentNode.childNodes.at(0));
-                currentNode.childNodes.at(0)->gameState.printBoard();
+                Debug("Rolling out node: " << &currentNode->childNodes.at(0));
+                currentNode->childNodes.at(0)->gameState.printBoard();
             #endif
             
             // Once the node is expanded, select the first child of that node and do a rollout
-            float fFinalScore = this->rollOut( * currentNode.childNodes.at(0));
+            float fFinalScore = this->rollOut( * currentNode->childNodes.at(0));
             
             // Update its values accordingly
-            currentNode.childNodes.at(0)->iNumberOfVisits = currentNode.childNodes.at(0)->iNumberOfVisits + 1;
-            currentNode.childNodes.at(0)->fTotalScore = currentNode.childNodes.at(0)->fTotalScore + fFinalScore;
+            currentNode->childNodes.at(0)->iNumberOfVisits = currentNode->childNodes.at(0)->iNumberOfVisits + 1;
+            currentNode->childNodes.at(0)->fTotalScore = currentNode->childNodes.at(0)->fTotalScore + fFinalScore;
             
            
             // return the score for backpropagation
@@ -279,10 +279,14 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
         int iCurrentBestScoreIndex = -1;
 
         // Go through its children
-        for (int i = 0; i < currentNode.childNodes.size(); i++)
+        for (int i = 0; i < currentNode->childNodes.size(); i++)
         {
             // Compute its UCB score
-            float iScore = this->getUCBScore( * currentNode.childNodes.at(i));
+            float iScore = this->getUCBScore( * currentNode->childNodes.at(i));
+            
+            #ifdef DEBUG_FLAG_MCTS
+                Debug("UCB Score for child node " << i + 1 << "/" << currentNode->childNodes.size() << " (" << currentNode->childNodes.at(i) << "): " << iScore);
+            #endif
 
             // If its score is higher than any other previously seen
             if (iScore > iBestScore)
@@ -293,16 +297,17 @@ float MonteCarloTreeSearch::selectNode(Node & currentNode)
             }
         }
         #ifdef DEBUG_FLAG_MCTS
-            Debug("Selecting child node: " << iCurrentBestScoreIndex);
+            std::cout << std::endl;
+            Debug("Selecting child node: " << iCurrentBestScoreIndex + 1 << "/" << currentNode->childNodes.size());
         #endif
         
         // Select the node with the highest found UCB score
         // The fFinalScore is the score returned by the leaf nodes / child nodes in the tree that have been rolled out
-        float fFinalScore = this->selectNode( * currentNode.childNodes.at(iCurrentBestScoreIndex));
+        float fFinalScore = this->selectNode( currentNode->childNodes.at(iCurrentBestScoreIndex) );
         
         // Update the values of the node accordingly
-        currentNode.iNumberOfVisits = currentNode.iNumberOfVisits + 1;
-        currentNode.fTotalScore = currentNode.fTotalScore + fFinalScore;
+        currentNode->iNumberOfVisits = currentNode->iNumberOfVisits + 1;
+        currentNode->fTotalScore = currentNode->fTotalScore + fFinalScore;
         
         // Return or backpropagation
         return fFinalScore;
@@ -316,6 +321,8 @@ Game MonteCarloTreeSearch::getBestGameState(Game toAnalyseGame, Colour currentPl
     // At the root of the tree will be the initial given game state
     this->rootNode = new Node(toAnalyseGame);
     
+//    delete this->rootNode;
+    
     this->playerColour = currentPlayerColour;
     
     this->iNumberOfTotalSimulations = 0;
@@ -324,7 +331,7 @@ Game MonteCarloTreeSearch::getBestGameState(Game toAnalyseGame, Colour currentPl
     // traverse the tree from the root node
     for (; this->iNumberOfTotalSimulations < iNumberOfSimulations; this->iNumberOfTotalSimulations++)
     {
-        this->selectNode( * this->rootNode );
+        this->selectNode( this->rootNode );
     }
     
     // Once the tree has been expanded
@@ -335,6 +342,9 @@ Game MonteCarloTreeSearch::getBestGameState(Game toAnalyseGame, Colour currentPl
     for (int i = 0; i < this->rootNode->childNodes.size(); i++)
     {
         float iScore = this->getUCBScore( * this->rootNode->childNodes.at(i));
+        #ifdef DEBUG_FLAG_MCTS
+            Debug("UCB Score for child node " << i + 1 << "/" << this->rootNode->childNodes.size() << " (" << this->rootNode->childNodes.at(i) << "): " << iScore);
+        #endif
 
         if (iScore > iBestScore)
         {
@@ -342,6 +352,10 @@ Game MonteCarloTreeSearch::getBestGameState(Game toAnalyseGame, Colour currentPl
             iCurrentBestScoreIndex = i;
         }
     }
+    #ifdef DEBUG_FLAG_MCTS
+        std::cout << std::endl;
+        Debug("Selecting child node: " << iCurrentBestScoreIndex + 1 << "/" << this->rootNode->childNodes.size());
+    #endif
     // Store the game state
     Game bestGame = this->rootNode->childNodes.at(iCurrentBestScoreIndex)->gameState;
     

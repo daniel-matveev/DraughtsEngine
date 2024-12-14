@@ -1,9 +1,6 @@
 //
 //  Minimax.hpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 19/10/2024.
-//
+//  Draughts_NEA
 
 #ifndef Minimax_hpp
 #define Minimax_hpp

@@ -1,9 +1,7 @@
 //
 //  AlphaBetaPruning.hpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 19/10/2024.
-//
+//  Draughts_NEA
+
 
 #ifndef AlphaBetaPruning_hpp
 #define AlphaBetaPruning_hpp

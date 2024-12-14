@@ -1,9 +1,6 @@
 //
 //  Utilities.hpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 10/10/2024.
-//
+//  Draughts_NEA
 
 #ifndef Utilities_hpp
 #define Utilities_hpp
@@ -24,9 +21,9 @@
 #endif
 
 
-#ifndef DEBUG_FLAG
-    #define DEBUG_FLAG
-#endif
+//#ifndef DEBUG_FLAG
+//    #define DEBUG_FLAG
+//#endif
 //#ifndef DEBUG_FLAG_MINIMAX
 //    #define DEBUG_FLAG_MINIMAX
 //#endif
@@ -34,10 +31,16 @@
 //#ifndef DEBUG_FLAG_MCTS
 //    #define DEBUG_FLAG_MCTS
 //#endif
-
+//
 //#ifndef DEBUG_FLAG_ALPHABETAPRUNING
 //    #define DEBUG_FLAG_ALPHABETAPRUNING
 //#endif
+
+#ifndef DEBUG_FLAG_TIME
+    #define DEBUG_FLAG_TIME
+#endif
+
+
 
 // For piece colour
 // When printing on the board
@@ -150,10 +153,12 @@ namespace std
         public:
             std::size_t operator()(const Position& position) const
             {
-                std::size_t hashedX = std::hash<int>()(position.x);
-                std::size_t hashedY = std::hash<int>()(position.y);
+//                std::size_t hashedX = std::hash<int>()(position.x);
+//                std::size_t hashedY = std::hash<int>()(position.y);
+//                
+//                return hashedX ^ (hashedY << 1);
                 
-                return hashedX ^ (hashedY << 1);
+                return position.y * 8 + position.x;
             }
     };
 

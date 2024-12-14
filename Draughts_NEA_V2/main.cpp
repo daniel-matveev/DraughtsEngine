@@ -1,9 +1,6 @@
 //
 //  main.cpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 09/10/2024.
-//
+//  Draughts_NEA
 
 #include "Console.hpp"
 
@@ -119,7 +116,7 @@ int main(int argc, const char * argv[])
 //    Position toMovePosition;
 // 
 //    int counter = 0;
-//    
+////    
 //    while (mainGame.getWinner() == NoColour) 
 //    {
 //        counter++;
@@ -135,13 +132,14 @@ int main(int argc, const char * argv[])
 //            mm.iNumberOfLeafNodes = 0;
             
 //            std::cout << "AlphaBetaPruning called" << std::endl;
-//            mainGame = abp.getBestGameState(mainGame, 6);
+//            mainGame = abp.getBestGameState(mainGame, 4);
+
 //            std::cout << abp.iNumberOfLeafNodes << std::endl;
 //            abp.iNumberOfLeafNodes = 0;
 //            
 //            std::cout << "MonteCarloTreeSearch called" << std::endl;
 //            mainGame = mcts.getBestGameState(mainGame, mainGame.getCurrentPlayerColour(), 100);
-    
+//        mcts = MonteCarloTreeSearch();
 //        }
 //        else
 //        {

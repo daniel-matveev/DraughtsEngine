@@ -1,9 +1,6 @@
 //
 //  MonteCarloTreeSearch.hpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 22/10/2024.
-//
+//  Draughts_NEA
 
 #ifndef MonteCarloTreeSearch_hpp
 #define MonteCarloTreeSearch_hpp
@@ -59,7 +56,7 @@ private:
     Game simulateMove(Position toMovePosition, Game toAnalyseGame);
     
     // Recursive tree traversal function until a child node is found
-    float selectNode(Node & currentNode);
+    float selectNode(Node * currentNode);
     
     // To free up the memory allocated during the recursive tree traversal
     void deleteTree(Node * currentNode);

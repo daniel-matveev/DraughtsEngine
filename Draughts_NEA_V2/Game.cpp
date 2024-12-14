@@ -1,9 +1,6 @@
 //
 //  Game.cpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 09/10/2024.
-//
+//  Draughts_NEA
 
 #include "Game.hpp"
 
@@ -68,17 +65,22 @@ void Game::selectPieces()
                 this->getValidMoves(false);
                 
                 // Create iterator to be able to iterate over the map
-                std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = this->filteredEndPositionsToBoard.begin();
+                ;
                 
                 // Filtering of valid pieces
-                for (; filteredEndPositionsToBoardIterator != this->filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
+                for (std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator
+                        = this->filteredEndPositionsToBoard.begin();
+                     filteredEndPositionsToBoardIterator != this->filteredEndPositionsToBoard.end();
+                     ++filteredEndPositionsToBoardIterator)
                 {
-                    bool bCanJumpCurrently = this->canCurrentlyJump(filteredEndPositionsToBoardIterator->second);
+                    bool bCanJumpCurrently
+                        = this->canCurrentlyJump(filteredEndPositionsToBoardIterator->second);
                     
                     // If the currently selected piece can jump and we have found a piece that can also jump
                     if ( bCanJumpCurrently && bCanJumpOverall)
                     {
-                        this->selectablePieces.insert(this->selectedPiece.getPosition());
+                        this->selectablePieces.insert(
+                                               this->selectedPiece.getPosition());
                     }
                     // If the currently selected piece can jump but we have not yet found a piece that can also jump
                     else if ( bCanJumpCurrently && !bCanJumpOverall)
@@ -87,7 +89,8 @@ void Game::selectPieces()
                         bCanJumpOverall = true;
                         // All the pieces inserted before this one then must not be able to jump
                         this->selectablePieces.clear();
-                        this->selectablePieces.insert(this->selectedPiece.getPosition());
+                        this->selectablePieces.insert(
+                                               this->selectedPiece.getPosition());
                     }
                     // If the currently selected piece can't jump but we found a piece that can jump
                     else if (!bCanJumpCurrently && bCanJumpOverall)
@@ -97,7 +100,8 @@ void Game::selectPieces()
                     // If the currently selected piece can't jump and we have not yet found a piece that can also jump
                     else if (!bCanJumpCurrently && !bCanJumpOverall)
                     {
-                        this->selectablePieces.insert(this->selectedPiece.getPosition());
+                        this->selectablePieces.insert(
+                                               this->selectedPiece.getPosition());
                     }
                     
                 }
@@ -119,12 +123,18 @@ void Game::getValidMoves(bool bMultiJump)
     // If the selected piece is not a king
     if (!this->selectedPiece.getCrowned())
     {
-        this->checkPiece(this->selectedPiece.getPosition(), this->gameBoard, bMultiJump);
+        this->checkPiece(
+                         this->selectedPiece.getPosition(),
+                         this->gameBoard,
+                         bMultiJump);
     }
     // If the selected piece is a king
     else if (this->selectedPiece.getCrowned())
     {
-        this->checkKing(this->selectedPiece.getPosition(), this->gameBoard, bMultiJump);
+        this->checkKing(
+                        this->selectedPiece.getPosition(),
+                        this->gameBoard,
+                        bMultiJump);
     }
     
     #ifdef DEBUG_FLAG
@@ -141,7 +151,8 @@ void Game::getValidMoves(bool bMultiJump)
     // If moves consists of taking pieces we keep those
     bool bCanJumpOverall = false;
     
-    std::unordered_map<Position, std::vector<Position>>::iterator endPositionsToBoardIterator = this->endPositionsToBoard.begin();
+    std::unordered_map<Position, std::vector<Position>>::iterator
+        endPositionsToBoardIterator = this->endPositionsToBoard.begin();
     
     for (;endPositionsToBoardIterator != this->endPositionsToBoard.end(); ++endPositionsToBoardIterator)
     {
@@ -468,6 +479,13 @@ bool Game::select(Position toCheckPosition)
         // Selected piece is the peice at that position
         this->selectedPiece = this->gameBoard.getPiece(toCheckPosition);
         
+        #ifdef DEBUG_FLAG
+            Debug("Piece:\n");
+                Debug("Position:" << this->selectedPiece.getPosition());
+//                Debug("Colour: " << this->selectedPiece.getColour())
+                Debug("Crowned: " << this->selectedPiece.getCrowned());
+        #endif
+        
         // get the valid moves of that piece
         this->getValidMoves(false);
 
@@ -480,9 +498,12 @@ bool Game::select(Position toCheckPosition)
 // Returns true if the end position has been inputed and updates the boardState accordingly
 bool Game::move(Position toCheckPosition)
 {
-    std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = this->filteredEndPositionsToBoard.begin();
     
-    for (; filteredEndPositionsToBoardIterator != this->filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
+    
+    for (std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator
+            = this->filteredEndPositionsToBoard.begin();
+         filteredEndPositionsToBoardIterator != this->filteredEndPositionsToBoard.end();
+         ++filteredEndPositionsToBoardIterator)
     {
         // If a valid end move entered
         if (filteredEndPositionsToBoardIterator->first == toCheckPosition)
@@ -491,6 +512,12 @@ bool Game::move(Position toCheckPosition)
             this->gameBoard.movePiece(filteredEndPositionsToBoardIterator->first, this->selectedPiece);
             this->gameBoard.removePieces(filteredEndPositionsToBoardIterator->second);
 
+            #ifdef DEBUG_FLAG
+                Debug("Piece:\n");
+                Debug("Position:" << toCheckPosition);
+            //                Debug("Colour: " << this->selectedPiece.getColour())
+            Debug("Crowned: " << this->gameBoard.getPiece(toCheckPosition).getCrowned());
+            #endif
             // Move ends
             // => swap players
             this->swapPlayers();

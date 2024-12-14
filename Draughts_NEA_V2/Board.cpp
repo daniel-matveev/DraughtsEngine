@@ -1,9 +1,6 @@
 //
 //  Board.cpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 09/10/2024.
-//
+//  Draughts_NEA
 
 #include "Board.hpp"
 
@@ -39,28 +36,56 @@ void Board::initBoard()
 void Board::setUpBoard()
 {
     // Controls Row / y
-    for (int i = 0; i < this->iSize; i++)
-    {
-//      Controls Column / x
-        for (int j = 0; j < this->iSize; j++)
-        {
-            // If the row is one of the first 3
-            // AND the column number modulus 2 = to the row number + 1 modulus 2
-            // Creates the patern: 1, 3, 5, 7
-            //                     0, 2, 4, 6
-            // Set the colour to these pieces Black
-            if ( ( i >= 0 && i <= 2) && ( j % 2 == (i + 1) % 2 ) )
-            {
-                this->board[i][j].updateColour(Black);
-            }
-            // Same condition but for the last 3 rows
-            // Set the colour to these pieces White
-            else if ( ( i >= 5 && i <= 7) && ( j % 2 == (i + 1) % 2 ) )
-            {
-                this->board[i][j].updateColour(White);
-            }
-        }
-    }
+//    for (int i = 0; i < this->iSize; i++)
+//    {
+////      Controls Column / x
+//        for (int j = 0; j < this->iSize; j++)
+//        {
+//            // If the row is one of the first 3
+//            // AND the column number modulus 2 = to the row number + 1 modulus 2
+//            // Creates the patern: 1, 3, 5, 7
+//            //                     0, 2, 4, 6
+//            // Set the colour to these pieces Black
+//            if ( ( i >= 0 && i <= 2) && ( j % 2 == (i + 1) % 2 ) )
+//            {
+//                this->board[i][j].updateColour(Black);
+//            }
+//            // Same condition but for the last 3 rows
+//            // Set the colour to these pieces White
+//            else if ( ( i >= 5 && i <= 7) && ( j % 2 == (i + 1) % 2 ) )
+//            {
+//                this->board[i][j].updateColour(White);
+//            }
+//        }
+//    }
+////    
+    this->board[7][2].updateColour(White);
+    this->board[6][5].updateColour(White);
+    this->board[7][4].updateColour(White);
+//
+////    this->board[7][5].updateCrowned(true);
+//    
+    this->board[4][3].updateColour(Black);
+//
+    this->board[2][1].updateColour(Black);
+    this->board[3][2].updateColour(Black);
+    
+    this->board[4][5].updateColour(Black);
+
+
+//    this->board[1][0].updateColour(Black);
+//    
+//    this->board[1][2].updateColour(Black);
+//    
+//    this->board[1][4].updateColour(Black);
+//    
+//    this->board[3][2].updateColour(White);
+//    
+//    this->board[3][4].updateColour(White);
+//    
+//    this->board[4][5].updateColour(White);
+//    this->board[5][6].updateColour(White);
+
 }
 
 // Constructor
@@ -113,7 +138,8 @@ void Board::movePiece(Position newPosition, Piece selectedPiece)
     // Convert position coordinates into index values
     newPosition = newPosition - 1;
     
-    this->board[newPosition.y] [newPosition.x].updateColour(selectedPiece.getColour());
+    this->board[newPosition.y]
+               [newPosition.x].updateColour(selectedPiece.getColour());
     
     
     // At the old position set the colour of the piece as NoColour and not crowned
@@ -122,8 +148,11 @@ void Board::movePiece(Position newPosition, Piece selectedPiece)
     // Convert position coordinates into index values
     selectedPiecePosition = selectedPiecePosition - 1;
     
-    this->board[selectedPiecePosition.y] [selectedPiecePosition.x].updateColour(NoColour);
-    this->board[selectedPiecePosition.y] [selectedPiecePosition.x].updateCrowned(false);
+    this->board[selectedPiecePosition.y]
+               [selectedPiecePosition.x].updateColour(NoColour);
+    
+    this->board[selectedPiecePosition.y]
+               [selectedPiecePosition.x].updateCrowned(false);
     
     // If a piece is corwned update the status of the new position to also be crowned
     if (bPieceIsCrowned)

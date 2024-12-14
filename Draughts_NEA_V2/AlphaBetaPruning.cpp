@@ -1,9 +1,6 @@
 //
 //  AlphaBetaPruning.cpp
-//  Draughts_NEA_V2
-//
-//  Created by Daniel Matveev on 19/10/2024.
-//
+//  Draughts_NEA
 
 #include "AlphaBetaPruning.hpp"
 
@@ -42,8 +39,8 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
         for (int i = 0 ; i < toAnalyseGames.size(); i++)
         {
             #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
-                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i + 1);
+                Debug("Analysing move: " << i + 1 << "/" << toAnalyseGames.size() );
                 toAnalyseGames.at(i).printBoard();
                 Debug("Current Maximum Evaluation: " << fMaxEvaluation);
                 Debug("Current Alpha: " << fAlpha);
@@ -60,8 +57,8 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
             fAlpha = std::max(fAlpha, fEvaluation);
             
             #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
-                Debug("Move analysed: " << i << "/" << toAnalyseGames.size() - 1 );
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i + 1);
+                Debug("Move analysed: " << i + 1 << "/" << toAnalyseGames.size() );
                 Debug("Current Maximum Evaluation: " << fMaxEvaluation);
                 Debug("Current Alpha: " << fAlpha);
                 Debug("Current Beta: " << fBeta << "\n");
@@ -75,6 +72,8 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
                 break;
             }
         }
+        
+        toAnalyseGames.clear();
         // return the best evaluation for white
         return fMaxEvaluation;
     }
@@ -91,8 +90,8 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
         for (int i = 0 ; i < toAnalyseGames.size(); i++)
         {
             #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
-                Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i + 1);
+                Debug("Analysing move: " << i + 1 << "/" << toAnalyseGames.size() );
                 toAnalyseGames.at(i).printBoard();
                 Debug("Current Minimum Evaluation: " << fMinEvaluation);
                 Debug("Current Alpha: " << fAlpha);
@@ -109,8 +108,8 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
             fBeta = std::min(fBeta, fEvaluation);
             
             #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i);
-                Debug("Move analysed : " << i << "/" << toAnalyseGames.size()-1 );
+                Debug("Current Node ID: " << iDepth << "." << currentPlayerColour << "." << i + 1);
+                Debug("Move analysed : " << i + 1 << "/" << toAnalyseGames.size() );
                 Debug("Current Minimum Evaluation: " << fMinEvaluation);
                 Debug("Current Alpha: " << fAlpha);
                 Debug("Current Beta: " << fBeta << "\n");
@@ -124,6 +123,8 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
                 break;
             }
         }
+        
+        toAnalyseGames.clear();
         // return the best evaluation for black
         return fMinEvaluation;
     }
@@ -201,8 +202,8 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
     for (int i = 0; i < toAnalyseGames.size(); i++)
     {
         #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-            Debug("Current Node ID: " << iDepth << "+1." << playerColour << "." << i);
-            Debug("Analysing move: " << i << "/" << toAnalyseGames.size() - 1 );
+            Debug("Current Node ID: " << iDepth + 1 << "." << playerColour << "." << i + 1);
+            Debug("Analysing move: " << i + 1 << "/" << toAnalyseGames.size() );
             toAnalyseGames.at(i).printBoard();
             if (toAnalyseGame.currentPlayerColour == White)
             {
@@ -236,8 +237,8 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
         }
         
         #ifdef DEBUG_FLAG_ALPHABETAPRUNING
-            Debug("Current Node ID: " << iDepth << "+1." << playerColour << "." << i);
-            Debug("Move analysed: " << i << "/" << toAnalyseGames.size()-1 );
+            Debug("Current Node ID: " << iDepth + 1 << "." << playerColour << "." << i + 1);
+            Debug("Move analysed: " << i + 1 << "/" << toAnalyseGames.size() );
             if (toAnalyseGame.currentPlayerColour == White)
             {
                 Debug("Current Maximum Evaluation: " << fMaxEvaluation);
@@ -262,11 +263,15 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
         
     }
     
-    #ifdef DEBUG_FLAG_ALPHABETAPRUNING
+    #ifdef DEBUG_FLAG_TIME
         Debug("Number of different games analysed: " << this->iNumberOfLeafNodes);
     #endif
 
     this->iNumberOfLeafNodes = 0;
     
-    return toAnalyseGames.at(iBestBoardStateIndex);
+    Game bestGameState = toAnalyseGames.at(iBestBoardStateIndex);
+    
+    toAnalyseGames.clear();
+    
+    return bestGameState;
 }
