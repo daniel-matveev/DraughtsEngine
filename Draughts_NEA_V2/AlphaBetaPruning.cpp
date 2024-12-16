@@ -52,7 +52,10 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
             // Recursevely go through each one
             // Alternatting moves
             // Once a final position is reached the evaluation of that position is returned
-            float fEvaluation = this->alphaBetaPruning(toAnalyseGames.at(i), iDepth - 1, fAlpha, fBeta);
+            float fEvaluation = this->alphaBetaPruning(toAnalyseGames.at(i),
+                                                       iDepth - 1,
+                                                       fAlpha,
+                                                       fBeta);
             
             // Compare it to the best evaluation for white and update
             fMaxEvaluation = std::max(fMaxEvaluation, fEvaluation);
@@ -103,7 +106,10 @@ float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float f
             // Recursevely go through each one
             // Alternatting moves
             // Once a final position is reached the evaluation of that position is returned
-            float fEvaluation = this->alphaBetaPruning(toAnalyseGames.at(i), iDepth - 1, fAlpha, fBeta);
+            float fEvaluation = this->alphaBetaPruning(toAnalyseGames.at(i),
+                                                       iDepth - 1,
+                                                       fAlpha,
+                                                       fBeta);
             
             // Compare it to the best evaluation for black and update
             fMinEvaluation = std::min(fMinEvaluation, fEvaluation);
@@ -145,24 +151,32 @@ std::vector<Game> AlphaBetaPruning::getAllPossibleGames(Game toAnalyseGame)
 {
     std::vector<Game> toAnalyseGames;
     
-    std::set<Position>::iterator selectablePiecesIterator = toAnalyseGame.selectablePieces.begin();
+    
     
     // for each selectable piece
-    for (; selectablePiecesIterator != toAnalyseGame.selectablePieces.end(); ++selectablePiecesIterator)
+    for (std::set<Position>::iterator selectablePiecesIterator
+            = toAnalyseGame.selectablePieces.begin();
+         selectablePiecesIterator != toAnalyseGame.selectablePieces.end();
+         ++selectablePiecesIterator)
     {
         // Select it
-        toAnalyseGame.select(Position {selectablePiecesIterator->x, selectablePiecesIterator->y});
+        toAnalyseGame.select(Position {selectablePiecesIterator->x,
+                                       selectablePiecesIterator->y});
         
         // Get its valid moves
         toAnalyseGame.getValidMoves(false);
         
-        std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = toAnalyseGame.filteredEndPositionsToBoard.begin();
+        
         
         // For each valid move
-        for (; filteredEndPositionsToBoardIterator != toAnalyseGame.filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
+        for (std::unordered_map<Position, std::vector<Position> >::iterator
+                filteredEndPositionsToBoardIterator = toAnalyseGame.filteredEndPositionsToBoard.begin();
+             filteredEndPositionsToBoardIterator != toAnalyseGame.filteredEndPositionsToBoard.end();
+             ++filteredEndPositionsToBoardIterator)
         {
             // simulate that move
-            Game tempGame = this->simulateMove(filteredEndPositionsToBoardIterator->first, toAnalyseGame);
+            Game tempGame = this->simulateMove(filteredEndPositionsToBoardIterator->first,
+                                               toAnalyseGame);
             
             // add the board permuation to toAnalyseGames
             toAnalyseGames.push_back(tempGame);
@@ -222,7 +236,9 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
         // Recursevely go through each one
         // Alternatting moves
         // Once a final position is reached the evaluation of that position is returned
-        float fEvaluation = this->alphaBetaPruning(toAnalyseGames.at(i), iDepth, -INFINITY, INFINITY);
+        float fEvaluation = this->alphaBetaPruning(toAnalyseGames.at(i),
+                                                   iDepth, fAlpha,
+                                                   fBeta);
         
         // Compare it to the best evaluation for black and update
         if (playerColour == Black && fEvaluation < fMinEvaluation)

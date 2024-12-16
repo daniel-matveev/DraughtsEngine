@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>40738128-C967-40F6-9D4E-409CC89161D5</key>
+		<key>0AF1032C-ABAC-4B45-B5D4-8C49D3C49B04</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>40738128-C967-40F6-9D4E-409CC89161D5.xcactivitylog</string>
+			<string>0AF1032C-ABAC-4B45-B5D4-8C49D3C49B04.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>756031601.35254502</real>
+			<real>756041401.54698002</real>
 			<key>timeStoppedRecording</key>
-			<real>756031603.66385996</real>
+			<real>756041405.92458498</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>40738128-C967-40F6-9D4E-409CC89161D5</string>
+			<string>0AF1032C-ABAC-4B45-B5D4-8C49D3C49B04</string>
 		</dict>
-		<key>492A0C49-82F4-40F3-89AB-AB908477ABD4</key>
+		<key>26D44ED8-77A4-442D-9EFC-522A2D2DB36C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>492A0C49-82F4-40F3-89AB-AB908477ABD4.xcactivitylog</string>
+			<string>26D44ED8-77A4-442D-9EFC-522A2D2DB36C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,15 +82,15 @@
 			<key>signature</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>755969892.33392</real>
+			<real>756035861.46878505</real>
 			<key>timeStoppedRecording</key>
-			<real>755969894.44953799</real>
+			<real>756035866.30450702</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>492A0C49-82F4-40F3-89AB-AB908477ABD4</string>
+			<string>26D44ED8-77A4-442D-9EFC-522A2D2DB36C</string>
 		</dict>
-		<key>8384285D-3158-404D-8E2C-A6A8E4FF7AA3</key>
+		<key>3A952CE9-1D87-47C8-9BF9-8459FFF97F35</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -99,7 +99,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>8384285D-3158-404D-8E2C-A6A8E4FF7AA3.xcactivitylog</string>
+			<string>3A952CE9-1D87-47C8-9BF9-8459FFF97F35.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -124,15 +124,15 @@
 			<key>signature</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>756031366.77873504</real>
+			<real>756041240.19133306</real>
 			<key>timeStoppedRecording</key>
-			<real>756031372.63289905</real>
+			<real>756041243.58977103</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>8384285D-3158-404D-8E2C-A6A8E4FF7AA3</string>
+			<string>3A952CE9-1D87-47C8-9BF9-8459FFF97F35</string>
 		</dict>
-		<key>DC4C41B9-0BB9-43B6-BBFF-4508B74FF005</key>
+		<key>475D9F30-F8B0-4FD8-9F47-4384CE6402AB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -141,7 +141,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>DC4C41B9-0BB9-43B6-BBFF-4508B74FF005.xcactivitylog</string>
+			<string>475D9F30-F8B0-4FD8-9F47-4384CE6402AB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -166,13 +166,181 @@
 			<key>signature</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>756031481.68315697</real>
+			<real>756040309.98616397</real>
 			<key>timeStoppedRecording</key>
-			<real>756031484.18376398</real>
+			<real>756040315.05828404</real>
 			<key>title</key>
 			<string>Build Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>DC4C41B9-0BB9-43B6-BBFF-4508B74FF005</string>
+			<string>475D9F30-F8B0-4FD8-9F47-4384CE6402AB</string>
+		</dict>
+		<key>73E0CB6B-534E-429E-8A33-0E424E5D5102</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>73E0CB6B-534E-429E-8A33-0E424E5D5102.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Draughts_NEA_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Draughts_NEA_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>timeStartedRecording</key>
+			<real>756040599.75863802</real>
+			<key>timeStoppedRecording</key>
+			<real>756040601.47578001</real>
+			<key>title</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>73E0CB6B-534E-429E-8A33-0E424E5D5102</string>
+		</dict>
+		<key>9E2BAD41-2375-48E8-AF39-E72D2960E598</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9E2BAD41-2375-48E8-AF39-E72D2960E598.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Draughts_NEA_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Draughts_NEA_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>timeStartedRecording</key>
+			<real>756040560.98784602</real>
+			<key>timeStoppedRecording</key>
+			<real>756040562.76629496</real>
+			<key>title</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>9E2BAD41-2375-48E8-AF39-E72D2960E598</string>
+		</dict>
+		<key>BF3E1EE2-F041-42F3-ADD0-9C3A734D622F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BF3E1EE2-F041-42F3-ADD0-9C3A734D622F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Draughts_NEA_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Draughts_NEA_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>timeStartedRecording</key>
+			<real>756041377.168419</real>
+			<key>timeStoppedRecording</key>
+			<real>756041377.24287903</real>
+			<key>title</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>BF3E1EE2-F041-42F3-ADD0-9C3A734D622F</string>
+		</dict>
+		<key>F1AB0F06-E6FF-4CF6-AFF0-D5FF96604FB2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F1AB0F06-E6FF-4CF6-AFF0-D5FF96604FB2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Draughts_NEA_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Draughts_NEA_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>timeStartedRecording</key>
+			<real>756040358.754812</real>
+			<key>timeStoppedRecording</key>
+			<real>756040364.35086</real>
+			<key>title</key>
+			<string>Build Draughts_NEA_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>F1AB0F06-E6FF-4CF6-AFF0-D5FF96604FB2</string>
 		</dict>
 	</dict>
 </dict>

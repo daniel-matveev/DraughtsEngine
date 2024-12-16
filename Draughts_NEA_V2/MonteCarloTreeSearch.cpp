@@ -31,20 +31,7 @@ MonteCarloTreeSearch::MonteCarloTreeSearch()
 }
 
 // MCTS destructor
-MonteCarloTreeSearch::~MonteCarloTreeSearch()
-{
-    // Free up all the allocated memory
-    try
-    {
-        if (!this->isLeafNode(*this->rootNode))
-        {
-            this->deleteTree(this->rootNode);
-        }
-    } catch (...)
-    {
-        std::cout << "Tree already deleted" << std::endl;
-    }
-}
+MonteCarloTreeSearch::~MonteCarloTreeSearch() { }
 
 // Recursevely traverses the tree and deletes the nodes if they are leaf nodes
 void MonteCarloTreeSearch::deleteTree(Node * currentNode)
@@ -227,23 +214,30 @@ float MonteCarloTreeSearch::selectNode(Node * currentNode)
             #endif
             
             // For each selectable piece
-            std::set<Position>::iterator selectablePiecesIterator = currentNode->gameState.selectablePieces.begin();
             
-            for (; selectablePiecesIterator != currentNode->gameState.selectablePieces.end(); ++selectablePiecesIterator)
+            
+            for (std::set<Position>::iterator selectablePiecesIterator
+                    = currentNode->gameState.selectablePieces.begin();
+                 selectablePiecesIterator != currentNode->gameState.selectablePieces.end();
+                 ++selectablePiecesIterator)
             {
                 // Select that piece
-                currentNode->gameState.select(Position {selectablePiecesIterator->x, selectablePiecesIterator->y});
+                currentNode->gameState.select(Position {selectablePiecesIterator->x,
+                                                        selectablePiecesIterator->y});
                 
                 // Get its valid moves
                 currentNode->gameState.getValidMoves(false);
 
                 // And for each valid move
-                std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator = currentNode->gameState.filteredEndPositionsToBoard.begin();
 
-                for (; filteredEndPositionsToBoardIterator != currentNode->gameState.filteredEndPositionsToBoard.end(); ++filteredEndPositionsToBoardIterator)
+                for (std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator
+                     = currentNode->gameState.filteredEndPositionsToBoard.begin();
+                     filteredEndPositionsToBoardIterator != currentNode->gameState.filteredEndPositionsToBoard.end();
+                     ++filteredEndPositionsToBoardIterator)
                 {
                     // Make a new node where that move is taken
-                    Game tempGame = this->simulateMove(filteredEndPositionsToBoardIterator->first, currentNode->gameState);
+                    Game tempGame = this->simulateMove(filteredEndPositionsToBoardIterator->first,
+                                                       currentNode->gameState);
 
                     // Allocate memory for new node
                     Node * childNode = new Node(tempGame);
@@ -267,10 +261,12 @@ float MonteCarloTreeSearch::selectNode(Node * currentNode)
             float fFinalScore = this->rollOut( * currentNode->childNodes.at(0));
             
             // Update its values accordingly
-            currentNode->childNodes.at(0)->iNumberOfVisits = currentNode->childNodes.at(0)->iNumberOfVisits + 1;
-            currentNode->childNodes.at(0)->fTotalScore = currentNode->childNodes.at(0)->fTotalScore + fFinalScore;
+            currentNode->childNodes.at(0)->iNumberOfVisits =
+                        currentNode->childNodes.at(0)->iNumberOfVisits + 1;
             
-           
+            currentNode->childNodes.at(0)->fTotalScore =
+                        currentNode->childNodes.at(0)->fTotalScore + fFinalScore;
+            
             // return the score for backpropagation
             return fFinalScore;
         }
@@ -309,7 +305,7 @@ float MonteCarloTreeSearch::selectNode(Node * currentNode)
         
         // Select the node with the highest found UCB score
         // The fFinalScore is the score returned by the leaf nodes / child nodes in the tree that have been rolled out
-        float fFinalScore = this->selectNode( currentNode->childNodes.at(iCurrentBestScoreIndex) );
+        float fFinalScore = this->selectNode(currentNode->childNodes.at(iCurrentBestScoreIndex));
         
         // Update the values of the node accordingly
         currentNode->iNumberOfVisits = currentNode->iNumberOfVisits + 1;
@@ -322,7 +318,9 @@ float MonteCarloTreeSearch::selectNode(Node * currentNode)
 
 // Returns a game state it has found as the most optimal
 // Based on the given current game state and player colour and the number of simulated games
-Game MonteCarloTreeSearch::getBestGameState(Game toAnalyseGame, Colour currentPlayerColour, int iNumberOfSimulations)
+Game MonteCarloTreeSearch::getBestGameState(Game toAnalyseGame,
+                                            Colour currentPlayerColour,
+                                            int iNumberOfSimulations)
 {
     // At the root of the tree will be the initial given game state
     this->rootNode = new Node(toAnalyseGame);

@@ -47,7 +47,10 @@ private:
     bool checkKing(Position piecePosition, Board boardState, bool bMultiJump);
     
     // Checks the specified direction for possible moves
-    bool checkDirection(Position startPosition, Board boardState, Position directionPosition, bool bMultiJump);
+    bool checkDirection(Position startPosition,
+                        Board boardState,
+                        Position directionPosition,
+                        bool bMultiJump);
     
     // Populates the selectablePieces set if a piece can make a valid move
     // Filters through the pieces if jumps are possible
