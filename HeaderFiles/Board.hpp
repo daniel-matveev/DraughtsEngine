@@ -1,6 +1,9 @@
 //
 //  Board.hpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #ifndef Board_hpp
 #define Board_hpp

@@ -1,7 +1,9 @@
 //
 //  AlphaBetaPruning.hpp
 //  Draughts_NEA
-
+//
+//  Created by Daniel Matveev
+//
 
 #ifndef AlphaBetaPruning_hpp
 #define AlphaBetaPruning_hpp
@@ -23,6 +25,7 @@ private:
     std::vector<Game> getAllPossibleGames(Game toAnalyseGame);
     
 public:
+    // Constructor / Destructor
     AlphaBetaPruning();
     ~AlphaBetaPruning();
     

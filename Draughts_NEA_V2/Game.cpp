@@ -1,6 +1,9 @@
 //
 //  Game.cpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #include "Game.hpp"
 
@@ -31,6 +34,7 @@ bool Game::canCurrentlyJump(std::vector<Position> toSkipPositions)
     }
 }
 
+// To clear the game object so it checks each piece independently
 void Game::clear()
 {
     this->intermediatePositionsToBoard.clear();
@@ -64,11 +68,9 @@ void Game::selectPieces()
                 // Get its valid moves
                 this->getValidMoves(false);
                 
-                // Create iterator to be able to iterate over the map
-                ;
-                
                 // Filtering of valid pieces
-                for (std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator
+                for (std::unordered_map<Position, std::vector<Position> >::iterator
+                        filteredEndPositionsToBoardIterator
                         = this->filteredEndPositionsToBoard.begin();
                      filteredEndPositionsToBoardIterator != this->filteredEndPositionsToBoard.end();
                      ++filteredEndPositionsToBoardIterator)
@@ -159,13 +161,15 @@ void Game::getValidMoves(bool bMultiJump)
         bool bCanJumpCurrently = this->canCurrentlyJump(endPositionsToBoardIterator->second);;
         if ( bCanJumpCurrently && bCanJumpOverall)
         {
-            this->filteredEndPositionsToBoard.insert( std::make_pair( endPositionsToBoardIterator->first, endPositionsToBoardIterator->second) );
+            this->filteredEndPositionsToBoard.insert( std::make_pair( endPositionsToBoardIterator->first,
+                                                                     endPositionsToBoardIterator->second) );
         }
         else if ( bCanJumpCurrently && !bCanJumpOverall)
         {
             bCanJumpOverall = true;
             this->filteredEndPositionsToBoard.clear();
-            this->filteredEndPositionsToBoard.insert( std::make_pair( endPositionsToBoardIterator->first, endPositionsToBoardIterator->second) );
+            this->filteredEndPositionsToBoard.insert( std::make_pair( endPositionsToBoardIterator->first,
+                                                                     endPositionsToBoardIterator->second) );
             
         }
         else if (!bCanJumpCurrently && bCanJumpOverall)
@@ -174,7 +178,8 @@ void Game::getValidMoves(bool bMultiJump)
         }
         else if (!bCanJumpCurrently && !bCanJumpOverall)
         {
-            this->filteredEndPositionsToBoard.insert( std::make_pair( endPositionsToBoardIterator->first, endPositionsToBoardIterator->second) );
+            this->filteredEndPositionsToBoard.insert( std::make_pair( endPositionsToBoardIterator->first,
+                                                                     endPositionsToBoardIterator->second) );
             
         }
     }
@@ -478,13 +483,6 @@ bool Game::select(Position toCheckPosition)
         // Position found
         // Selected piece is the peice at that position
         this->selectedPiece = this->gameBoard.getPiece(toCheckPosition);
-        
-        #ifdef DEBUG_FLAG
-            Debug("Piece:\n");
-                Debug("Position:" << this->selectedPiece.getPosition());
-//                Debug("Colour: " << this->selectedPiece.getColour())
-                Debug("Crowned: " << this->selectedPiece.getCrowned());
-        #endif
         
         // get the valid moves of that piece
         this->getValidMoves(false);

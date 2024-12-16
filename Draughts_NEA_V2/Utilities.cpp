@@ -1,6 +1,9 @@
 //
 //  Utilities.cpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #include "Utilities.hpp"
 

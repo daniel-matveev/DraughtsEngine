@@ -1,6 +1,9 @@
 //
 //  MonteCarloTreeSearch.hpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #ifndef MonteCarloTreeSearch_hpp
 #define MonteCarloTreeSearch_hpp
@@ -62,6 +65,7 @@ private:
     void deleteTree(Node * currentNode);
     
 public:
+    // Constructor / Destructor
     MonteCarloTreeSearch();
     ~MonteCarloTreeSearch();
     

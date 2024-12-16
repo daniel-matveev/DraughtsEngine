@@ -1,8 +1,8 @@
 //
 //  Console.hpp
-//  Draughts_NEA_V2
+//  Draughts_NEA
 //
-//  Created by Daniel Matveev on 26/10/2024.
+//  Created by Daniel Matveev 
 //
 
 #ifndef Console_hpp

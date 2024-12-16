@@ -1,6 +1,9 @@
 //
 //  Board.cpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #include "Board.hpp"
 
@@ -36,56 +39,28 @@ void Board::initBoard()
 void Board::setUpBoard()
 {
     // Controls Row / y
-//    for (int i = 0; i < this->iSize; i++)
-//    {
-////      Controls Column / x
-//        for (int j = 0; j < this->iSize; j++)
-//        {
-//            // If the row is one of the first 3
-//            // AND the column number modulus 2 = to the row number + 1 modulus 2
-//            // Creates the patern: 1, 3, 5, 7
-//            //                     0, 2, 4, 6
-//            // Set the colour to these pieces Black
-//            if ( ( i >= 0 && i <= 2) && ( j % 2 == (i + 1) % 2 ) )
-//            {
-//                this->board[i][j].updateColour(Black);
-//            }
-//            // Same condition but for the last 3 rows
-//            // Set the colour to these pieces White
-//            else if ( ( i >= 5 && i <= 7) && ( j % 2 == (i + 1) % 2 ) )
-//            {
-//                this->board[i][j].updateColour(White);
-//            }
-//        }
-//    }
-////    
-    this->board[7][2].updateColour(White);
-    this->board[6][5].updateColour(White);
-    this->board[7][4].updateColour(White);
-//
-////    this->board[7][5].updateCrowned(true);
-//    
-    this->board[4][3].updateColour(Black);
-//
-    this->board[2][1].updateColour(Black);
-    this->board[3][2].updateColour(Black);
-    
-    this->board[4][5].updateColour(Black);
-
-
-//    this->board[1][0].updateColour(Black);
-//    
-//    this->board[1][2].updateColour(Black);
-//    
-//    this->board[1][4].updateColour(Black);
-//    
-//    this->board[3][2].updateColour(White);
-//    
-//    this->board[3][4].updateColour(White);
-//    
-//    this->board[4][5].updateColour(White);
-//    this->board[5][6].updateColour(White);
-
+    for (int i = 0; i < this->iSize; i++)
+    {
+//      Controls Column / x
+        for (int j = 0; j < this->iSize; j++)
+        {
+            // If the row is one of the first 3
+            // AND the column number modulus 2 = to the row number + 1 modulus 2
+            // Creates the patern: 1, 3, 5, 7
+            //                     0, 2, 4, 6
+            // Set the colour to these pieces Black
+            if ( ( i >= 0 && i <= 2) && ( j % 2 == (i + 1) % 2 ) )
+            {
+                this->board[i][j].updateColour(Black);
+            }
+            // Same condition but for the last 3 rows
+            // Set the colour to these pieces White
+            else if ( ( i >= 5 && i <= 7) && ( j % 2 == (i + 1) % 2 ) )
+            {
+                this->board[i][j].updateColour(White);
+            }
+        }
+    }
 }
 
 // Constructor
@@ -185,10 +160,10 @@ void Board::removePiece(Position toRemovePosition)
         }
     }
     
-    // Sets the position to remove as NoColour
-    
     // Convert position coordinates into index values
     toRemovePosition = toRemovePosition - 1;
+    
+    // Sets the position to remove as NoColour
     this->board [toRemovePosition.y] [toRemovePosition.x].updateColour(NoColour);
     this->board [toRemovePosition.y] [toRemovePosition.x].updateCrowned(false);
 }
@@ -214,6 +189,7 @@ int Board::getBlackLeft()
     return this->iBlackLeft;
 }
 
+// Returns the number of black kings left
 int Board::getBlackKingsLeft()
 {
     return this->iBlackKingsLeft;
@@ -225,6 +201,7 @@ int Board::getWhiteLeft()
     return this->iWhiteLeft;
 }
 
+// Returns the number of white kings left
 int Board::getWhiteKingsLeft()
 {
     return this->iWhiteKingsLeft;
@@ -265,4 +242,3 @@ void Board::printBoard()
         std::cout << "---+---++---++---++---++---++---++---++---+" << std::endl;
     }
 }
-

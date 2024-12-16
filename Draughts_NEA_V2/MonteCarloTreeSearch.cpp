@@ -1,6 +1,9 @@
 //
 //  MonteCarloTreeSearch.cpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #include "MonteCarloTreeSearch.hpp"
 
@@ -24,19 +27,22 @@ Node::Node()
 // MCTS constructor
 MonteCarloTreeSearch::MonteCarloTreeSearch()
 {
-    this->iNumberOfSimulationsInRollOut = 10;
+    this->iNumberOfSimulationsInRollOut = 15;
 }
 
 // MCTS destructor
 MonteCarloTreeSearch::~MonteCarloTreeSearch()
 {
     // Free up all the allocated memory
-    if (this->rootNode == nullptr)
+    try
     {
         if (!this->isLeafNode(*this->rootNode))
         {
             this->deleteTree(this->rootNode);
         }
+    } catch (...)
+    {
+        std::cout << "Tree already deleted" << std::endl;
     }
 }
 

@@ -1,6 +1,9 @@
 //
 //  AlphaBetaPruning.cpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #include "AlphaBetaPruning.hpp"
 

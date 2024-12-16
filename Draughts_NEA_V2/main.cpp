@@ -1,6 +1,9 @@
 //
 //  main.cpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #include "Console.hpp"
 
@@ -26,7 +29,8 @@ int main(int argc, const char * argv[])
             std::cin.clear();
             
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Enter a number" << std::endl;
+            std::cout << "\nEnter a number" << std::endl;
+            continue;
         }
         
         
@@ -39,11 +43,11 @@ int main(int argc, const char * argv[])
                 
                 if (i == 0)
                 {
-                    std::cout << "Select white player" << std::endl;
+                    std::cout << "\nSelect white player" << std::endl;
                 }
                 else
                 {
-                    std::cout << "Select black player" << std::endl;
+                    std::cout << "\nSelect black player" << std::endl;
                 }
                 
                 do
@@ -56,7 +60,7 @@ int main(int argc, const char * argv[])
                         std::cin.clear();
                         
                         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                        std::cout << "Enter a number" << std::endl;
+                        std::cout << "\nEnter a number" << std::endl;
                     }
                     
                 } while (iPlayerSelection > 4 || iPlayerSelection < 1);
@@ -73,7 +77,7 @@ int main(int argc, const char * argv[])
                             std::cin.clear();
                             
                             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                            std::cout << "Enter a number" << std::endl;
+                            std::cout << "\nEnter a number" << std::endl;
                         }
                         
                     } while (iDifficultyLevel > 3 || iDifficultyLevel < 1);
@@ -94,7 +98,7 @@ int main(int argc, const char * argv[])
         }
         else
         {
-            std::cout << "Invalid option" << std::endl;
+            std::cout << "\nInvalid option" << std::endl;
         }
         
     } while (iMainMenuOption != 3);

@@ -1,6 +1,9 @@
 //
 //  Utilities.hpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #ifndef Utilities_hpp
 #define Utilities_hpp
@@ -13,32 +16,37 @@
 #include <set>
 #include <filesystem>
 
-
+// For printing when debuging
 #ifndef Debug
     #define Debug(note) (std::cerr << "<" << std::filesystem::path(__FILE__).filename().string() << "> <function=" << __FUNCTION__ << "> <line=" << __LINE__ << ">: " << note << std::endl)
 #else
     #define Debug(note)
 #endif
 
-
+// Debug flag for the Game object (do not use if playing against algorithms)
 //#ifndef DEBUG_FLAG
 //    #define DEBUG_FLAG
 //#endif
+
+// Debug flag for the Minimax algorithm
 //#ifndef DEBUG_FLAG_MINIMAX
 //    #define DEBUG_FLAG_MINIMAX
 //#endif
-//
+
+// Debug flag for the Monte Carlo Tree Search algorithm
 //#ifndef DEBUG_FLAG_MCTS
 //    #define DEBUG_FLAG_MCTS
 //#endif
-//
+
+// Debug flag for the Alpha Beta Pruning algorithm
 //#ifndef DEBUG_FLAG_ALPHABETAPRUNING
 //    #define DEBUG_FLAG_ALPHABETAPRUNING
 //#endif
 
-#ifndef DEBUG_FLAG_TIME
-    #define DEBUG_FLAG_TIME
-#endif
+// Debug flag for the Console object
+//#ifndef DEBUG_FLAG_TIME
+//    #define DEBUG_FLAG_TIME
+//#endif
 
 
 
@@ -105,6 +113,7 @@ struct Position
 // Declaration of overloading << operator for priting the string equivalent of a position as (x, y)
 std::ostream& operator << (std::ostream& os, const Position& pos);
 
+// Implementation of overloading << operator for priting a vector of positions
 template <typename T>
 std::ostream& operator << (std::ostream& os, const std::vector<T>& vector)
 {
@@ -123,6 +132,7 @@ std::ostream& operator << (std::ostream& os, const std::vector<T>& vector)
     return os;
 }
 
+// Implementation of overloading << operator for priting a set of positions
 template <typename T>
 std::ostream& operator << (std::ostream& os, const std::set<T>& set)
 {
@@ -153,19 +163,10 @@ namespace std
         public:
             std::size_t operator()(const Position& position) const
             {
-//                std::size_t hashedX = std::hash<int>()(position.x);
-//                std::size_t hashedY = std::hash<int>()(position.y);
-//                
-//                return hashedX ^ (hashedY << 1);
-                
                 return position.y * 8 + position.x;
             }
     };
 
 }
 
-
 #endif /* Utilities_hpp */
-
-
-

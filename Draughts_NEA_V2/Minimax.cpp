@@ -1,6 +1,9 @@
 //
 //  Minimax.cpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #include "Minimax.hpp"
 

@@ -1,6 +1,9 @@
 //
 //  Console.cpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #include "Console.hpp"
 
@@ -39,10 +42,10 @@ void Console::printStartOptions()
     std::string szText;
     
     szText =
-            "\n"
+            "\nMAIN MENU\n"
             "1 - Start Game\n"
             "2 - Game Rules\n"
-            "3 - Quit\n"
+            "3 - Quit\n\n"
             "Option: ";
     
     std::cout << szText;
@@ -64,6 +67,7 @@ void Console::printGameRules()
             " - The game is over once a player can no longer make a move\n"
             " - If you want to exit a game type q at any point in the console\n"
             " - If you want to get a hint type h\n"
+            " - If playing against one of the bots enter a letter other than q to proceed further\n"
     ;
     
     std::cout << szText << std::endl;
@@ -184,6 +188,11 @@ void Console::selectPlayer(int iPlayer, int iDifficulty)
         default:
             break;
     }
+    
+#ifdef DEBUG_FLAG_TIME
+    Debug("Player type: " << tempPlayer.szTypeOfPlayer);
+    Debug("Player difficulty: " << tempPlayer.iDifficulty);
+#endif
     
     // If player1 has not yet been assigned any values
     if (this->player1.szTypeOfPlayer == "None")

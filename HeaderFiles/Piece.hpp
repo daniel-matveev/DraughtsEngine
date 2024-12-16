@@ -1,6 +1,9 @@
 //
 //  Piece.hpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #ifndef Piece_hpp
 #define Piece_hpp
@@ -22,7 +25,7 @@ private:
     void initVariables(Position piecePosition, bool bIsCrowned, Colour pieceColour);
     
 public:
-    // Default Constructor
+    // Constructor / Destructor
     Piece();
     ~Piece();
     

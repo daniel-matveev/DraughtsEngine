@@ -1,6 +1,9 @@
 //
 //  Game.hpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #ifndef Game_hpp
 #define Game_hpp
@@ -22,9 +25,10 @@ private:
     // Stores the pieces that can be selected by the player during move
     std::set<Position> selectablePieces;
     
+    // Stack to keep track of the piece that can be skipped when checking vor valid moves
     std::vector<Position> toSkipPositions;
     
-    // Map that stores the end positions as keys and the board permutation as values
+    // Map that stores the end positions as keys and pieces that can be skipped as values
     std::unordered_map< Position, std::vector<Position> > endPositionsToBoard;
     // Map that stores the filtered key-value pairs of the endPositionsToBoard map
     std::unordered_map< Position, std::vector<Position> > filteredEndPositionsToBoard;

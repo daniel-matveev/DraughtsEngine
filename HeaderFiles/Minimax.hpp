@@ -1,6 +1,9 @@
 //
 //  Minimax.hpp
 //  Draughts_NEA
+//
+//  Created by Daniel Matveev
+//
 
 #ifndef Minimax_hpp
 #define Minimax_hpp
@@ -21,6 +24,7 @@ private:
     std::vector<Game> getAllPossibleGames(Game toAnalyseGame);
     
 public:
+    // Constructor / Destructor
     Minimax();
     ~Minimax();
     
