@@ -277,7 +277,10 @@ bool Game::checkKing(Position piecePosition, Board boardState, bool bMultiJump)
 // directionPosition - direction the pieces are moving
 //            -> White - -1 (Up)
 //            -> Black - +1 (Down)
-bool Game::checkDirection(Position startPosition, Board boardState, Position directionPosition, bool bMultiJump)
+bool Game::checkDirection(Position startPosition,
+                          Board boardState,
+                          Position directionPosition,
+                          bool bMultiJump)
 {
     // To store position of piece to remove in case we can jump
     Position toSkipPosition;
@@ -377,7 +380,8 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
                 // => Insert to the end positions map
                 if (!bCanJump)
                 {
-                    this->endPositionsToBoard.insert( { std::make_pair( tempPosition, this->toSkipPositions ) } );
+                    this->endPositionsToBoard.insert( { std::make_pair( tempPosition,
+                                                                       this->toSkipPositions ) } );
                     
                     if (this->toSkipPositions.size() > 0)
                     {
@@ -387,7 +391,8 @@ bool Game::checkDirection(Position startPosition, Board boardState, Position dir
                 // If it can jump => intermediate move
                 else
                 {
-                    this->intermediatePositionsToBoard.insert( std::make_pair(tempPosition, this->toSkipPositions) );
+                    this->intermediatePositionsToBoard.insert( std::make_pair(tempPosition,
+                                                                              this->toSkipPositions) );
                     
                     if (this->toSkipPositions.size() > 0)
                     {
@@ -527,9 +532,12 @@ bool Game::move(Position toCheckPosition)
     }
     
     // If it is not in the end positions map, it may be in the intermediate move
-    std::unordered_map<Position, std::vector<Position> >::iterator intermediatePositionsToBoardIterator = this->intermediatePositionsToBoard.begin();
     
-    for (; intermediatePositionsToBoardIterator != this->intermediatePositionsToBoard.end(); ++intermediatePositionsToBoardIterator)
+    for (std::unordered_map<Position, std::vector<Position> >::iterator
+            intermediatePositionsToBoardIterator
+            = this->intermediatePositionsToBoard.begin();
+         intermediatePositionsToBoardIterator != this->intermediatePositionsToBoard.end();
+         ++intermediatePositionsToBoardIterator)
     {
         // If a valid intermediate move entered
         if (intermediatePositionsToBoardIterator->first == toCheckPosition)
@@ -574,10 +582,14 @@ int Game::getEvaluation()
     return this->gameBoard.getWhiteLeft() - this->gameBoard.getBlackLeft();
 }
 
+// A more involved evaluation function which takes into account different aspects of the game
+// Used by the alpha beta pruning algorith
 float Game::calculateEvaluation()
 {
+    // For the white player
     float fOverallWhiteEvaluation = 0;
     
+    // Board filter map to weight against where the white pieces are
     float fWhiteBoardFilter [8][8] = {
         {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
         {0.1, 0.0, 0.1, 0.0, 0.1, 0.0, 0.1, 0.0},
@@ -600,13 +612,18 @@ float Game::calculateEvaluation()
         }
     }
    
+    // Final white evaluation
+    // The number of pieces left is weighted as a score of 1 per piece
+    // And a score of 2 for each king
     fOverallWhiteEvaluation =   fOverallWhiteEvaluation +
                                 ( (float) this->gameBoard.getWhiteLeft() * 1) +
                                 ( (float) this->gameBoard.getWhiteKingsLeft() * 2);
     
     
+    // For the black player
     float fOverallBlackEvaluation = 0;
     
+    // Board filter map to weight against where the black pieces are
     float fBlackBoardFilter [8][8] = {
         {0.0, 1.5, 0.0, 0.0, 0.0, 1.5, 0.0, 0.0},
         {0.0, 0.0, 0.5, 0.0, 0.5, 0.0, 0.5, 0.0},
@@ -629,10 +646,15 @@ float Game::calculateEvaluation()
         }
     }
     
+    // Final black evaluation
+    // The number of pieces left is weighted as a score of 1 per piece
+    // And a score of 2 for each king
     fOverallBlackEvaluation =   fOverallBlackEvaluation +
                                 ( (float) this->gameBoard.getBlackLeft() * 1) +
                                 ( (float) this->gameBoard.getBlackKingsLeft() * 2);
     
+    // As white is trying to maximise the score
+    // The overall evaluation of the board would be the white evaluation - black evaluation
     return fOverallWhiteEvaluation - fOverallBlackEvaluation;
 }
 

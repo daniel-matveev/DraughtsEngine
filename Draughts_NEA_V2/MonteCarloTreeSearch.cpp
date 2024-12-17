@@ -86,7 +86,8 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
     int iTotalScore = 0;
     
     std::set<Position>::iterator selectablePiecesIterator;
-    std::unordered_map<Position, std::vector<Position> >::iterator filteredEndPositionsToBoardIterator;
+    std::unordered_map<Position, std::vector<Position> >::iterator
+        filteredEndPositionsToBoardIterator;
     
     unsigned long iNumberOfSelectablePieces;
     unsigned long iNumberOfEndMoves;
@@ -329,11 +330,13 @@ Game MonteCarloTreeSearch::getBestGameState(Game toAnalyseGame,
     
     this->playerColour = currentPlayerColour;
     
-    this->iNumberOfTotalSimulations = 0;
+    
     
     // For the given number of total simulations
     // traverse the tree from the root node
-    for (; this->iNumberOfTotalSimulations < iNumberOfSimulations; this->iNumberOfTotalSimulations++)
+    for (this->iNumberOfTotalSimulations = 0;
+         this->iNumberOfTotalSimulations < iNumberOfSimulations;
+         this->iNumberOfTotalSimulations++)
     {
         this->selectNode( this->rootNode );
     }

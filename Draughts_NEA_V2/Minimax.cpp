@@ -135,7 +135,8 @@ std::vector<Game> Minimax::getAllPossibleGames(Game toAnalyseGame)
         
         // For each valid move
         for (std::unordered_map<Position, std::vector<Position> >::iterator
-                filteredEndPositionsToBoardIterator = toAnalyseGame.filteredEndPositionsToBoard.begin();
+                filteredEndPositionsToBoardIterator
+                = toAnalyseGame.filteredEndPositionsToBoard.begin();
              filteredEndPositionsToBoardIterator != toAnalyseGame.filteredEndPositionsToBoard.end();
              ++filteredEndPositionsToBoardIterator)
         {

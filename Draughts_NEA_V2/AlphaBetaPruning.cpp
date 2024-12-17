@@ -8,7 +8,10 @@
 #include "AlphaBetaPruning.hpp"
 
 // Core minimax with alpha beta pruning optimisation algorithm
-float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame, int iDepth, float fAlpha, float fBeta)
+float AlphaBetaPruning::alphaBetaPruning(Game toAnalyseGame,
+                                         int iDepth,
+                                         float fAlpha,
+                                         float fBeta)
 {
     // Base case scenario
     // If we have hit the desired depth or There is a winner
@@ -170,7 +173,8 @@ std::vector<Game> AlphaBetaPruning::getAllPossibleGames(Game toAnalyseGame)
         
         // For each valid move
         for (std::unordered_map<Position, std::vector<Position> >::iterator
-                filteredEndPositionsToBoardIterator = toAnalyseGame.filteredEndPositionsToBoard.begin();
+                filteredEndPositionsToBoardIterator
+                = toAnalyseGame.filteredEndPositionsToBoard.begin();
              filteredEndPositionsToBoardIterator != toAnalyseGame.filteredEndPositionsToBoard.end();
              ++filteredEndPositionsToBoardIterator)
         {
