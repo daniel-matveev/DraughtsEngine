@@ -59,15 +59,18 @@ void Console::printGameRules()
     szText =
             "\n"
             "Game Rules:\n"
-            " - A regular piece can move and capture on the diagonal in a forward direction\n"
-            " - If a piece can take then it has to take\n"
-            " - A piece can jump over multiple opponent pieces and capture them\n"
-            " - Once a piece reaches the other side of the board, it becomes a king\n"
+            " - To enter a position enter:\n"
+            "   - The X coordinate represented by the top column number (1-8)\n"
+            "   - Then the Y coordinate represented by the row number (1-8)\n"
+            " - Players take turns to move a piece of their own colour\n"
+            " - Any piece that reaches the far edge of the board is immediately crowned and is thereafter known as a 'King'\n"
+            " - The act of crowning is represented by an upper case letter of the piece\n"
+            " - Regular pieces can only move and capture diagonally forwards\n"
             " - A king can move in all directions\n"
-            " - The game is over once a player can no longer make a move\n"
+            " - A move finishes only when the position of the capturing piece no longer allows it to take another piece\n"
+            " - The game is won by the player who manages to capture all his opponent's pieces or make them unable to move\n"
             " - If you want to exit a game type q at any point in the console\n"
             " - If you want to get a hint type h\n"
-            " - If playing against one of the bots enter a letter other than q to proceed further\n"
     ;
     
     std::cout << szText << std::endl;
@@ -189,10 +192,10 @@ void Console::selectPlayer(int iPlayer, int iDifficulty)
             break;
     }
     
-#ifdef DEBUG_FLAG_TIME
-    Debug("Player type: " << tempPlayer.szTypeOfPlayer);
-    Debug("Player difficulty: " << tempPlayer.iDifficulty);
-#endif
+    #ifdef DEBUG_FLAG_TIME
+        Debug("Player type: " << tempPlayer.szTypeOfPlayer);
+        Debug("Player difficulty: " << tempPlayer.iDifficulty);
+    #endif
     
     // If player1 has not yet been assigned any values
     if (this->player1.szTypeOfPlayer == "None")

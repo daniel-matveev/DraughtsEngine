@@ -6,10 +6,10 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>D0F120C2-9879-4008-A433-CCE4F5884EA3</key>
+		<key>E690FA86-3D48-41EF-AB01-BA655A0B0EE1</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>8C4786FE-7EB8-40A1-875F-53173AAE27B4</string>
+			<string>4E1D6B4A-67B6-423C-B54A-B0B596C3BE29</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Draughts_NEA_V2-2024.12.17_09-10-41-+0000.xcresult</string>
+			<string>Run-Draughts_NEA_V2-2024.12.17_21-03-07-+0000.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -59,13 +59,13 @@
 			<key>signature</key>
 			<string>Run Draughts_NEA_V2</string>
 			<key>timeStartedRecording</key>
-			<real>756119441.65243006</real>
+			<real>756162187.96141505</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Draughts_NEA_V2</string>
 			<key>uniqueIdentifier</key>
-			<string>D0F120C2-9879-4008-A433-CCE4F5884EA3</string>
+			<string>E690FA86-3D48-41EF-AB01-BA655A0B0EE1</string>
 		</dict>
 	</dict>
 </dict>
