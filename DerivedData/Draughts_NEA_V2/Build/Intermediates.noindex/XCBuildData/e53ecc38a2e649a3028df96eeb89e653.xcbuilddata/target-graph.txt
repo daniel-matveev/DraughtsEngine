@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'Draughts_NEA_V2' in project 'Draughts_NEA_V2' (no dependencies)
