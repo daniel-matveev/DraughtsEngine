@@ -16,43 +16,62 @@ SrcDir = source
 IncludeDir = include
 BuildDir = build
 
-# Selects all .cpp files automatically into a list Sources (space separated)
-Sources = $(wildcard $(SrcDir)/*.cpp)
+CoreDir = $(SrcDir)/core
+AppsDir = $(SrcDir)/apps
 
+# --- Core engine source files ---
+# Selects all .cpp files automatically into a list Sources (space separated)
+CoreSources = $(wildcard $(CoreDir)/*.cpp)
 # $(patsubst PATTERN, REPLACEMENT, TEXT) does a search and replace
-# For each entry in Sources, it maps "source/filename.cpp" to "build/filename.o" 
-Objects = $(patsubst $(SrcDir)/%.cpp, $(BuildDir)/%.o, $(Sources))
+# For each entry in CoreSources, it maps "source/core/filename.cpp" to "build/core/filename.o" 
+CoreObjects = $(patsubst $(CoreDir)/%.cpp, $(BuildDir)/core/%.o, $(CoreSources))
+
+# --- App objects (each has an entrypoint main() function) ---
+AppSources = $(wildcard $(AppsDir)/*.cpp)
+AppObjects = $(patsubst $(AppsDir)/%.cpp, $(BuildDir)/apps/%.o, $(AppSources))
+
+AppNames = $(patsubst $(AppsDir)/%.cpp, %, $(AppSources))
 
 # Final executable Make will try to build
-Target = $(BuildDir)/draughts
+AppTargets = $(patsubst %, $(BuildDir)/%, $(AppNames))
 
 # Ensures that the "all" and "clean" targets are always executed when called
 # even if a file with the same name exists
 .PHONY: all clean
 
-# Defines what happens when you run "make" with no arguments. In this case, it will build the final executable.
-all: $(Target)
+# Defines what happens when you run "make" with no arguments 
+# Will build every app binary
+all: $(AppTargets)
 
-# Link rule: builds the final executable from all the object files
-# Lists $(Objects) as prerequisites
+
+# Link rule: builds every app bianary
+# For a target like build/draughts_gameplay, % = "draughts_gameplay"
+# so the prerequisites become: build/apps/draughts_gameplay.o  +  all of $(CoreObjects)
 #   $^    : Indicates all the prerequisites
 #   $@    : Indicates the target (build/draughts)
-$(Target): $(Objects)
+$(AppTargets): $(BuildDir)/%: $(BuildDir)/apps/%.o $(CoreObjects)
 	$(Compiler) $(Flags) $^ -o $@ $(LinkFlags)
 
-# Pattern rule: builds each .o file from its corresponding .cpp file
+# Compile rule for core engine files: source/core/*.cpp -> build/core/*.o
 # This is done once per object file needed (substitutes % each time)
-# "| $(BuildDir)" guarantees /build exists but touching the build/ folder timestamp does not trigger a rebuild of the .o files
+# "| $(BuildDir)/core" guarantees /build/core exists but touching the build/core folder timestamp does not trigger a rebuild of the .o files
 #   -c    : compile to object file only (do not link)
 #   $<    : Indicates the first prerequisite (source/Board.cpp)
-#   $@    : Indicates the target (build/Board.o)
-$(BuildDir)/%.o: $(SrcDir)/%.cpp | $(BuildDir)
+#   $@    : Indicates the target (build/core/Board.o)
+$(BuildDir)/core/%.o: $(CoreDir)/%.cpp | $(BuildDir)/core
 	$(Compiler) $(Flags) -c $< -o $@
 
-# Creates the build directory if it does not exist
+# Compile rule for app files: source/apps/*.cpp -> build/apps/*.o
+$(BuildDir)/apps/%.o: $(AppsDir)/%.cpp | $(BuildDir)/apps
+	$(Compiler) $(Flags) -c $< -o $@
+
+# Creates the build directory to reflect the source directory if it does not exist
 # -p flag ensures there is no error thrown if the directory already exists
-$(BuildDir):
-	mkdir -p $(BuildDir)
+$(BuildDir)/core:
+	mkdir -p $(BuildDir)/core
+
+$(BuildDir)/apps:
+	mkdir -p $(BuildDir)/apps
 
 # Defines what happens when you run "make clean"
 # Removes the build direcotry and all its contents
