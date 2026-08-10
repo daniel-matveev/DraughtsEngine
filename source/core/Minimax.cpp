@@ -19,7 +19,7 @@ float Minimax::minimax(Game toAnalyseGame, int iDepth)
             Debug("Board evaluation: " << toAnalyseGame.getEvaluation() << "\n");
         #endif
         this->iNumberOfLeafNodes++;
-        return toAnalyseGame.getEvaluation();
+        return toAnalyseGame.calculateEvaluation();
     }
     
     // Get the current player's colour
@@ -220,7 +220,6 @@ Game Minimax::getBestGameState(Game toAnalyseGame, int iDepth)
             }
         #endif
     }
-    
     #ifdef DEBUG_FLAG_TIME
         Debug("Number of different games analysed: " << this->iNumberOfLeafNodes);
     #endif
