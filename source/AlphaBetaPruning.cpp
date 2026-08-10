@@ -198,13 +198,12 @@ AlphaBetaPruning::AlphaBetaPruning()
     this->iNumberOfLeafNodes = 0;
 }
 
-AlphaBetaPruning::~AlphaBetaPruning()
-{
-    
-}
+AlphaBetaPruning::~AlphaBetaPruning() { }
 
 Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
 {
+    this->iNumberOfLeafNodes = 0;
+
     // to keep track of the next best board state found
     int iBestBoardStateIndex = -1;
     
@@ -290,11 +289,5 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
         Debug("Number of different games analysed: " << this->iNumberOfLeafNodes);
     #endif
 
-    this->iNumberOfLeafNodes = 0;
-    
-    Game bestGameState = toAnalyseGames.at(iBestBoardStateIndex);
-    
-    toAnalyseGames.clear();
-    
-    return bestGameState;
+    return toAnalyseGames.at(iBestBoardStateIndex);
 }

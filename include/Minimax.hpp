@@ -14,7 +14,7 @@ class Minimax
 {
 private:
     
-    int minimax(Game toAnalyseGame, int iDepth);
+    float minimax(Game toAnalyseGame, int iDepth);
     
     // helper function
     // Will return a 'copy' of the game state with the opponent move executed
