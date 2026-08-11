@@ -1,5 +1,5 @@
 /*
-    minimax_AB_testing.cpp
+    algorithm_parity_test.cpp
 
     Testing suite to compare the output of the minimax and minimax with alpha-beta pruning algorithms. 
     The program will run a number of games between the two algorithms and output the results to a file.
