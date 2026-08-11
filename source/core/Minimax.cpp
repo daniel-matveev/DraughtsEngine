@@ -16,7 +16,7 @@ float Minimax::minimax(Game toAnalyseGame, int iDepth)
     {
         #ifdef DEBUG_FLAG_MINIMAX
             Debug("Depth hit");
-            Debug("Board evaluation: " << toAnalyseGame.getEvaluation() << "\n");
+            Debug("Board evaluation: " << toAnalyseGame.calculateEvaluation() << "\n");
         #endif
         this->iNumberOfLeafNodes++;
         return toAnalyseGame.calculateEvaluation();
