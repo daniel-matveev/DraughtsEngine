@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <random>
+#include <fstream>
 
 #include "Game.hpp"
 #include "Minimax.hpp"
@@ -55,5 +56,8 @@ int main(int argc, const char * argv[])
 
     std::cout << "Testing completed. Total mismatches: " << mismatches << " out of " << iNumberOfGames * iMaxMoves << " positions. At depth: " << iSearchDepth << std::endl;
 
+    std::ofstream log("results/parity_results.log", std::ios::app);  // append, not overwrite
+    log << "Run: depth=" << iSearchDepth << ", games=" << iNumberOfGames << ", max_moves=" << iMaxMoves << "\n";
+    log << "Mismatches: " << mismatches << " / " << iNumberOfGames * iMaxMoves << "\n\n";
     return mismatches == 0 ? 0 : 1; // Return 0 if no mismatches, else return 1
 }
