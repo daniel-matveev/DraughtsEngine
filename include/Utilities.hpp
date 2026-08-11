@@ -15,6 +15,7 @@
 #include <math.h>
 #include <set>
 #include <filesystem>
+#include <random>
 
 // For printing when debuging
 #ifndef Debug

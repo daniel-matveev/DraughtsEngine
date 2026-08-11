@@ -730,6 +730,29 @@ Colour Game::getCurrentPlayerColour()
     return this->currentPlayerColour;
 }
 
+bool Game::playRandomMove(std::mt19937 &rng)
+{
+    if (this->selectablePieces.size() == 0)
+    {
+        return false;
+    }
+
+    // Select a random piece from the set of selectable pieces
+    std::uniform_int_distribution<int> pieceDist(0, this->selectablePieces.size() - 1);
+    auto pieceIterator = this->selectablePieces.begin();
+    std::advance(pieceIterator, pieceDist(rng));
+
+    this->select(Position {pieceIterator->x, pieceIterator->y});
+
+    // Select a random move from the filtered end positions map
+    std::uniform_int_distribution<int> moveDist(0, this->filteredEndPositionsToBoard.size() - 1);
+    auto moveIterator = this->filteredEndPositionsToBoard.begin();
+    std::advance(moveIterator, moveDist(rng));
+
+    this->move(moveIterator->first);
+    return true;
+}
+
 // For printing the board
 void Game::printBoard()
 {

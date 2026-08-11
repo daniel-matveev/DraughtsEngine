@@ -14,9 +14,9 @@
 
 int main(int argc, const char * argv[])
 {
-    const int iNumberOfGames = 50;
+    const int iNumberOfGames = 100;
     const int iMaxMoves = 40;
-    const int iSearchDepth = 5;
+    const int iSearchDepth = 3;
 
     std::mt19937 rng(67); // Fixed seed for reproducibility
 
@@ -27,7 +27,7 @@ int main(int argc, const char * argv[])
         Game game;
         game.getWinner(); // Ensure selectablePices is populated
 
-        for (int m = 0; m < iMaxMoves && game.getWinner() != NoColour; m++)
+        for (int m = 0; m < iMaxMoves && game.getWinner() == NoColour; m++)
         {
             Minimax minimax;
             AlphaBetaPruning alphaBetaPruning;
@@ -49,11 +49,11 @@ int main(int argc, const char * argv[])
             }
 
             // Advance the game
-            game = minimaxNextBestGameState; // or alphaBetaNextBestGameState, they should be the same
+            game.playRandomMove(rng);
         }
     }
 
-    std::cout << "Testing completed. Total mismatches: " << mismatches << " out of " << iNumberOfGames * iMaxMoves << " positions." << std::endl;
+    std::cout << "Testing completed. Total mismatches: " << mismatches << " out of " << iNumberOfGames * iMaxMoves << " positions. At depth: " << iSearchDepth << std::endl;
 
     return mismatches == 0 ? 0 : 1; // Return 0 if no mismatches, else return 1
 }

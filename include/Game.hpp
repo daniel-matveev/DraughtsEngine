@@ -98,6 +98,9 @@ public:
     Colour getCurrentPlayerColour();
     
     Board getGameBoard();
+
+    // Selects a uniform random move from the set of selectable pieces and their valid moves
+    bool playRandomMove(std::mt19937 &rng);
     
     // Prints the board
     void printBoard();
