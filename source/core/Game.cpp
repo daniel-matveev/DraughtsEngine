@@ -351,17 +351,25 @@ bool Game::checkDirection(Position startPosition,
                 #ifdef DEBUG_FLAG
                     Debug("Pieces to skip stack: " << this->toSkipPositions << "\n");
                 #endif
+
+                bool bCrownedBeforeMove = boardState.getPiece(startPosition).getCrowned();
                 
                 // Move the piece to the new position
                 boardState.movePiece(tempPosition, boardState.getPiece(startPosition));
+
+                bool bJustPromoted = !bCrownedBeforeMove && boardState.getPiece(tempPosition).getCrowned();
                 
                 // Remove the piece we jumped over
                 boardState.removePiece(toSkipPosition);
             
                 
                 bool bCanJump = false;
+                if (bJustPromoted)
+                {
+
+                }
                 // If the piece moving is a king
-                if (boardState.getPiece(tempPosition).getCrowned())
+                else if (boardState.getPiece(tempPosition).getCrowned())
                 {
                     // check if it can jump again
                     bCanJump = this->checkKing(tempPosition, boardState, true);
