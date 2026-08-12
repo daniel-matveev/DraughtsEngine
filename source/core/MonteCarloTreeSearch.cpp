@@ -25,7 +25,8 @@ Node::Node()
 }
 
 // MCTS constructor
-MonteCarloTreeSearch::MonteCarloTreeSearch()
+MonteCarloTreeSearch::MonteCarloTreeSearch(unsigned int seed)
+    : rng(seed)
 {
     this->iNumberOfSimulationsInRollOut = 15;
 }
@@ -83,17 +84,10 @@ float MonteCarloTreeSearch::getUCBScore(Node toCalculateNode)
 // Simulates multiple games from a starting game position
 float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
 {
+
+    const int iMaxRolloutMoves = 80;
+
     int iTotalScore = 0;
-    
-    std::set<Position>::iterator selectablePiecesIterator;
-    std::unordered_map<Position, std::vector<Position> >::iterator
-        filteredEndPositionsToBoardIterator;
-    
-    unsigned long iNumberOfSelectablePieces;
-    unsigned long iNumberOfEndMoves;
-    
-    int iRandomToSelectPiece;
-    int iRandomMove;
     
     int iWins = 0;
     int iLoses = 0;
@@ -105,31 +99,12 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
         // To store the game state in the node without altering the game state in the node
         tempGame = toRolloutNode.gameState;
         
-        while (tempGame.getWinner() == NoColour)
+        int iRolloutMoves = 0;
+        while (tempGame.getWinner() == NoColour && iRolloutMoves < iMaxRolloutMoves)
         {
             // Make a random piece selection from the selectable pieces
-            iNumberOfSelectablePieces = (int) tempGame.selectablePieces.size();
-            
-            iRandomToSelectPiece = rand() % iNumberOfSelectablePieces;
-            
-            selectablePiecesIterator = tempGame.selectablePieces.begin();
-            
-            std::advance(selectablePiecesIterator, iRandomToSelectPiece);
-            
-            tempGame.select( * selectablePiecesIterator );
-            
-            
-            // Make a random move from the selected piece
-            iNumberOfEndMoves = tempGame.filteredEndPositionsToBoard.size();
-            
-            iRandomMove = rand() % iNumberOfEndMoves;
-            
-            filteredEndPositionsToBoardIterator = tempGame.filteredEndPositionsToBoard.begin();
-            
-            std::advance(filteredEndPositionsToBoardIterator, iRandomMove);
-            
-            tempGame.move(filteredEndPositionsToBoardIterator->first);
-        
+            tempGame.playRandomMove(this->rng);
+            iRolloutMoves++;
         }
     
         

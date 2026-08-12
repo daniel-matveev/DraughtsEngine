@@ -36,6 +36,8 @@ private:
     Node * rootNode;
     
     Colour playerColour;
+
+    std::mt19937 rng;
     
     // To simulate multiple games from the same node
     int iNumberOfSimulationsInRollOut;
@@ -66,7 +68,7 @@ private:
     
 public:
     // Constructor / Destructor
-    MonteCarloTreeSearch();
+    MonteCarloTreeSearch(unsigned int seed = std::random_device{}());
     ~MonteCarloTreeSearch();
     
     // Will return the best move found after a set number of simulations have been run
