@@ -1,5 +1,19 @@
+# Build artifacts
 build/
 *.o
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
 
 # macOS
 .DS_Store
