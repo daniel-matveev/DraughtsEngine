@@ -21,7 +21,7 @@ int main(int argc, const char * argv[])
     int randomWins = 0;
     int draws = 0;
 
-    std::ofstream csv("./results/mcts_vs_random_baseline.csv");
+    std::ofstream csv("./results/mcts_vs_random_fixed.csv");
     csv << "game_index,mcts_colour,winner,moves\n";
 
     for (int g = 0; g < iNumberOfGames; g++)
@@ -70,7 +70,7 @@ int main(int argc, const char * argv[])
         int alphaBetaWins = 0;
         int draws = 0;
 
-        std::string csvFileName = "./results/mcts_vs_alphabeta_baseline" + std::to_string(depth) + ".csv";
+        std::string csvFileName = "./results/mcts_vs_alphabeta_fixed" + std::to_string(depth) + ".csv";
         std::ofstream csv(csvFileName);
         csv << "game_index,mcts_colour,winner,moves\n";
         

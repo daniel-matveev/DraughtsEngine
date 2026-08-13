@@ -75,7 +75,7 @@ float MonteCarloTreeSearch::getUCBScore(Node toCalculateNode)
     }
     
     // Formula
-    float C = 2;
+    float C = 1.41f;
     float dNodeMean = ( toCalculateNode.fTotalScore) / ((float) toCalculateNode.iNumberOfVisits);
     
     return dNodeMean + C * sqrt( log(this->iNumberOfTotalSimulations) / toCalculateNode.iNumberOfVisits );
@@ -87,8 +87,6 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
 
     const int iMaxRolloutMoves = 80;
 
-    int iTotalScore = 0;
-    
     int iWins = 0;
     int iLoses = 0;
     
@@ -125,9 +123,8 @@ float MonteCarloTreeSearch::rollOut(Node toRolloutNode)
         Debug("Ratio of wins to losses (W:B): " << iWins << ":" << iLoses << "\n");
     #endif
     
-    iTotalScore = (10 * iWins);
-    // Return the average of the games
-    return ( (float) iTotalScore ) / this->iNumberOfSimulationsInRollOut;
+    // Return a value between 0 and 1, where 1 is a win and 0 is a loss
+    return ( (float) iWins ) / this->iNumberOfSimulationsInRollOut;
 }
 
 // Returns a game state given a move to do
@@ -181,8 +178,22 @@ float MonteCarloTreeSearch::selectNode(Node * currentNode)
                     currentNode->gameState.printBoard();
                     Debug("Game over.\n");
                 #endif
-                // No games will be simulated, just return a constant
-                return 5;
+                // No games will be simulated 
+                // Award score of 1 if the algorithm won, 0 if it lost
+                float fFinalScore;
+                if (currentNode->gameState.getWinner() == this->playerColour)
+                {
+                    fFinalScore = 1.0f;
+                }
+                else
+                {
+                    fFinalScore = 0.0f;
+                }
+
+                currentNode->iNumberOfVisits = currentNode->iNumberOfVisits + 1;
+                currentNode->fTotalScore = currentNode->fTotalScore + fFinalScore;
+
+                return fFinalScore;
             }
             
             #ifdef DEBUG_FLAG_MCTS
@@ -226,22 +237,29 @@ float MonteCarloTreeSearch::selectNode(Node * currentNode)
                 currentNode->gameState.clear();
 
             }
+
+            std::uniform_int_distribution<int> childDist(0, currentNode->childNodes.size() - 1);
+            size_t iRandomChildIndex = childDist(this->rng);
+
             #ifdef DEBUG_FLAG_MCTS
                 Debug("Number of children: " << currentNode->childNodes.size() << "\n");
             
-                Debug("Rolling out node: " << &currentNode->childNodes.at(0));
-                currentNode->childNodes.at(0)->gameState.printBoard();
+                Debug("Rolling out node: " << &currentNode->childNodes.at(iRandomChildIndex));
+                currentNode->childNodes.at(iRandomChildIndex)->gameState.printBoard();
             #endif
             
             // Once the node is expanded, select the first child of that node and do a rollout
-            float fFinalScore = this->rollOut( * currentNode->childNodes.at(0));
+            float fFinalScore = this->rollOut( * currentNode->childNodes.at(iRandomChildIndex));
             
             // Update its values accordingly
-            currentNode->childNodes.at(0)->iNumberOfVisits =
-                        currentNode->childNodes.at(0)->iNumberOfVisits + 1;
+            currentNode->childNodes.at(iRandomChildIndex)->iNumberOfVisits =
+                        currentNode->childNodes.at(iRandomChildIndex)->iNumberOfVisits + 1;
             
-            currentNode->childNodes.at(0)->fTotalScore =
-                        currentNode->childNodes.at(0)->fTotalScore + fFinalScore;
+            currentNode->childNodes.at(iRandomChildIndex)->fTotalScore =
+                        currentNode->childNodes.at(iRandomChildIndex)->fTotalScore + fFinalScore;
+
+            currentNode->iNumberOfVisits = currentNode->iNumberOfVisits + 1;
+            currentNode->fTotalScore = currentNode->fTotalScore + fFinalScore;
             
             // return the score for backpropagation
             return fFinalScore;
@@ -318,19 +336,19 @@ Game MonteCarloTreeSearch::getBestGameState(Game toAnalyseGame,
     
     // Once the tree has been expanded
     // Select a child node from the root node that maximised the UCB score
-    float iBestScore = -1;
+    float iBestVisits = -1;
     int iCurrentBestScoreIndex = -1;
 
     for (int i = 0; i < this->rootNode->childNodes.size(); i++)
     {
-        float iScore = this->getUCBScore( * this->rootNode->childNodes.at(i));
+        float iVisits = this->rootNode->childNodes.at(i)->iNumberOfVisits;
         #ifdef DEBUG_FLAG_MCTS
             Debug("UCB Score for child node " << i + 1 << "/" << this->rootNode->childNodes.size() << " (" << this->rootNode->childNodes.at(i) << "): " << iScore);
         #endif
 
-        if (iScore > iBestScore)
+        if (iVisits > iBestVisits)
         {
-            iBestScore = iScore;
+            iBestVisits = iVisits;
             iCurrentBestScoreIndex = i;
         }
     }
