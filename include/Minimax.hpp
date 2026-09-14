@@ -12,7 +12,7 @@
 
 class Minimax
 {
-private:
+protected:
     
     float minimax(Game toAnalyseGame, int iDepth);
     

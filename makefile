@@ -1,15 +1,15 @@
 # Compiler to use for every compile and link step
-Compiler = clang++
+Compiler = g++-15
 
 # Flags used when compiling each .cpp file into a .o file:
 #   -std=c++17      : Use the C++17 standard
 #   -g              : Include debugging information
 #   -Wall           : Enable all warning messages
 #   -Iinclude       : Allows the compiler to find header files in the include directory
-Flags = -std=c++17 -g -Wall -Iinclude
+Flags = -std=c++17 -g -Wall -Iinclude -O2 -fopenmp
 
 # Flags used when linking the object files into the final executable
-LinkFlags = 
+LinkFlags = -fopenmp
 
 # Folder name variables
 SrcDir = source
