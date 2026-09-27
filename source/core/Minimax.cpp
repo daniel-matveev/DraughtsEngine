@@ -8,7 +8,7 @@
 #include "Minimax.hpp"
 
 // Core minimax algorithm
-float Minimax::minimax(Game toAnalyseGame, int iDepth)
+float Minimax::minimax(Game toAnalyseGame, int iDepth, long long& iLeafNodes)
 {
     // Base case scenario
     // If we have hit the desired depth or There is a winner
@@ -18,7 +18,7 @@ float Minimax::minimax(Game toAnalyseGame, int iDepth)
             Debug("Depth hit");
             Debug("Board evaluation: " << toAnalyseGame.calculateEvaluation() << "\n");
         #endif
-        this->iNumberOfLeafNodes++;
+        iLeafNodes++;
         return toAnalyseGame.calculateEvaluation();
     }
     
@@ -50,7 +50,7 @@ float Minimax::minimax(Game toAnalyseGame, int iDepth)
             // Recursevely go through each one
             // Alternatting moves
             // Once a final position is reached the evaluation of that position is returned
-            float fEvaluation = this->minimax(toAnalyseGames.at(i), iDepth - 1);
+            float fEvaluation = this->minimax(toAnalyseGames.at(i), iDepth - 1, iLeafNodes);
             
             // Compare it to the best evaluation for white and update
             fMaxEvaluation = std::max(fMaxEvaluation, fEvaluation);
@@ -88,7 +88,7 @@ float Minimax::minimax(Game toAnalyseGame, int iDepth)
             // Recursevely go through each one
             // Alternatting moves
             // Once a final position is reached the evaluation of that position is returned
-            float fEvaluation = this->minimax(toAnalyseGames.at(i), iDepth - 1);
+            float fEvaluation = this->minimax(toAnalyseGames.at(i), iDepth - 1, iLeafNodes);
             
             // Compare it to the best evaluation for black and update
             fMinEvaluation = std::min(fMinEvaluation, fEvaluation);
@@ -162,67 +162,59 @@ Minimax::~Minimax() { }
 
 Game Minimax::getBestGameState(Game toAnalyseGame, int iDepth)
 {
-    // to keep track of the next best board state found
-    int iBestBoardStateIndex = -1;
-    
-    float fMinEvaluation = INFINITY;
-    float fMaxEvaluation = -INFINITY;
-    
     Colour playerColour = toAnalyseGame.getCurrentPlayerColour();
     
-    this->iNumberOfLeafNodes = 0;
+    long long iTotalLeafNodes = 0;
     
     // Get all the possible game states for black
     std::vector<Game> toAnalyseGames = this->getAllPossibleGames(toAnalyseGame);
     
+    std::vector<float> scores(toAnalyseGames.size());
+
+    #pragma omp parallel for schedule(dynamic) reduction(+:iTotalLeafNodes)
     for (int i = 0; i < toAnalyseGames.size(); i++)
     {
-        #ifdef DEBUG_FLAG_MINIMAX
-            Debug("Current Node ID: " << iDepth + 1 << "." << playerColour << "." << i + 1);
-            Debug("Analysing move: " << i + 1 << "/" << toAnalyseGames.size() );
-            toAnalyseGames.at(i).printBoard();
-            if (toAnalyseGame.currentPlayerColour == White)
-            {
-                Debug("Current Maximum Evaluation: " << fMaxEvaluation << "\n");
-            }
-            else
-            {
-                Debug("Current Minimum Evaluation: " << fMinEvaluation << "\n");
-            }
-            
-        #endif
+        long long iLocalLeafNodes = 0;
         // Recursevely go through each one
         // Alternatting moves
         // Once a final position is reached the evaluation of that position is returned
-        float fEvaluation = this->minimax(toAnalyseGames.at(i), iDepth);
-        
-        // Compare it to the best evaluation for black and update
-        if (playerColour == Black && fEvaluation < fMinEvaluation)
-        {
-            fMinEvaluation = fEvaluation;
-            iBestBoardStateIndex = i;
-        }
-        else if (playerColour == White && fEvaluation > fMaxEvaluation)
-        {
-            fMaxEvaluation = fEvaluation;
-            iBestBoardStateIndex = i;
-        }
-        #ifdef DEBUG_FLAG_MINIMAX
-            Debug("Current Node ID: " << iDepth + 1 << "." << playerColour << "." << i + 1);
-            Debug("Move analysed: " << i + 1 << "/" << toAnalyseGames.size() );
-            if (toAnalyseGame.currentPlayerColour == White)
-            {
-                Debug("Current Maximum Evaluation: " << fMaxEvaluation << "\n");
-            }
-            else
-            {
-                Debug("Current Minimum Evaluation: " << fMinEvaluation << "\n");
-            }
-        #endif
+        scores[i] = this->minimax(toAnalyseGames.at(i), iDepth, iLocalLeafNodes);
+
+        iTotalLeafNodes += iLocalLeafNodes;
     }
+
+    this->iNumberOfLeafNodes = iTotalLeafNodes;
+
+    #ifdef DEBUG_FLAG_MINIMAX
+        Debug("Outer loop finished");
+        Debug("Move scores: ");
+        for (int i = 0; i < scores.size(); i++)
+        {
+            Debug("Move " << i + 1 << ": " << scores[i]);
+        }
+    #endif
+
     #ifdef DEBUG_FLAG_TIME
         Debug("Number of different games analysed: " << this->iNumberOfLeafNodes);
     #endif
+
+    // Find the index of the best score
+    int iBestBoardStateIndex = 0;
+    float fBestScore = scores[0];
+
+    for (int i = 1; i < scores.size(); i++)
+    {
+        if (playerColour == White && scores[i] > fBestScore)
+        {
+            fBestScore = scores[i];
+            iBestBoardStateIndex = i;
+        }
+        else if (playerColour == Black && scores[i] < fBestScore)
+        {
+            fBestScore = scores[i];
+            iBestBoardStateIndex = i;
+        }
+    }
     
     return toAnalyseGames.at(iBestBoardStateIndex);
 }
