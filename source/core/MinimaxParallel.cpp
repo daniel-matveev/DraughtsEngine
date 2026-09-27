@@ -1,5 +1,7 @@
 #include "MinimaxParallel.hpp"
 
+
+
 MinimaxParallel::MinimaxParallel() {}
 
 MinimaxParallel::~MinimaxParallel() {}

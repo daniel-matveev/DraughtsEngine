@@ -5,6 +5,8 @@
 
 #include "Minimax.hpp"
 
+#include <omp.h>
+
 class MinimaxParallel : public Minimax
 {
     public:

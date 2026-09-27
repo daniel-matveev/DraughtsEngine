@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
 
     std::filesystem::create_directories("results/minimax_serial_vs_parallel_test"); // Ensure the results directory exists
     std::ofstream csv("results/minimax_serial_vs_parallel_test/minimax_serial_vs_parallel_results.csv");
-    csv << "game_id,depth,threads,serial_wall_ms,parallel_wall_ms,move_aggrement\n";
+    csv << "game_id,depth,threads,serial_wall_ms,parallel_wall_ms,move_aggrement,node_count_serial,node_count_parallel\n";
 
     for (int depth : depths)
     {
@@ -50,18 +50,22 @@ int main(int argc, char* argv[])
             
             Minimax minimaxSerial;
             Game gameSerial = basePosition; // Reset to the base position for each algorithm
+            minimaxSerial.iNumberOfLeafNodes = 0; // Reset the leaf node counter
             auto startSerial = std::chrono::high_resolution_clock::now();
             Game bestGameSerial = minimaxSerial.getBestGameState(gameSerial, depth);
             auto endSerial = std::chrono::high_resolution_clock::now();
             double serialWallMs = std::chrono::duration<double, std::milli>(endSerial - startSerial).count();
+            int nodeCountSerial = minimaxSerial.iNumberOfLeafNodes.load(); // Get the leaf node count for serial
 
             // Minimax Parallel
             MinimaxParallel minimaxParallel;
             Game gameParallel = basePosition; // Reset to the base position for each algorithm
+            minimaxParallel.iNumberOfLeafNodes = 0; // Reset the leaf node counter
             auto startParallel = std::chrono::high_resolution_clock::now();
             Game bestGameParallel = minimaxParallel.getBestGameState(gameParallel, depth);
             auto endParallel = std::chrono::high_resolution_clock::now();
             double parallelWallMs = std::chrono::duration<double, std::milli>(endParallel - startParallel).count();
+            int nodeCountParallel = minimaxParallel.iNumberOfLeafNodes.load(); // Get the leaf node count for parallel
 
             int numMovesParallel = minimaxParallel.getNumMoves(basePosition);
 
@@ -73,12 +77,12 @@ int main(int argc, char* argv[])
             }
 
             // Check if both algorithms agree on the best move
-            bool moveAgreement = (bestGameSerial.getCurrentPlayerColour() == bestGameParallel.getCurrentPlayerColour());
+            bool moveAgreement = (bestGameSerial.getGameBoard() == bestGameParallel.getGameBoard());
 
-            csv << positionIndex << "," << depth << "," << omp_get_max_threads() << "," << serialWallMs << "," << parallelWallMs << "," << moveAgreement << "\n";
+            csv << positionIndex << "," << depth << "," << omp_get_max_threads() << "," << serialWallMs << "," << parallelWallMs << "," << moveAgreement << "," << nodeCountSerial << "," << nodeCountParallel << "\n";
             csv.flush();
             
-            std::cout << "Depth: " << depth << ", Position: " << positionIndex << ", Serial Time: " << serialWallMs << " ms, Parallel Time: " << parallelWallMs << " ms, Move Agreement: " << moveAgreement << std::endl;
+            std::cout << "Depth: " << depth << ", Position: " << positionIndex << ", Serial Time: " << serialWallMs << " ms, Parallel Time: " << parallelWallMs << " ms, Move Agreement: " << moveAgreement << ", Serial Nodes: " << nodeCountSerial << ", Parallel Nodes: " << nodeCountParallel << std::endl;
         }
     }
 

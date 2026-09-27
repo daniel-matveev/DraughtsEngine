@@ -10,6 +10,8 @@
 
 #include "Game.hpp"
 
+#include <atomic>
+
 class Minimax
 {
 protected:
@@ -29,7 +31,7 @@ public:
     ~Minimax();
     
     // For testing
-    int iNumberOfLeafNodes;
+    std::atomic<int> iNumberOfLeafNodes{0};
     
     // Will run the possible moves for that player and on each one call minimax to determine which one is the best
     Game getBestGameState(Game toAnalyseGame, int iDepth);
