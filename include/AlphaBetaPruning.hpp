@@ -13,7 +13,7 @@
 
 class AlphaBetaPruning
 {
-private:
+protected:
     
     float alphaBetaPruning(Game toAnalyseGame, int iDepth, float fAlpha, float fBeta);
     
