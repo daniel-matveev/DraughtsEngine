@@ -1,5 +1,7 @@
 # Compiler to use for every compile and link step
-Compiler = g++-15
+Compiler = clang++
+
+LibompPrefix = /usr/local/opt/libomp
 
 # Flags used when compiling each .cpp file into a .o file:
 #   -std=c++17      : Use the C++17 standard
@@ -10,10 +12,11 @@ Compiler = g++-15
 #   -fopenmp        : Enable OpenMP support for parallel programming
 #   -MMD            : Generate dependency files
 #   -MP             : Generate phony targets for dependencies
-Flags = -std=c++17 -g -Wall -Iinclude -O2 -fopenmp -MMD -MP
+Flags = -std=c++17 -g -Wall -Iinclude -O2 -Xpreprocessor -fopenmp -I$(LibompPrefix)/include -MMD -MP
 
 # Flags used when linking the object files into the final executable
-LinkFlags = -fopenmp
+# LinkFlags = -fopenmp -Wl -ld_classic
+LinkFlags = -L$(LibompPrefix)/lib -lomp
 
 # Folder name variables
 SrcDir = source
