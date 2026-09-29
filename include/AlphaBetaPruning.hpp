@@ -10,6 +10,8 @@
 
 #include "Game.hpp"
 
+#include <algorithm>
+
 
 class AlphaBetaPruning
 {
@@ -28,6 +30,9 @@ public:
     // Constructor / Destructor
     AlphaBetaPruning();
     ~AlphaBetaPruning();
+
+    // The best evaluation found by the algorithm
+    float fBestEvaluation = 0;
     
     // For testing
     int iNumberOfLeafNodes;

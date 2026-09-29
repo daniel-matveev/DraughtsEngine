@@ -215,6 +215,6 @@ Game Minimax::getBestGameState(Game toAnalyseGame, int iDepth)
             iBestBoardStateIndex = i;
         }
     }
-    
+    this->fBestEvaluation = fBestScore;
     return toAnalyseGames.at(iBestBoardStateIndex);
 }

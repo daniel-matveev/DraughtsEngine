@@ -1,0 +1,615 @@
+Position 0 generated with 9 moves available.
+Position 0, Depth 3, Minimax completed. Nodes: 1832, Score: 2.2
+Position 0, Depth 3, AlphaBetaPruning completed. Nodes: 235, Score: 2.2
+Position 0, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 142, Score: 2.2, Tied Moves: 2
+Position 0, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 57, Full Nodes: 144, Score: 2.2, Tied Moves: 2
+Position 0, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 117, Full Nodes: 80, Score: 2.2, Tied Moves: 1
+Position 0, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 703, Full Nodes: 80, Score: 2.2, Tied Moves: 1
+Position 0, Depth 4, Minimax completed. Nodes: 9715, Score: 1.7
+Position 0, Depth 4, AlphaBetaPruning completed. Nodes: 615, Score: 1.7
+Position 0, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 490, Score: 1.7, Tied Moves: 2
+Position 0, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 57, Full Nodes: 592, Score: 1.7, Tied Moves: 2
+Position 0, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 117, Full Nodes: 424, Score: 1.7, Tied Moves: 1
+Position 0, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 703, Full Nodes: 424, Score: 1.7, Tied Moves: 1
+Position 0, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1288, Full Nodes: 424, Score: 1.7, Tied Moves: 1
+Position 0, Depth 5, Minimax completed. Nodes: 60221, Score: 2.1
+Position 0, Depth 5, AlphaBetaPruning completed. Nodes: 3075, Score: 2.1
+Position 0, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 1237, Score: 2.1, Tied Moves: 2
+Position 0, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 57, Full Nodes: 1362, Score: 2.1, Tied Moves: 2
+Position 0, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 117, Full Nodes: 879, Score: 2.1, Tied Moves: 1
+Position 0, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 703, Full Nodes: 879, Score: 2.1, Tied Moves: 1
+Position 0, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1288, Full Nodes: 879, Score: 2.1, Tied Moves: 1
+Position 0, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 7680, Full Nodes: 879, Score: 2.1, Tied Moves: 1
+Position 0, Depth 6, Minimax completed. Nodes: 324011, Score: 1.6
+Position 0, Depth 6, AlphaBetaPruning completed. Nodes: 6698, Score: 1.6
+Position 0, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 4521, Score: 1.6, Tied Moves: 2
+Position 0, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 57, Full Nodes: 4521, Score: 1.6, Tied Moves: 2
+Position 0, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 117, Full Nodes: 4057, Score: 1.6, Tied Moves: 1
+Position 0, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 703, Full Nodes: 4057, Score: 1.6, Tied Moves: 1
+Position 0, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1288, Full Nodes: 4057, Score: 1.6, Tied Moves: 1
+Position 0, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 7680, Full Nodes: 4057, Score: 1.6, Tied Moves: 1
+Position 0, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 14609, Full Nodes: 4057, Score: 1.6, Tied Moves: 2
+Position 0, Depth 7, Minimax completed. Nodes: 1894032, Score: 1.8
+Position 0, Depth 7, AlphaBetaPruning completed. Nodes: 25005, Score: 1.8
+Position 0, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 11563, Score: 1.8, Tied Moves: 2
+Position 0, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 57, Full Nodes: 11563, Score: 1.8, Tied Moves: 2
+Position 0, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 117, Full Nodes: 9122, Score: 1.8, Tied Moves: 1
+Position 0, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 703, Full Nodes: 9122, Score: 1.8, Tied Moves: 1
+Position 0, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1288, Full Nodes: 9122, Score: 1.8, Tied Moves: 1
+Position 0, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 7680, Full Nodes: 9122, Score: 1.8, Tied Moves: 1
+Position 0, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 14609, Full Nodes: 9122, Score: 1.8, Tied Moves: 2
+Position 0, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 70467, Full Nodes: 9122, Score: 1.8, Tied Moves: 2
+Position 1 generated with 11 moves available.
+Position 1, Depth 3, Minimax completed. Nodes: 1349, Score: -1.1
+Position 1, Depth 3, AlphaBetaPruning completed. Nodes: 213, Score: -1.1
+Position 1, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 202, Score: -1.1, Tied Moves: 1
+Position 1, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 52, Full Nodes: 217, Score: -1.1, Tied Moves: 1
+Position 1, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 152, Full Nodes: 202, Score: -1.1, Tied Moves: 1
+Position 1, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 484, Full Nodes: 138, Score: -1.1, Tied Moves: 1
+Position 1, Depth 4, Minimax completed. Nodes: 7424, Score: -1.4
+Position 1, Depth 4, AlphaBetaPruning completed. Nodes: 1357, Score: -1.4
+Position 1, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 1326, Score: -1.4, Tied Moves: 1
+Position 1, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 52, Full Nodes: 1326, Score: -1.4, Tied Moves: 1
+Position 1, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 152, Full Nodes: 1326, Score: -1.4, Tied Moves: 1
+Position 1, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 484, Full Nodes: 1170, Score: -1.4, Tied Moves: 1
+Position 1, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1982, Full Nodes: 1170, Score: -1.4, Tied Moves: 1
+Position 1, Depth 5, Minimax completed. Nodes: 36620, Score: -0.900001
+Position 1, Depth 5, AlphaBetaPruning completed. Nodes: 2180, Score: -0.900001
+Position 1, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 2028, Score: -0.900001, Tied Moves: 1
+Position 1, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 52, Full Nodes: 2216, Score: -0.900001, Tied Moves: 1
+Position 1, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 152, Full Nodes: 1993, Score: -0.900001, Tied Moves: 1
+Position 1, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 484, Full Nodes: 1396, Score: -0.900001, Tied Moves: 1
+Position 1, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1982, Full Nodes: 1396, Score: -0.900001, Tied Moves: 1
+Position 1, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4451, Full Nodes: 1396, Score: -0.900001, Tied Moves: 1
+Position 1, Depth 6, Minimax completed. Nodes: 200019, Score: -1.1
+Position 1, Depth 6, AlphaBetaPruning completed. Nodes: 11111, Score: -1.1
+Position 1, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 10166, Score: -1.1, Tied Moves: 1
+Position 1, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 52, Full Nodes: 10166, Score: -1.1, Tied Moves: 1
+Position 1, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 152, Full Nodes: 10166, Score: -1.1, Tied Moves: 1
+Position 1, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 484, Full Nodes: 8419, Score: -1.1, Tied Moves: 1
+Position 1, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1982, Full Nodes: 8419, Score: -1.1, Tied Moves: 1
+Position 1, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4451, Full Nodes: 8419, Score: -1.1, Tied Moves: 1
+Position 1, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 17951, Full Nodes: 10166, Score: -1.1, Tied Moves: 3
+Position 1, Depth 7, Minimax completed. Nodes: 972375, Score: -0.700001
+Position 1, Depth 7, AlphaBetaPruning completed. Nodes: 19262, Score: -0.700001
+Position 1, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 18171, Score: -0.700001, Tied Moves: 1
+Position 1, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 52, Full Nodes: 21373, Score: -0.700001, Tied Moves: 1
+Position 1, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 152, Full Nodes: 17129, Score: -0.700001, Tied Moves: 1
+Position 1, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 484, Full Nodes: 12396, Score: -0.700001, Tied Moves: 1
+Position 1, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1982, Full Nodes: 12396, Score: -0.700001, Tied Moves: 1
+Position 1, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4451, Full Nodes: 12396, Score: -0.700001, Tied Moves: 1
+Position 1, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 17951, Full Nodes: 17129, Score: -0.700001, Tied Moves: 3
+Position 1, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 42880, Full Nodes: 12396, Score: -0.700001, Tied Moves: 1
+Position 2 generated with 12 moves available.
+Position 2, Depth 3, Minimax completed. Nodes: 2105, Score: 2
+Position 2, Depth 3, AlphaBetaPruning completed. Nodes: 432, Score: 2
+Position 2, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12, Full Nodes: 409, Score: 2, Tied Moves: 4
+Position 2, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 80, Full Nodes: 409, Score: 2, Tied Moves: 4
+Position 2, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 198, Full Nodes: 292, Score: 2, Tied Moves: 1
+Position 2, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1150, Full Nodes: 292, Score: 2, Tied Moves: 1
+Position 2, Depth 4, Minimax completed. Nodes: 10258, Score: 1.1
+Position 2, Depth 4, AlphaBetaPruning completed. Nodes: 1586, Score: 1.1
+Position 2, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12, Full Nodes: 1645, Score: 1.1, Tied Moves: 4
+Position 2, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 80, Full Nodes: 1645, Score: 1.1, Tied Moves: 4
+Position 2, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 198, Full Nodes: 1343, Score: 1.1, Tied Moves: 1
+Position 2, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1150, Full Nodes: 1343, Score: 1.1, Tied Moves: 1
+Position 2, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2584, Full Nodes: 1343, Score: 1.1, Tied Moves: 1
+Position 2, Depth 5, Minimax completed. Nodes: 53767, Score: 1.8
+Position 2, Depth 5, AlphaBetaPruning completed. Nodes: 4084, Score: 1.8
+Position 2, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12, Full Nodes: 4315, Score: 1.8, Tied Moves: 4
+Position 2, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 80, Full Nodes: 4315, Score: 1.8, Tied Moves: 4
+Position 2, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 198, Full Nodes: 2652, Score: 1.8, Tied Moves: 1
+Position 2, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1150, Full Nodes: 2652, Score: 1.8, Tied Moves: 1
+Position 2, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2584, Full Nodes: 2652, Score: 1.8, Tied Moves: 1
+Position 2, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 10318, Full Nodes: 2652, Score: 1.8, Tied Moves: 1
+Position 2, Depth 6, Minimax completed. Nodes: 264784, Score: 0.9
+Position 2, Depth 6, AlphaBetaPruning completed. Nodes: 15254, Score: 0.9
+Position 2, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12, Full Nodes: 14739, Score: 0.9, Tied Moves: 4
+Position 2, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 80, Full Nodes: 14739, Score: 0.9, Tied Moves: 4
+Position 2, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 198, Full Nodes: 12038, Score: 0.9, Tied Moves: 1
+Position 2, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1150, Full Nodes: 12038, Score: 0.9, Tied Moves: 1
+Position 2, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2584, Full Nodes: 12038, Score: 0.9, Tied Moves: 1
+Position 2, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 10318, Full Nodes: 12038, Score: 0.9, Tied Moves: 1
+Position 2, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 27243, Full Nodes: 12038, Score: 0.9, Tied Moves: 1
+Position 2, Depth 7, Minimax completed. Nodes: 1368377, Score: 1.6
+Position 2, Depth 7, AlphaBetaPruning completed. Nodes: 35437, Score: 1.6
+Position 2, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12, Full Nodes: 34991, Score: 1.6, Tied Moves: 4
+Position 2, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 80, Full Nodes: 34991, Score: 1.6, Tied Moves: 4
+Position 2, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 198, Full Nodes: 24810, Score: 1.6, Tied Moves: 1
+Position 2, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1150, Full Nodes: 24810, Score: 1.6, Tied Moves: 1
+Position 2, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2584, Full Nodes: 24810, Score: 1.6, Tied Moves: 1
+Position 2, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 10318, Full Nodes: 24810, Score: 1.6, Tied Moves: 1
+Position 2, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 27243, Full Nodes: 24810, Score: 1.6, Tied Moves: 1
+Position 2, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 87418, Full Nodes: 24810, Score: 1.6, Tied Moves: 1
+Position 3 generated with 5 moves available.
+Position 3, Depth 3, Minimax completed. Nodes: 1336, Score: 11.4
+Position 3, Depth 3, AlphaBetaPruning completed. Nodes: 520, Score: 11.4
+Position 3, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5, Full Nodes: 602, Score: 11.4, Tied Moves: 1
+Position 3, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 40, Full Nodes: 600, Score: 11.4, Tied Moves: 1
+Position 3, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 115, Full Nodes: 547, Score: 11.4, Tied Moves: 1
+Position 3, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 715, Full Nodes: 496, Score: 11.4, Tied Moves: 1
+Position 3, Depth 4, Minimax completed. Nodes: 5989, Score: 10.9
+Position 3, Depth 4, AlphaBetaPruning completed. Nodes: 1098, Score: 10.9
+Position 3, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5, Full Nodes: 1228, Score: 10.9, Tied Moves: 1
+Position 3, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 40, Full Nodes: 1228, Score: 10.9, Tied Moves: 1
+Position 3, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 115, Full Nodes: 1150, Score: 10.9, Tied Moves: 1
+Position 3, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 715, Full Nodes: 1124, Score: 10.9, Tied Moves: 1
+Position 3, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1571, Full Nodes: 1124, Score: 10.9, Tied Moves: 1
+Position 3, Depth 5, Minimax completed. Nodes: 38291, Score: 11.6
+Position 3, Depth 5, AlphaBetaPruning completed. Nodes: 2884, Score: 11.6
+Position 3, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5, Full Nodes: 4582, Score: 11.6, Tied Moves: 1
+Position 3, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 40, Full Nodes: 4546, Score: 11.6, Tied Moves: 1
+Position 3, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 115, Full Nodes: 3373, Score: 11.6, Tied Moves: 1
+Position 3, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 715, Full Nodes: 4900, Score: 11.6, Tied Moves: 1
+Position 3, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1571, Full Nodes: 4900, Score: 11.6, Tied Moves: 1
+Position 3, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 7714, Full Nodes: 2884, Score: 11.6, Tied Moves: 1
+Position 3, Depth 6, Minimax completed. Nodes: 164667, Score: 11.1
+Position 3, Depth 6, AlphaBetaPruning completed. Nodes: 8549, Score: 11.1
+Position 3, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5, Full Nodes: 10366, Score: 11.1, Tied Moves: 1
+Position 3, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 40, Full Nodes: 10366, Score: 11.1, Tied Moves: 1
+Position 3, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 115, Full Nodes: 9643, Score: 11.1, Tied Moves: 1
+Position 3, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 715, Full Nodes: 8524, Score: 11.1, Tied Moves: 1
+Position 3, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1571, Full Nodes: 8524, Score: 11.1, Tied Moves: 1
+Position 3, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 7714, Full Nodes: 8549, Score: 11.1, Tied Moves: 1
+Position 3, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 14655, Full Nodes: 9790, Score: 11.1, Tied Moves: 2
+Position 3, Depth 7, Minimax completed. Nodes: 1007249, Score: 11.8
+Position 3, Depth 7, AlphaBetaPruning completed. Nodes: 32568, Score: 11.8
+Position 3, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5, Full Nodes: 47954, Score: 11.8, Tied Moves: 1
+Position 3, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 40, Full Nodes: 47954, Score: 11.8, Tied Moves: 1
+Position 3, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 115, Full Nodes: 37521, Score: 11.8, Tied Moves: 1
+Position 3, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 715, Full Nodes: 50704, Score: 11.8, Tied Moves: 1
+Position 3, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1571, Full Nodes: 50704, Score: 11.8, Tied Moves: 1
+Position 3, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 7714, Full Nodes: 32568, Score: 11.8, Tied Moves: 1
+Position 3, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 14655, Full Nodes: 55552, Score: 11.8, Tied Moves: 2
+Position 3, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 80508, Full Nodes: 32568, Score: 11.8, Tied Moves: 1
+Position 4 generated with 8 moves available.
+Position 4, Depth 3, Minimax completed. Nodes: 2864, Score: -1.7
+Position 4, Depth 3, AlphaBetaPruning completed. Nodes: 364, Score: -1.7
+Position 4, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 364, Score: -1.7, Tied Moves: 1
+Position 4, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 56, Full Nodes: 364, Score: -1.7, Tied Moves: 1
+Position 4, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 133, Full Nodes: 364, Score: -1.7, Tied Moves: 1
+Position 4, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 880, Full Nodes: 318, Score: -1.7, Tied Moves: 4
+Position 4, Depth 4, Minimax completed. Nodes: 20161, Score: -2
+Position 4, Depth 4, AlphaBetaPruning completed. Nodes: 1707, Score: -2
+Position 4, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 1707, Score: -2, Tied Moves: 1
+Position 4, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 56, Full Nodes: 1707, Score: -2, Tied Moves: 1
+Position 4, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 133, Full Nodes: 1707, Score: -2, Tied Moves: 1
+Position 4, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 880, Full Nodes: 1952, Score: -2, Tied Moves: 4
+Position 4, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2832, Full Nodes: 1707, Score: -2, Tied Moves: 4
+Position 4, Depth 5, Minimax completed. Nodes: 130834, Score: -1.5
+Position 4, Depth 5, AlphaBetaPruning completed. Nodes: 6233, Score: -1.5
+Position 4, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 6233, Score: -1.5, Tied Moves: 1
+Position 4, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 56, Full Nodes: 6233, Score: -1.5, Tied Moves: 1
+Position 4, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 133, Full Nodes: 6233, Score: -1.5, Tied Moves: 1
+Position 4, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 880, Full Nodes: 7138, Score: -1.5, Tied Moves: 4
+Position 4, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2832, Full Nodes: 6233, Score: -1.5, Tied Moves: 4
+Position 4, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 14689, Full Nodes: 6233, Score: -1.5, Tied Moves: 4
+Position 4, Depth 6, Minimax completed. Nodes: 846308, Score: -2.5
+Position 4, Depth 6, AlphaBetaPruning completed. Nodes: 21376, Score: -2.5
+Position 4, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 21396, Score: -2.5, Tied Moves: 1
+Position 4, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 56, Full Nodes: 21376, Score: -2.5, Tied Moves: 1
+Position 4, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 133, Full Nodes: 21376, Score: -2.5, Tied Moves: 1
+Position 4, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 880, Full Nodes: 21857, Score: -2.5, Tied Moves: 4
+Position 4, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2832, Full Nodes: 21311, Score: -2.5, Tied Moves: 4
+Position 4, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 14689, Full Nodes: 21311, Score: -2.5, Tied Moves: 4
+Position 4, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 49199, Full Nodes: 13719, Score: -2.5, Tied Moves: 1
+Position 4, Depth 7, Minimax completed. Nodes: 4980960, Score: -1.6
+Position 4, Depth 7, AlphaBetaPruning completed. Nodes: 71008, Score: -1.6
+Position 4, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 71031, Score: -1.6, Tied Moves: 1
+Position 4, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 56, Full Nodes: 71008, Score: -1.6, Tied Moves: 1
+Position 4, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 133, Full Nodes: 71008, Score: -1.6, Tied Moves: 1
+Position 4, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 880, Full Nodes: 73812, Score: -1.6, Tied Moves: 4
+Position 4, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2832, Full Nodes: 70278, Score: -1.6, Tied Moves: 4
+Position 4, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 14689, Full Nodes: 70278, Score: -1.6, Tied Moves: 4
+Position 4, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 49199, Full Nodes: 60530, Score: -1.6, Tied Moves: 1
+Position 4, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 196193, Full Nodes: 62984, Score: -1.6, Tied Moves: 2
+Position 5 generated with 10 moves available.
+Position 5, Depth 3, Minimax completed. Nodes: 1945, Score: -0.800001
+Position 5, Depth 3, AlphaBetaPruning completed. Nodes: 418, Score: -0.800001
+Position 5, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 10, Full Nodes: 318, Score: -0.800001, Tied Moves: 2
+Position 5, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 50, Full Nodes: 318, Score: -0.800001, Tied Moves: 2
+Position 5, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 206, Full Nodes: 318, Score: -0.800001, Tied Moves: 2
+Position 5, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 950, Full Nodes: 318, Score: -0.800001, Tied Moves: 2
+Position 5, Depth 4, Minimax completed. Nodes: 12765, Score: -1.1
+Position 5, Depth 4, AlphaBetaPruning completed. Nodes: 1915, Score: -1.1
+Position 5, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 10, Full Nodes: 1495, Score: -1.1, Tied Moves: 2
+Position 5, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 50, Full Nodes: 1495, Score: -1.1, Tied Moves: 2
+Position 5, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 206, Full Nodes: 1495, Score: -1.1, Tied Moves: 2
+Position 5, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 950, Full Nodes: 1495, Score: -1.1, Tied Moves: 2
+Position 5, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 3533, Full Nodes: 1915, Score: -1.1, Tied Moves: 3
+Position 5, Depth 5, Minimax completed. Nodes: 61608, Score: -0.9
+Position 5, Depth 5, AlphaBetaPruning completed. Nodes: 3924, Score: -0.9
+Position 5, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 10, Full Nodes: 2642, Score: -0.9, Tied Moves: 2
+Position 5, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 50, Full Nodes: 2642, Score: -0.9, Tied Moves: 2
+Position 5, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 206, Full Nodes: 2642, Score: -0.9, Tied Moves: 2
+Position 5, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 950, Full Nodes: 2642, Score: -0.9, Tied Moves: 2
+Position 5, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 3533, Full Nodes: 3924, Score: -0.9, Tied Moves: 3
+Position 5, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8883, Full Nodes: 3924, Score: -0.9, Tied Moves: 2
+Position 5, Depth 6, Minimax completed. Nodes: 350292, Score: -1.2
+Position 5, Depth 6, AlphaBetaPruning completed. Nodes: 16940, Score: -1.2
+Position 5, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 10, Full Nodes: 14087, Score: -1.2, Tied Moves: 2
+Position 5, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 50, Full Nodes: 14087, Score: -1.2, Tied Moves: 2
+Position 5, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 206, Full Nodes: 14087, Score: -1.2, Tied Moves: 2
+Position 5, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 950, Full Nodes: 14087, Score: -1.2, Tied Moves: 2
+Position 5, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 3533, Full Nodes: 16940, Score: -1.2, Tied Moves: 3
+Position 5, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8883, Full Nodes: 16940, Score: -1.2, Tied Moves: 2
+Position 5, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 34030, Full Nodes: 16940, Score: -1.2, Tied Moves: 2
+Position 5, Depth 7, Minimax completed. Nodes: 1619085, Score: -0.8
+Position 5, Depth 7, AlphaBetaPruning completed. Nodes: 32012, Score: -0.8
+Position 5, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 10, Full Nodes: 26635, Score: -0.8, Tied Moves: 2
+Position 5, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 50, Full Nodes: 26635, Score: -0.8, Tied Moves: 2
+Position 5, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 206, Full Nodes: 26635, Score: -0.8, Tied Moves: 2
+Position 5, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 950, Full Nodes: 26635, Score: -0.8, Tied Moves: 2
+Position 5, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 3533, Full Nodes: 32012, Score: -0.8, Tied Moves: 3
+Position 5, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8883, Full Nodes: 32012, Score: -0.8, Tied Moves: 2
+Position 5, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 34030, Full Nodes: 32012, Score: -0.8, Tied Moves: 2
+Position 5, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 79863, Full Nodes: 32012, Score: -0.8, Tied Moves: 1
+Position 6 generated with 8 moves available.
+Position 6, Depth 3, Minimax completed. Nodes: 902, Score: -1.8
+Position 6, Depth 3, AlphaBetaPruning completed. Nodes: 416, Score: -1.8
+Position 6, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 210, Score: -1.8, Tied Moves: 1
+Position 6, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 42, Full Nodes: 210, Score: -1.8, Tied Moves: 1
+Position 6, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 160, Full Nodes: 230, Score: -1.8, Tied Moves: 2
+Position 6, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 587, Full Nodes: 210, Score: -1.8, Tied Moves: 1
+Position 6, Depth 4, Minimax completed. Nodes: 4035, Score: -2.4
+Position 6, Depth 4, AlphaBetaPruning completed. Nodes: 1560, Score: -2.4
+Position 6, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 895, Score: -2.4, Tied Moves: 1
+Position 6, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 42, Full Nodes: 895, Score: -2.4, Tied Moves: 1
+Position 6, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 160, Full Nodes: 919, Score: -2.4, Tied Moves: 2
+Position 6, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 587, Full Nodes: 895, Score: -2.4, Tied Moves: 1
+Position 6, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1910, Full Nodes: 919, Score: -2.4, Tied Moves: 1
+Position 6, Depth 5, Minimax completed. Nodes: 18453, Score: -1.8
+Position 6, Depth 5, AlphaBetaPruning completed. Nodes: 3534, Score: -1.8
+Position 6, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 1765, Score: -1.8, Tied Moves: 1
+Position 6, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 42, Full Nodes: 1765, Score: -1.8, Tied Moves: 1
+Position 6, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 160, Full Nodes: 2050, Score: -1.8, Tied Moves: 2
+Position 6, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 587, Full Nodes: 1765, Score: -1.8, Tied Moves: 1
+Position 6, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1910, Full Nodes: 2050, Score: -1.8, Tied Moves: 1
+Position 6, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5343, Full Nodes: 1765, Score: -1.8, Tied Moves: 1
+Position 6, Depth 6, Minimax completed. Nodes: 79432, Score: -2.4
+Position 6, Depth 6, AlphaBetaPruning completed. Nodes: 10410, Score: -2.4
+Position 6, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 6223, Score: -2.4, Tied Moves: 1
+Position 6, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 42, Full Nodes: 6223, Score: -2.4, Tied Moves: 1
+Position 6, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 160, Full Nodes: 6057, Score: -2.4, Tied Moves: 2
+Position 6, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 587, Full Nodes: 6223, Score: -2.4, Tied Moves: 1
+Position 6, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1910, Full Nodes: 6057, Score: -2.4, Tied Moves: 1
+Position 6, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5343, Full Nodes: 6264, Score: -2.4, Tied Moves: 1
+Position 6, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 15001, Full Nodes: 6057, Score: -2.4, Tied Moves: 1
+Position 6, Depth 7, Minimax completed. Nodes: 353283, Score: -1.7
+Position 6, Depth 7, AlphaBetaPruning completed. Nodes: 20256, Score: -1.7
+Position 6, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 12047, Score: -1.7, Tied Moves: 1
+Position 6, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 42, Full Nodes: 11910, Score: -1.7, Tied Moves: 1
+Position 6, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 160, Full Nodes: 11943, Score: -1.7, Tied Moves: 2
+Position 6, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 587, Full Nodes: 11910, Score: -1.7, Tied Moves: 1
+Position 6, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1910, Full Nodes: 11943, Score: -1.7, Tied Moves: 1
+Position 6, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5343, Full Nodes: 11793, Score: -1.7, Tied Moves: 1
+Position 6, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 15001, Full Nodes: 11943, Score: -1.7, Tied Moves: 1
+Position 6, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 37882, Full Nodes: 11943, Score: -1.7, Tied Moves: 2
+Position 7 generated with 9 moves available.
+Position 7, Depth 3, Minimax completed. Nodes: 2951, Score: -1.5
+Position 7, Depth 3, AlphaBetaPruning completed. Nodes: 492, Score: -1.5
+Position 7, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 352, Score: -1.5, Tied Moves: 1
+Position 7, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 65, Full Nodes: 352, Score: -1.5, Tied Moves: 1
+Position 7, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 318, Full Nodes: 352, Score: -1.5, Tied Moves: 1
+Position 7, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1483, Full Nodes: 500, Score: -1.5, Tied Moves: 4
+Position 7, Depth 4, Minimax completed. Nodes: 18162, Score: -2.2
+Position 7, Depth 4, AlphaBetaPruning completed. Nodes: 1154, Score: -2.2
+Position 7, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 1394, Score: -2.2, Tied Moves: 1
+Position 7, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 65, Full Nodes: 1394, Score: -2.2, Tied Moves: 1
+Position 7, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 318, Full Nodes: 1394, Score: -2.2, Tied Moves: 1
+Position 7, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1483, Full Nodes: 1278, Score: -2.2, Tied Moves: 4
+Position 7, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4467, Full Nodes: 1278, Score: -2.2, Tied Moves: 2
+Position 7, Depth 5, Minimax completed. Nodes: 99523, Score: -1.7
+Position 7, Depth 5, AlphaBetaPruning completed. Nodes: 2842, Score: -1.7
+Position 7, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 3142, Score: -1.7, Tied Moves: 1
+Position 7, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 65, Full Nodes: 3142, Score: -1.7, Tied Moves: 1
+Position 7, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 318, Full Nodes: 3142, Score: -1.7, Tied Moves: 1
+Position 7, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1483, Full Nodes: 3212, Score: -1.7, Tied Moves: 4
+Position 7, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4467, Full Nodes: 3212, Score: -1.7, Tied Moves: 2
+Position 7, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12747, Full Nodes: 3212, Score: -1.7, Tied Moves: 1
+Position 7, Depth 6, Minimax completed. Nodes: 562049, Score: -2.2
+Position 7, Depth 6, AlphaBetaPruning completed. Nodes: 14543, Score: -2.2
+Position 7, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 12602, Score: -2.2, Tied Moves: 1
+Position 7, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 65, Full Nodes: 12602, Score: -2.2, Tied Moves: 1
+Position 7, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 318, Full Nodes: 12602, Score: -2.2, Tied Moves: 1
+Position 7, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1483, Full Nodes: 14290, Score: -2.2, Tied Moves: 4
+Position 7, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4467, Full Nodes: 14290, Score: -2.2, Tied Moves: 2
+Position 7, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12747, Full Nodes: 14290, Score: -2.2, Tied Moves: 1
+Position 7, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 32536, Full Nodes: 14290, Score: -2.2, Tied Moves: 2
+Position 7, Depth 7, Minimax completed. Nodes: 2865331, Score: -1.7
+Position 7, Depth 7, AlphaBetaPruning completed. Nodes: 24934, Score: -1.7
+Position 7, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9, Full Nodes: 19281, Score: -1.7, Tied Moves: 1
+Position 7, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 65, Full Nodes: 19281, Score: -1.7, Tied Moves: 1
+Position 7, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 318, Full Nodes: 19281, Score: -1.7, Tied Moves: 1
+Position 7, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1483, Full Nodes: 23903, Score: -1.7, Tied Moves: 4
+Position 7, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4467, Full Nodes: 23903, Score: -1.7, Tied Moves: 2
+Position 7, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12747, Full Nodes: 23903, Score: -1.7, Tied Moves: 1
+Position 7, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 32536, Full Nodes: 23903, Score: -1.7, Tied Moves: 2
+Position 7, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 83059, Full Nodes: 23903, Score: -1.7, Tied Moves: 2
+Position 8 generated with 8 moves available.
+Position 8, Depth 3, Minimax completed. Nodes: 1601, Score: 3.3
+Position 8, Depth 3, AlphaBetaPruning completed. Nodes: 333, Score: 3.3
+Position 8, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 333, Score: 3.3, Tied Moves: 1
+Position 8, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 62, Full Nodes: 386, Score: 3.3, Tied Moves: 4
+Position 8, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 177, Full Nodes: 386, Score: 3.3, Tied Moves: 4
+Position 8, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 714, Full Nodes: 367, Score: 3.3, Tied Moves: 1
+Position 8, Depth 4, Minimax completed. Nodes: 7187, Score: 2.7
+Position 8, Depth 4, AlphaBetaPruning completed. Nodes: 1138, Score: 2.7
+Position 8, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 1136, Score: 2.7, Tied Moves: 1
+Position 8, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 62, Full Nodes: 1133, Score: 2.7, Tied Moves: 4
+Position 8, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 177, Full Nodes: 1095, Score: 2.7, Tied Moves: 4
+Position 8, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 714, Full Nodes: 989, Score: 2.7, Tied Moves: 1
+Position 8, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1733, Full Nodes: 989, Score: 2.7, Tied Moves: 3
+Position 8, Depth 5, Minimax completed. Nodes: 39774, Score: 3.5
+Position 8, Depth 5, AlphaBetaPruning completed. Nodes: 2682, Score: 3.5
+Position 8, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 2682, Score: 3.5, Tied Moves: 1
+Position 8, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 62, Full Nodes: 2969, Score: 3.5, Tied Moves: 4
+Position 8, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 177, Full Nodes: 2969, Score: 3.5, Tied Moves: 4
+Position 8, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 714, Full Nodes: 2937, Score: 3.5, Tied Moves: 1
+Position 8, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1733, Full Nodes: 3148, Score: 3.5, Tied Moves: 3
+Position 8, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6092, Full Nodes: 2682, Score: 3.5, Tied Moves: 5
+Position 8, Depth 6, Minimax completed. Nodes: 179564, Score: 2.5
+Position 8, Depth 6, AlphaBetaPruning completed. Nodes: 9218, Score: 2.5
+Position 8, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 9169, Score: 2.5, Tied Moves: 1
+Position 8, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 62, Full Nodes: 9006, Score: 2.5, Tied Moves: 4
+Position 8, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 177, Full Nodes: 9006, Score: 2.5, Tied Moves: 4
+Position 8, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 714, Full Nodes: 9366, Score: 2.5, Tied Moves: 1
+Position 8, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1733, Full Nodes: 9270, Score: 2.5, Tied Moves: 3
+Position 8, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6092, Full Nodes: 9163, Score: 2.5, Tied Moves: 5
+Position 8, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 15610, Full Nodes: 9006, Score: 2.5, Tied Moves: 1
+Position 8, Depth 7, Minimax completed. Nodes: 925820, Score: 3.7
+Position 8, Depth 7, AlphaBetaPruning completed. Nodes: 42326, Score: 3.7
+Position 8, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 42320, Score: 3.7, Tied Moves: 1
+Position 8, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 62, Full Nodes: 42463, Score: 3.7, Tied Moves: 4
+Position 8, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 177, Full Nodes: 42463, Score: 3.7, Tied Moves: 4
+Position 8, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 714, Full Nodes: 42055, Score: 3.7, Tied Moves: 1
+Position 8, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1733, Full Nodes: 42055, Score: 3.7, Tied Moves: 3
+Position 8, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6092, Full Nodes: 42320, Score: 3.7, Tied Moves: 5
+Position 8, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 15610, Full Nodes: 42463, Score: 3.7, Tied Moves: 1
+Position 8, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 53530, Full Nodes: 42463, Score: 3.7, Tied Moves: 4
+Position 9 generated with 8 moves available.
+Position 9, Depth 3, Minimax completed. Nodes: 685, Score: -0.1
+Position 9, Depth 3, AlphaBetaPruning completed. Nodes: 202, Score: -0.1
+Position 9, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 202, Score: -0.1, Tied Moves: 1
+Position 9, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 39, Full Nodes: 289, Score: -0.1, Tied Moves: 1
+Position 9, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 102, Full Nodes: 248, Score: -0.1, Tied Moves: 2
+Position 9, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 454, Full Nodes: 141, Score: -0.1, Tied Moves: 1
+Position 9, Depth 4, Minimax completed. Nodes: 2839, Score: -0.400001
+Position 9, Depth 4, AlphaBetaPruning completed. Nodes: 801, Score: -0.400001
+Position 9, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 792, Score: -0.400001, Tied Moves: 1
+Position 9, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 39, Full Nodes: 883, Score: -0.400001, Tied Moves: 1
+Position 9, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 102, Full Nodes: 792, Score: -0.400001, Tied Moves: 2
+Position 9, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 454, Full Nodes: 750, Score: -0.400001, Tied Moves: 1
+Position 9, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1213, Full Nodes: 750, Score: -0.400001, Tied Moves: 1
+Position 9, Depth 5, Minimax completed. Nodes: 11947, Score: 0.299999
+Position 9, Depth 5, AlphaBetaPruning completed. Nodes: 2481, Score: 0.299999
+Position 9, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 2481, Score: 0.299999, Tied Moves: 1
+Position 9, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 39, Full Nodes: 2481, Score: 0.299999, Tied Moves: 1
+Position 9, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 102, Full Nodes: 2481, Score: 0.299999, Tied Moves: 2
+Position 9, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 454, Full Nodes: 2289, Score: 0.299999, Tied Moves: 1
+Position 9, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1213, Full Nodes: 2289, Score: 0.299999, Tied Moves: 1
+Position 9, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 3981, Full Nodes: 2481, Score: 0.299999, Tied Moves: 2
+Position 9, Depth 6, Minimax completed. Nodes: 47802, Score: -0.4
+Position 9, Depth 6, AlphaBetaPruning completed. Nodes: 5677, Score: -0.4
+Position 9, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 5677, Score: -0.4, Tied Moves: 1
+Position 9, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 39, Full Nodes: 5677, Score: -0.4, Tied Moves: 1
+Position 9, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 102, Full Nodes: 5677, Score: -0.4, Tied Moves: 2
+Position 9, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 454, Full Nodes: 5299, Score: -0.4, Tied Moves: 1
+Position 9, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1213, Full Nodes: 5299, Score: -0.4, Tied Moves: 1
+Position 9, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 3981, Full Nodes: 5677, Score: -0.4, Tied Moves: 2
+Position 9, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9677, Full Nodes: 5677, Score: -0.4, Tied Moves: 1
+Position 9, Depth 7, Minimax completed. Nodes: 192371, Score: 0.199999
+Position 9, Depth 7, AlphaBetaPruning completed. Nodes: 11726, Score: 0.199999
+Position 9, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 11726, Score: 0.199999, Tied Moves: 1
+Position 9, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 39, Full Nodes: 11726, Score: 0.199999, Tied Moves: 1
+Position 9, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 102, Full Nodes: 11726, Score: 0.199999, Tied Moves: 2
+Position 9, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 454, Full Nodes: 10428, Score: 0.199999, Tied Moves: 1
+Position 9, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1213, Full Nodes: 10428, Score: 0.199999, Tied Moves: 1
+Position 9, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 3981, Full Nodes: 11726, Score: 0.199999, Tied Moves: 2
+Position 9, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 9677, Full Nodes: 11726, Score: 0.199999, Tied Moves: 1
+Position 9, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 23123, Full Nodes: 11726, Score: 0.199999, Tied Moves: 1
+Position 10 generated with 11 moves available.
+Position 10, Depth 3, Minimax completed. Nodes: 959, Score: -0.3
+Position 10, Depth 3, AlphaBetaPruning completed. Nodes: 317, Score: -0.3
+Position 10, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 315, Score: -0.3, Tied Moves: 3
+Position 10, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 54, Full Nodes: 320, Score: -0.3, Tied Moves: 3
+Position 10, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 213, Full Nodes: 254, Score: -0.3, Tied Moves: 4
+Position 10, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 635, Full Nodes: 254, Score: -0.3, Tied Moves: 1
+Position 10, Depth 4, Minimax completed. Nodes: 3642, Score: -0.8
+Position 10, Depth 4, AlphaBetaPruning completed. Nodes: 1032, Score: -0.8
+Position 10, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 946, Score: -0.8, Tied Moves: 3
+Position 10, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 54, Full Nodes: 967, Score: -0.8, Tied Moves: 3
+Position 10, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 213, Full Nodes: 848, Score: -0.8, Tied Moves: 4
+Position 10, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 635, Full Nodes: 848, Score: -0.8, Tied Moves: 1
+Position 10, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1816, Full Nodes: 848, Score: -0.8, Tied Moves: 1
+Position 10, Depth 5, Minimax completed. Nodes: 14607, Score: -0.200001
+Position 10, Depth 5, AlphaBetaPruning completed. Nodes: 1599, Score: -0.200001
+Position 10, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 1661, Score: -0.200001, Tied Moves: 3
+Position 10, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 54, Full Nodes: 1836, Score: -0.200001, Tied Moves: 3
+Position 10, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 213, Full Nodes: 1448, Score: -0.200001, Tied Moves: 4
+Position 10, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 635, Full Nodes: 1448, Score: -0.200001, Tied Moves: 1
+Position 10, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1816, Full Nodes: 1448, Score: -0.200001, Tied Moves: 1
+Position 10, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4967, Full Nodes: 1448, Score: -0.200001, Tied Moves: 1
+Position 10, Depth 6, Minimax completed. Nodes: 54147, Score: -1.2
+Position 10, Depth 6, AlphaBetaPruning completed. Nodes: 4448, Score: -1.2
+Position 10, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 3648, Score: -1.2, Tied Moves: 3
+Position 10, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 54, Full Nodes: 3648, Score: -1.2, Tied Moves: 3
+Position 10, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 213, Full Nodes: 3699, Score: -1.2, Tied Moves: 4
+Position 10, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 635, Full Nodes: 3699, Score: -1.2, Tied Moves: 1
+Position 10, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1816, Full Nodes: 3864, Score: -1.2, Tied Moves: 1
+Position 10, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4967, Full Nodes: 3699, Score: -1.2, Tied Moves: 1
+Position 10, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12478, Full Nodes: 3648, Score: -1.2, Tied Moves: 1
+Position 10, Depth 7, Minimax completed. Nodes: 214160, Score: -0.500001
+Position 10, Depth 7, AlphaBetaPruning completed. Nodes: 6583, Score: -0.500001
+Position 10, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 6572, Score: -0.500001, Tied Moves: 3
+Position 10, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 54, Full Nodes: 6572, Score: -0.500001, Tied Moves: 3
+Position 10, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 213, Full Nodes: 5825, Score: -0.500001, Tied Moves: 4
+Position 10, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 635, Full Nodes: 5825, Score: -0.500001, Tied Moves: 1
+Position 10, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1816, Full Nodes: 5825, Score: -0.500001, Tied Moves: 1
+Position 10, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 4967, Full Nodes: 5825, Score: -0.500001, Tied Moves: 1
+Position 10, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 12478, Full Nodes: 6572, Score: -0.500001, Tied Moves: 1
+Position 10, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 30640, Full Nodes: 5825, Score: -0.500001, Tied Moves: 2
+Position 11 generated with 11 moves available.
+Position 11, Depth 3, Minimax completed. Nodes: 830, Score: 0.700001
+Position 11, Depth 3, AlphaBetaPruning completed. Nodes: 210, Score: 0.700001
+Position 11, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 211, Score: 0.700001, Tied Moves: 1
+Position 11, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 30, Full Nodes: 271, Score: 0.700001, Tied Moves: 2
+Position 11, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 106, Full Nodes: 195, Score: 0.700001, Tied Moves: 1
+Position 11, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 528, Full Nodes: 271, Score: 0.700001, Tied Moves: 2
+Position 11, Depth 4, Minimax completed. Nodes: 4352, Score: -0.3
+Position 11, Depth 4, AlphaBetaPruning completed. Nodes: 601, Score: -0.3
+Position 11, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 499, Score: -0.3, Tied Moves: 1
+Position 11, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 30, Full Nodes: 1061, Score: -0.3, Tied Moves: 2
+Position 11, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 106, Full Nodes: 793, Score: -0.3, Tied Moves: 1
+Position 11, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 528, Full Nodes: 1073, Score: -0.3, Tied Moves: 2
+Position 11, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1448, Full Nodes: 479, Score: -0.3, Tied Moves: 1
+Position 11, Depth 5, Minimax completed. Nodes: 21386, Score: 0.2
+Position 11, Depth 5, AlphaBetaPruning completed. Nodes: 1801, Score: 0.2
+Position 11, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 810, Score: 0.2, Tied Moves: 1
+Position 11, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 30, Full Nodes: 3677, Score: 0.2, Tied Moves: 2
+Position 11, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 106, Full Nodes: 2546, Score: 0.2, Tied Moves: 1
+Position 11, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 528, Full Nodes: 3584, Score: 0.2, Tied Moves: 2
+Position 11, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1448, Full Nodes: 769, Score: 0.2, Tied Moves: 1
+Position 11, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5902, Full Nodes: 769, Score: 0.2, Tied Moves: 1
+Position 11, Depth 6, Minimax completed. Nodes: 101201, Score: -1.5
+Position 11, Depth 6, AlphaBetaPruning completed. Nodes: 4110, Score: -1.5
+Position 11, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 2298, Score: -1.5, Tied Moves: 1
+Position 11, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 30, Full Nodes: 10254, Score: -1.5, Tied Moves: 2
+Position 11, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 106, Full Nodes: 5937, Score: -1.5, Tied Moves: 1
+Position 11, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 528, Full Nodes: 9492, Score: -1.5, Tied Moves: 2
+Position 11, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1448, Full Nodes: 2091, Score: -1.5, Tied Moves: 1
+Position 11, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5902, Full Nodes: 2091, Score: -1.5, Tied Moves: 1
+Position 11, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 15411, Full Nodes: 2091, Score: -1.5, Tied Moves: 1
+Position 11, Depth 7, Minimax completed. Nodes: 462552, Score: -0.8
+Position 11, Depth 7, AlphaBetaPruning completed. Nodes: 9621, Score: -0.8
+Position 11, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 4615, Score: -0.8, Tied Moves: 1
+Position 11, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 30, Full Nodes: 28912, Score: -0.8, Tied Moves: 2
+Position 11, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 106, Full Nodes: 16147, Score: -0.8, Tied Moves: 1
+Position 11, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 528, Full Nodes: 27045, Score: -0.8, Tied Moves: 2
+Position 11, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1448, Full Nodes: 3431, Score: -0.8, Tied Moves: 1
+Position 11, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5902, Full Nodes: 3431, Score: -0.8, Tied Moves: 1
+Position 11, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 15411, Full Nodes: 3431, Score: -0.8, Tied Moves: 1
+Position 11, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 42010, Full Nodes: 3431, Score: -0.8, Tied Moves: 1
+Position 12 generated with 11 moves available.
+Position 12, Depth 3, Minimax completed. Nodes: 1760, Score: 0.0999994
+Position 12, Depth 3, AlphaBetaPruning completed. Nodes: 420, Score: 0.0999994
+Position 12, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 378, Score: 0.0999994, Tied Moves: 3
+Position 12, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 63, Full Nodes: 378, Score: 0.0999994, Tied Moves: 3
+Position 12, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 255, Full Nodes: 340, Score: 0.0999994, Tied Moves: 1
+Position 12, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 912, Full Nodes: 340, Score: 0.0999994, Tied Moves: 1
+Position 12, Depth 4, Minimax completed. Nodes: 9048, Score: -2.7
+Position 12, Depth 4, AlphaBetaPruning completed. Nodes: 488, Score: -2.7
+Position 12, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 586, Score: -2.7, Tied Moves: 3
+Position 12, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 63, Full Nodes: 586, Score: -2.7, Tied Moves: 3
+Position 12, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 255, Full Nodes: 274, Score: -2.7, Tied Moves: 1
+Position 12, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 912, Full Nodes: 274, Score: -2.7, Tied Moves: 1
+Position 12, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2308, Full Nodes: 274, Score: -2.7, Tied Moves: 1
+Position 12, Depth 5, Minimax completed. Nodes: 40476, Score: -1.3
+Position 12, Depth 5, AlphaBetaPruning completed. Nodes: 1105, Score: -1.3
+Position 12, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 1004, Score: -1.3, Tied Moves: 3
+Position 12, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 63, Full Nodes: 1004, Score: -1.3, Tied Moves: 3
+Position 12, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 255, Full Nodes: 588, Score: -1.3, Tied Moves: 1
+Position 12, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 912, Full Nodes: 588, Score: -1.3, Tied Moves: 1
+Position 12, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2308, Full Nodes: 588, Score: -1.3, Tied Moves: 1
+Position 12, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6554, Full Nodes: 588, Score: -1.3, Tied Moves: 1
+Position 12, Depth 6, Minimax completed. Nodes: 197510, Score: -1.8
+Position 12, Depth 6, AlphaBetaPruning completed. Nodes: 5784, Score: -1.8
+Position 12, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 7302, Score: -1.8, Tied Moves: 3
+Position 12, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 63, Full Nodes: 7302, Score: -1.8, Tied Moves: 3
+Position 12, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 255, Full Nodes: 4189, Score: -1.8, Tied Moves: 1
+Position 12, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 912, Full Nodes: 4189, Score: -1.8, Tied Moves: 1
+Position 12, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2308, Full Nodes: 4189, Score: -1.8, Tied Moves: 1
+Position 12, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6554, Full Nodes: 4189, Score: -1.8, Tied Moves: 1
+Position 12, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 19130, Full Nodes: 4189, Score: -1.8, Tied Moves: 1
+Position 12, Depth 7, Minimax completed. Nodes: 872028, Score: -1.1
+Position 12, Depth 7, AlphaBetaPruning completed. Nodes: 9782, Score: -1.1
+Position 12, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 11, Full Nodes: 13932, Score: -1.1, Tied Moves: 3
+Position 12, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 63, Full Nodes: 13932, Score: -1.1, Tied Moves: 3
+Position 12, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 255, Full Nodes: 6250, Score: -1.1, Tied Moves: 1
+Position 12, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 912, Full Nodes: 6250, Score: -1.1, Tied Moves: 1
+Position 12, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2308, Full Nodes: 6250, Score: -1.1, Tied Moves: 1
+Position 12, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6554, Full Nodes: 6250, Score: -1.1, Tied Moves: 1
+Position 12, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 19130, Full Nodes: 6250, Score: -1.1, Tied Moves: 1
+Position 12, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 54436, Full Nodes: 6250, Score: -1.1, Tied Moves: 1
+Position 13 generated with 8 moves available.
+Position 13, Depth 3, Minimax completed. Nodes: 736, Score: 0.599999
+Position 13, Depth 3, AlphaBetaPruning completed. Nodes: 253, Score: 0.599999
+Position 13, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 221, Score: 0.599999, Tied Moves: 1
+Position 13, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 34, Full Nodes: 266, Score: 0.599999, Tied Moves: 1
+Position 13, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 111, Full Nodes: 194, Score: 0.599999, Tied Moves: 1
+Position 13, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 357, Full Nodes: 161, Score: 0.599999, Tied Moves: 2
+Position 13, Depth 4, Minimax completed. Nodes: 3250, Score: -0.2
+Position 13, Depth 4, AlphaBetaPruning completed. Nodes: 699, Score: -0.2
+Position 13, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 684, Score: -0.2, Tied Moves: 1
+Position 13, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 34, Full Nodes: 587, Score: -0.2, Tied Moves: 1
+Position 13, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 111, Full Nodes: 598, Score: -0.2, Tied Moves: 1
+Position 13, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 357, Full Nodes: 616, Score: -0.2, Tied Moves: 2
+Position 13, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 896, Full Nodes: 568, Score: -0.2, Tied Moves: 1
+Position 13, Depth 5, Minimax completed. Nodes: 15562, Score: 0.299999
+Position 13, Depth 5, AlphaBetaPruning completed. Nodes: 1360, Score: 0.299999
+Position 13, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 1119, Score: 0.299999, Tied Moves: 1
+Position 13, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 34, Full Nodes: 1841, Score: 0.299999, Tied Moves: 1
+Position 13, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 111, Full Nodes: 1194, Score: 0.299999, Tied Moves: 1
+Position 13, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 357, Full Nodes: 504, Score: 0.299999, Tied Moves: 2
+Position 13, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 896, Full Nodes: 1290, Score: 0.299999, Tied Moves: 1
+Position 13, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2902, Full Nodes: 504, Score: 0.299999, Tied Moves: 2
+Position 13, Depth 6, Minimax completed. Nodes: 72375, Score: -0.7
+Position 13, Depth 6, AlphaBetaPruning completed. Nodes: 4653, Score: -0.7
+Position 13, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 4492, Score: -0.7, Tied Moves: 1
+Position 13, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 34, Full Nodes: 4792, Score: -0.7, Tied Moves: 1
+Position 13, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 111, Full Nodes: 4198, Score: -0.7, Tied Moves: 1
+Position 13, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 357, Full Nodes: 2953, Score: -0.7, Tied Moves: 2
+Position 13, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 896, Full Nodes: 4221, Score: -0.7, Tied Moves: 1
+Position 13, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2902, Full Nodes: 2953, Score: -0.7, Tied Moves: 2
+Position 13, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 7811, Full Nodes: 2953, Score: -0.7, Tied Moves: 1
+Position 13, Depth 7, Minimax completed. Nodes: 347852, Score: 0.0999994
+Position 13, Depth 7, AlphaBetaPruning completed. Nodes: 6548, Score: 0.0999994
+Position 13, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 8, Full Nodes: 6417, Score: 0.0999994, Tied Moves: 1
+Position 13, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 34, Full Nodes: 7348, Score: 0.0999994, Tied Moves: 1
+Position 13, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 111, Full Nodes: 4579, Score: 0.0999994, Tied Moves: 1
+Position 13, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 357, Full Nodes: 4082, Score: 0.0999994, Tied Moves: 2
+Position 13, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 896, Full Nodes: 6260, Score: 0.0999994, Tied Moves: 1
+Position 13, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 2902, Full Nodes: 4082, Score: 0.0999994, Tied Moves: 2
+Position 13, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 7811, Full Nodes: 4082, Score: 0.0999994, Tied Moves: 1
+Position 13, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 15929, Full Nodes: 5305, Score: 0.0999994, Tied Moves: 2
+Position 14 generated with 6 moves available.
+Position 14, Depth 3, Minimax completed. Nodes: 1666, Score: 2.3
+Position 14, Depth 3, AlphaBetaPruning completed. Nodes: 606, Score: 2.3
+Position 14, Depth 3, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6, Full Nodes: 606, Score: 2.3, Tied Moves: 1
+Position 14, Depth 3, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 48, Full Nodes: 606, Score: 2.3, Tied Moves: 1
+Position 14, Depth 3, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 109, Full Nodes: 606, Score: 2.3, Tied Moves: 3
+Position 14, Depth 3, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 739, Full Nodes: 606, Score: 2.3, Tied Moves: 2
+Position 14, Depth 4, Minimax completed. Nodes: 8095, Score: 1.8
+Position 14, Depth 4, AlphaBetaPruning completed. Nodes: 1527, Score: 1.8
+Position 14, Depth 4, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6, Full Nodes: 1459, Score: 1.8, Tied Moves: 1
+Position 14, Depth 4, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 48, Full Nodes: 1459, Score: 1.8, Tied Moves: 1
+Position 14, Depth 4, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 109, Full Nodes: 1459, Score: 1.8, Tied Moves: 3
+Position 14, Depth 4, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 739, Full Nodes: 1459, Score: 1.8, Tied Moves: 2
+Position 14, Depth 4, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1615, Full Nodes: 1431, Score: 1.8, Tied Moves: 1
+Position 14, Depth 5, Minimax completed. Nodes: 43525, Score: 2
+Position 14, Depth 5, AlphaBetaPruning completed. Nodes: 2446, Score: 2
+Position 14, Depth 5, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6, Full Nodes: 2446, Score: 2, Tied Moves: 1
+Position 14, Depth 5, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 48, Full Nodes: 2446, Score: 2, Tied Moves: 1
+Position 14, Depth 5, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 109, Full Nodes: 2446, Score: 2, Tied Moves: 3
+Position 14, Depth 5, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 739, Full Nodes: 2446, Score: 2, Tied Moves: 2
+Position 14, Depth 5, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1615, Full Nodes: 3317, Score: 2, Tied Moves: 1
+Position 14, Depth 5, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5887, Full Nodes: 2446, Score: 2, Tied Moves: 3
+Position 14, Depth 6, Minimax completed. Nodes: 194109, Score: 1.7
+Position 14, Depth 6, AlphaBetaPruning completed. Nodes: 10894, Score: 1.7
+Position 14, Depth 6, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6, Full Nodes: 10456, Score: 1.7, Tied Moves: 1
+Position 14, Depth 6, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 48, Full Nodes: 10456, Score: 1.7, Tied Moves: 1
+Position 14, Depth 6, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 109, Full Nodes: 10456, Score: 1.7, Tied Moves: 3
+Position 14, Depth 6, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 739, Full Nodes: 10395, Score: 1.7, Tied Moves: 2
+Position 14, Depth 6, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1615, Full Nodes: 10106, Score: 1.7, Tied Moves: 1
+Position 14, Depth 6, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5887, Full Nodes: 10018, Score: 1.7, Tied Moves: 3
+Position 14, Depth 6, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 13267, Full Nodes: 10789, Score: 1.7, Tied Moves: 3
+Position 14, Depth 7, Minimax completed. Nodes: 971169, Score: 2
+Position 14, Depth 7, AlphaBetaPruning completed. Nodes: 26518, Score: 2
+Position 14, Depth 7, Shallow Depth 0, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 6, Full Nodes: 26518, Score: 2, Tied Moves: 1
+Position 14, Depth 7, Shallow Depth 1, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 48, Full Nodes: 26518, Score: 2, Tied Moves: 1
+Position 14, Depth 7, Shallow Depth 2, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 109, Full Nodes: 26518, Score: 2, Tied Moves: 3
+Position 14, Depth 7, Shallow Depth 3, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 739, Full Nodes: 26518, Score: 2, Tied Moves: 2
+Position 14, Depth 7, Shallow Depth 4, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 1615, Full Nodes: 24653, Score: 2, Tied Moves: 1
+Position 14, Depth 7, Shallow Depth 5, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 5887, Full Nodes: 26518, Score: 2, Tied Moves: 3
+Position 14, Depth 7, Shallow Depth 6, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 13267, Full Nodes: 31242, Score: 2, Tied Moves: 3
+Position 14, Depth 7, Shallow Depth 7, AlphaBetaPruningMoveOrdering completed. Shallow Nodes: 43019, Full Nodes: 26518, Score: 2, Tied Moves: 4

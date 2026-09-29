@@ -3,11 +3,14 @@
 
 #include "AlphaBetaPruning.hpp"
 
-class AlphaBetaPruningMoveOrdering : AlphaBetaPruning
+class AlphaBetaPruningMoveOrdering : public AlphaBetaPruning
 {
     public:
         AlphaBetaPruningMoveOrdering();
         ~AlphaBetaPruningMoveOrdering();
+
+        int iShallowNumberOfLeafNodes = 0;
+        int iNumberTiedMoves = 0;
 
         Game getBestGameState(Game toAnalyseGame, int depth, int shallowDepth);
 };

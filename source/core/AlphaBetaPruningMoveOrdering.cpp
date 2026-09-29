@@ -21,7 +21,26 @@ Game AlphaBetaPruningMoveOrdering::getBestGameState(Game toAnalyseGame, int dept
         shallowEvaluations[i] = {evaluation, i};
     }
 
+    this->iShallowNumberOfLeafNodes = this->iNumberOfLeafNodes;   
+
     Colour playerColour = toAnalyseGame.getCurrentPlayerColour();
+
+    float bestShallowScore = shallowEvaluations[0].first;
+    for (auto& pair : shallowEvaluations)
+    {
+        if (playerColour == White) bestShallowScore = std::max(bestShallowScore, pair.first);
+        else                       bestShallowScore = std::min(bestShallowScore, pair.first);
+    }
+
+    const float epsilon = 1e-4f;
+    this->iNumberTiedMoves = 0;
+    for (auto& pair : shallowEvaluations)
+    {
+        if (std::abs(pair.first - bestShallowScore) < epsilon)
+        {
+            this->iNumberTiedMoves++;
+        }
+    }
 
     std::stable_sort(shallowEvaluations.begin(), shallowEvaluations.end(),
     [&](const auto& a, const auto& b) {
@@ -64,6 +83,6 @@ Game AlphaBetaPruningMoveOrdering::getBestGameState(Game toAnalyseGame, int dept
             break; // Alpha-beta pruning
         }
     }
-
+    this->fBestEvaluation = (playerColour == White) ? fMaxEvaluation : fMinEvaluation;
     return possibleGames[iBestBoardStateIndex];
 }

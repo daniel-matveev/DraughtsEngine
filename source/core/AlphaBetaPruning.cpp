@@ -289,5 +289,7 @@ Game AlphaBetaPruning::getBestGameState(Game toAnalyseGame, int iDepth)
         Debug("Number of different games analysed: " << this->iNumberOfLeafNodes);
     #endif
 
+    this->fBestEvaluation = (playerColour == White) ? fMaxEvaluation : fMinEvaluation;
+
     return toAnalyseGames.at(iBestBoardStateIndex);
 }

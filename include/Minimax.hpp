@@ -30,6 +30,11 @@ public:
     
     // For testing
     long long iNumberOfLeafNodes{0};
+
+    int getNumMoves(Game game) { return getAllPossibleGames(game).size(); }
+    
+    // The best evaluation found by the algorithm
+    float fBestEvaluation = 0;
     
     // Will run the possible moves for that player and on each one call minimax to determine which one is the best
     Game getBestGameState(Game toAnalyseGame, int iDepth);
